@@ -72,7 +72,7 @@ def main():
     @media(max-width:600px){.topbar nav{padding:16px 18px;gap:16px}.stats{gap:8px}.stat{padding:12px 8px}.stat b{font-size:23px}.stat span{font-size:12px}figure{padding:12px}.chart{min-width:680px}.chart-scroll{border-bottom:1px solid #ddd}main{padding-top:20px}}
     </style>'''
     page=page.replace('</head>',style+'<meta name="description" content="A reproducible local Laya fine-tuning study: six safety datasets, two training sizes, detection gains and the cost of false alarms."></head>')
-    nav='''<div class="topbar"><nav aria-label="Main navigation"><strong>Laya / field notes</strong><a href="#results">Results</a><a href="#false-alarms">False alarms</a><a href="https://github.com/Alexander-Ollman/laya-ft/blob/research/moderation-publication/docs/reproduce.md">Reproduce</a><a href="https://github.com/Alexander-Ollman/laya-ft">GitHub</a><a href="https://alexander-ollman.github.io/qwen3.8-on-rtx3090/">Qwen field notes</a></nav></div>'''
+    nav='''<div class="topbar"><nav aria-label="Main navigation"><strong>Laya / field notes</strong><a href="index.html">Full Jev vs. Laya report</a><a href="#results">Results</a><a href="#false-alarms">False alarms</a><a href="https://github.com/Alexander-Ollman/laya-ft/blob/research/full-report/docs/reproduce.md">Reproduce</a><a href="https://github.com/Alexander-Ollman/laya-ft">GitHub</a><a href="https://alexander-ollman.github.io/qwen3.8-on-rtx3090/">Qwen field notes</a></nav></div>'''
     page=page.replace('<body><main>','<body>'+nav+'<main>')
     page=page.replace('</header>','''<div class="stats"><div class="stat"><b>6</b><span>Public dataset sources</span></div><div class="stat"><b>67,890</b><span>Scored decisions</span></div><div class="stat"><b>0</b><span>Request failures</span></div></div></header>''')
     def figure(name,alt,caption):
@@ -81,10 +81,10 @@ def main():
     page=page.replace("<div class=\"scroll\"><table><thead><tr><th>Test</th><th>Examples</th>",figure('detection-f1','Grouped bars compare harmful-content F1 before training and after 1,000 and 5,000 decisions across seven tasks.','All three models use the same test cases. Aegis uses held-out data from the training source; other datasets test transfer.')+"<div class=\"scroll\"><table><thead><tr><th>Test</th><th>Examples</th>",1)
     page=page.replace('<h2>Does it block harmless requests?</h2>','<h2 id="false-alarms">Does it block harmless requests?</h2>'+figure('false-alarm-tradeoff','XSTest harmful recall rises from 61.5 to 84.0 to 91.5 percent, while harmless false alarms rise from 24.8 to 65.2 to 47.2 percent.','The larger fine-tune catches more harmful prompts, but still flags nearly half of the harmless prompts in this challenge set.'))
     # Link readable documentation on GitHub; JSON evidence remains directly downloadable.
-    page=re.sub(r'href="docs/([^\"]+\.md)"',r'href="https://github.com/Alexander-Ollman/laya-ft/blob/research/moderation-publication/docs/\1"',page)
-    page=page.replace('<footer>','<section><h2>Reproduce the results</h2><p>The repository includes training and evaluation code, pinned source versions, saved predictions, and verification tests. Start with the <a href="https://github.com/Alexander-Ollman/laya-ft/blob/research/moderation-publication/docs/reproduce.md">step-by-step reproduction guide</a>. Rescoring the recorded predictions requires no GPU or paid model calls. Download gated datasets through their original publishers with your own access.</p></section><footer>')
-    (ROOT/'index.html').write_text(page)
+    page=re.sub(r'href="docs/([^\"]+\.md)"',r'href="https://github.com/Alexander-Ollman/laya-ft/blob/research/full-report/docs/\1"',page)
+    page=page.replace('<footer>','<section><h2>Reproduce the results</h2><p>The repository includes training and evaluation code, pinned source versions, saved predictions, and verification tests. Start with the <a href="https://github.com/Alexander-Ollman/laya-ft/blob/research/full-report/docs/reproduce.md">step-by-step reproduction guide</a>. Rescoring the recorded predictions requires no GPU or paid model calls. Download gated datasets through their original publishers with your own access.</p></section><footer>')
+    (ROOT/'moderation.html').write_text(page)
     (ROOT/'.nojekyll').touch()
-    print(ROOT/'index.html')
+    print(ROOT/'moderation.html')
 
 if __name__=='__main__':main()

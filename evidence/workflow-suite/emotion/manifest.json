@@ -1,0 +1,128 @@
+{
+  "dataset": "dair-ai/emotion",
+  "slug": "emotion",
+  "config": {
+    "repo": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "files": {
+      "train": "split/train-00000-of-00001.parquet",
+      "validation": "split/validation-00000-of-00001.parquet",
+      "test": "split/test-00000-of-00001.parquet"
+    },
+    "text": "text",
+    "label": "label",
+    "labels": [
+      "sadness",
+      "joy",
+      "love",
+      "anger",
+      "fear",
+      "surprise"
+    ],
+    "license": "Research and educational use only; see source card",
+    "instruction": "Which emotion is most clearly expressed by the author of this text?"
+  },
+  "labels": [
+    "sadness",
+    "joy",
+    "love",
+    "anger",
+    "fear",
+    "surprise"
+  ],
+  "license": "Research and educational use only; see source card",
+  "raw_sha256": {
+    "train": {
+      "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/split/train-00000-of-00001.parquet",
+      "sha256": "10817f0f2ea42358bc62f69a09dfb8bd71701727df6d5a387bea742f3ea06417",
+      "bytes": 1030740
+    },
+    "validation": {
+      "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/split/validation-00000-of-00001.parquet",
+      "sha256": "c70f0e660b5ebd1ea9a37d2a851f516f08a6d6477cdfc11be204e22a2f1102fd",
+      "bytes": 127466
+    },
+    "test": {
+      "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/split/test-00000-of-00001.parquet",
+      "sha256": "6f8407fa1ca9c310f55781f082ed73812f6551e8dda2c61973123a121869245b",
+      "bytes": 128987
+    },
+    "card": {
+      "sha256": "7b10e5670f3e5b0a12274e90aad8f85fc48d8e25eccb4e4c16933cd8b7dfc373",
+      "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe"
+    }
+  },
+  "split_sha256": {
+    "train": "d7c50f106cb2ba8744736e9198e56d5d5ca51e26b8d632728a8fb0e5a7002602",
+    "development": "4b73c0c987ad74539b502f937012690563ca7d09fa24e6f546923b467c464876",
+    "heldout": "8783e7c10f538d8dfa510e44f571a2a6c44249999caea983252b4fa440001db7"
+  },
+  "train": 1000,
+  "development": 200,
+  "test": 1000,
+  "counts": {
+    "train": {
+      "anger": 135,
+      "joy": 335,
+      "love": 81,
+      "surprise": 35,
+      "sadness": 293,
+      "fear": 121
+    },
+    "development": {
+      "love": 18,
+      "fear": 21,
+      "anger": 28,
+      "sadness": 55,
+      "joy": 70,
+      "surprise": 8
+    },
+    "heldout": {
+      "joy": 347,
+      "sadness": 291,
+      "fear": 112,
+      "love": 80,
+      "anger": 137,
+      "surprise": 33
+    }
+  },
+  "source_counts": {
+    "train": 16000,
+    "validation": 2000,
+    "test": 2000
+  },
+  "exclusions": {
+    "validation": {
+      "duplicates": 0,
+      "heldout_or_development_overlap": 3,
+      "conflicting_labels": 4
+    },
+    "train": {
+      "duplicates": 1,
+      "heldout_or_development_overlap": 16,
+      "conflicting_labels": 60
+    }
+  },
+  "split_policy": "Official test preserved if <=1000, otherwise fixed proportional sample1000; all official test/validation texts excluded from training.",
+  "protocol": {
+    "max_len": 1024,
+    "head_max_len": 768,
+    "epochs": 3,
+    "seed": 7,
+    "selection": "fixed final epoch; no test-based tuning",
+    "primary": "macro_f1",
+    "secondary": [
+      "accuracy",
+      "per-class recall",
+      "paired grouped bootstrap",
+      "latency",
+      "probability quality"
+    ],
+    "positive_class": null,
+    "sampling_seeds": {
+      "test": 7,
+      "development": 8,
+      "train": 9
+    }
+  }
+}

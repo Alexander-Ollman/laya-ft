@@ -1,11 +1,51 @@
 {
   "date": "2026-09-21",
-  "included_tests": 29,
+  "included_tests": 65,
   "python_compilation": "passed",
-  "charts": "Generated from validated analysis, zero-based0\u2013100 axes,SVG+PNG",
-  "browser": "Desktop1280 andmobile390:2charts11tables,noerrors,nooverflow",
-  "recorded_predictions": "unchanged from verified local review bundle",
+  "charts": "Five chart pairs across both pages; values derived from saved evidence, zero-based axes",
+  "browser": [
+    {
+      "page": "index.html",
+      "width": 1280,
+      "overflow": false,
+      "images": 4,
+      "tables": 15,
+      "errors": []
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow": false,
+      "images": 4,
+      "tables": 15,
+      "errors": []
+    },
+    {
+      "page": "moderation.html",
+      "width": 1280,
+      "overflow": false,
+      "images": 2,
+      "tables": 11,
+      "errors": []
+    },
+    {
+      "page": "moderation.html",
+      "width": 390,
+      "overflow": false,
+      "images": 2,
+      "tables": 11,
+      "errors": []
+    }
+  ],
+  "recorded_predictions": "Historical predictions unchanged; nine new Jev result files added",
   "laya_source_commit": "6a5819129eb220570792e417e49723d697efd76f",
   "source_check": "all7recorded Laya modulehashes match upstreamcommit",
-  "scope": "Moderation experiment; no rawdatasettext,weights,privateJevdata,orcredentials"
+  "scope": "Full Jev/Laya report: public workflow studies, aggregate private pilot, Laya moderation and matched secondary Jev comparison; Banking77 licensed text only",
+  "jev": {
+    "decisions": 22630,
+    "failures": 1,
+    "model_resolved": "typesafe/jev-1.13-20260917"
+  },
+  "rescoring": "Banking77 and all five workflow scores/intervals reproduced; Jev comparisons validate exact Laya result hashes",
+  "typecheck_lint": "No configured Python type checker or linter; compilation and tests pass"
 }

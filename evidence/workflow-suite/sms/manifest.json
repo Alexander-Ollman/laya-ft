@@ -1,0 +1,90 @@
+{
+  "dataset": "ucirvine/sms_spam",
+  "slug": "sms",
+  "config": {
+    "repo": "ucirvine/sms_spam",
+    "revision": "cae486f927c250fe1d4a5b55f11357964ed1646c",
+    "files": {
+      "pool": "plain_text/train-00000-of-00001.parquet"
+    },
+    "text": "sms",
+    "label": "label",
+    "labels": [
+      "legitimate",
+      "spam"
+    ],
+    "positive": "spam",
+    "license": "CC-BY-4.0 per original UCI source; HF card unknown",
+    "instruction": "Classify this SMS message as legitimate personal communication or unsolicited spam."
+  },
+  "labels": [
+    "legitimate",
+    "spam"
+  ],
+  "license": "CC-BY-4.0 per original UCI source; HF card unknown",
+  "raw_sha256": {
+    "pool": {
+      "url": "https://huggingface.co/datasets/ucirvine/sms_spam/resolve/cae486f927c250fe1d4a5b55f11357964ed1646c/plain_text/train-00000-of-00001.parquet",
+      "sha256": "6e5518e4a49cb2de8af9c89a38b742825cdddbb55942701fc2237d4364288abd",
+      "bytes": 358869
+    },
+    "card": {
+      "sha256": "5e97518746f7e8e69aab20d744171c954751df62e3b833bf8dd41ca32841c84d",
+      "revision": "cae486f927c250fe1d4a5b55f11357964ed1646c"
+    }
+  },
+  "split_sha256": {
+    "train": "4d5ca9c6ad934eb133fa3ab57b2d55b776c2c5f9e99cb6c8855f4fd7e0f5b940",
+    "development": "db2851dad1403b5c8318d8b61be5a3599865d8adbce36476c66a93f04f414a3e",
+    "heldout": "e7d34c14baa0d2889bf13daf16aaac1252b80cafce6eb4212c02855aac363c0c"
+  },
+  "train": 1000,
+  "development": 200,
+  "test": 1000,
+  "counts": {
+    "train": {
+      "legitimate": 877,
+      "spam": 123
+    },
+    "development": {
+      "legitimate": 176,
+      "spam": 24
+    },
+    "heldout": {
+      "legitimate": 877,
+      "spam": 123
+    }
+  },
+  "source_counts": {
+    "pool": 5574
+  },
+  "exclusions": {
+    "pool": {
+      "empty_normalized_text": 2,
+      "duplicates": 421,
+      "heldout_or_development_overlap": 322
+    }
+  },
+  "split_policy": "Custom seeded proportional train/development/test selection after text-group deduplication; source has only one split.",
+  "protocol": {
+    "max_len": 1024,
+    "head_max_len": 768,
+    "epochs": 3,
+    "seed": 7,
+    "selection": "fixed final epoch; no test-based tuning",
+    "primary": "macro_f1",
+    "secondary": [
+      "accuracy",
+      "per-class recall",
+      "paired grouped bootstrap",
+      "latency",
+      "probability quality"
+    ],
+    "positive_class": "spam",
+    "sampling_seeds": {
+      "test": 7,
+      "development": 8,
+      "train": 9
+    }
+  }
+}

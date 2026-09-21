@@ -1,0 +1,54 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 2171.19it/s]
+development {'epoch': 0, 'loss': 2.3199758529663086, 'accuracy': 0.625, 'n': 200}
+epoch 1 step 1/48 loss 2.5078 3s
+epoch 1 step 2/48 loss 2.2288 5s
+epoch 1 step 3/48 loss 1.1790 7s
+epoch 1 step 4/48 loss 3.1903 10s
+epoch 1 step 5/48 loss 1.5852 12s
+epoch 1 step 6/48 loss 1.8364 16s
+epoch 1 step 7/48 loss 0.5145 18s
+epoch 1 step 8/48 loss 1.3235 21s
+epoch 1 step 9/48 loss 1.3535 24s
+epoch 1 step 10/48 loss 1.2384 27s
+epoch 1 step 11/48 loss 1.5518 30s
+epoch 1 step 12/48 loss 0.9154 33s
+epoch 1 step 13/48 loss 0.8140 36s
+epoch 1 step 14/48 loss 2.1025 39s
+epoch 1 step 15/48 loss 0.8155 42s
+epoch 1 step 16/48 loss 0.5321 44s
+development {'epoch': 1, 'loss': 0.9169054812192917, 'accuracy': 0.735, 'n': 200}
+epoch 2 step 17/48 loss 0.8664 50s
+epoch 2 step 18/48 loss 0.5940 53s
+epoch 2 step 19/48 loss 0.4041 56s
+epoch 2 step 20/48 loss 0.8989 59s
+epoch 2 step 21/48 loss 0.3993 62s
+epoch 2 step 22/48 loss 0.3018 65s
+epoch 2 step 23/48 loss 0.4360 68s
+epoch 2 step 24/48 loss 0.9700 71s
+epoch 2 step 25/48 loss 0.8093 75s
+epoch 2 step 26/48 loss 0.6745 77s
+epoch 2 step 27/48 loss 0.2913 80s
+epoch 2 step 28/48 loss 0.2883 83s
+epoch 2 step 29/48 loss 0.3610 87s
+epoch 2 step 30/48 loss 0.4123 90s
+epoch 2 step 31/48 loss 0.6706 93s
+epoch 2 step 32/48 loss 0.3238 95s
+development {'epoch': 2, 'loss': 0.8838523823022842, 'accuracy': 0.79, 'n': 200}
+epoch 3 step 33/48 loss 0.3099 100s
+epoch 3 step 34/48 loss 1.3605 103s
+epoch 3 step 35/48 loss 0.4598 106s
+epoch 3 step 36/48 loss 0.3198 109s
+epoch 3 step 37/48 loss 0.3269 112s
+epoch 3 step 38/48 loss 0.4277 115s
+epoch 3 step 39/48 loss 0.5563 118s
+epoch 3 step 40/48 loss 0.3044 121s
+epoch 3 step 41/48 loss 0.2979 124s
+epoch 3 step 42/48 loss 1.0548 127s
+epoch 3 step 43/48 loss 0.3241 130s
+epoch 3 step 44/48 loss 0.3670 133s
+epoch 3 step 45/48 loss 0.4539 136s
+epoch 3 step 46/48 loss 0.3204 139s
+epoch 3 step 47/48 loss 0.3022 142s
+epoch 3 step 48/48 loss 0.5563 144s
+development {'epoch': 3, 'loss': 0.8536566638946533, 'accuracy': 0.795, 'n': 200}
+saved /Users/alexanderollman/jevtest/models/laya-suite-emotion-s7

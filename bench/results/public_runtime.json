@@ -1,0 +1,16 @@
+{
+  "python": "3.12.12",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "hardware": "Apple M4 Max",
+  "packages": {
+    "laya": "0.3.3",
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "huggingface-hub": "1.32.0",
+    "safetensors": "0.8.0",
+    "httpx": "0.28.1",
+    "fastapi": "0.141.1",
+    "uvicorn": "0.53.0",
+    "numpy": "2.5.3"
+  }
+}

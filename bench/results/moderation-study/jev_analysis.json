@@ -1,0 +1,3349 @@
+{
+  "schema": "moderation-jev-posthoc-v1",
+  "study_sha256": "863bf377337873b33452aeaf23442bdfa36759b82f31b3784dac9352eee54f0d",
+  "scope": "Secondary post-hoc comparisons; 95% descriptive intervals, no multiplicity correction",
+  "complete": true,
+  "tasks": [
+    {
+      "slug": "aegis_prompt",
+      "complete": true,
+      "n": 1928,
+      "input_sha256": "44304b4a5835362575fbf7a24a872a446b6849246c103c23bc33acbce8be84d4",
+      "summary": {
+        "n": 1928,
+        "correct": 1589,
+        "accuracy": 0.8241701244813278,
+        "wilson_95": [
+          0.8065379921546534,
+          0.8405130348810077
+        ],
+        "macro_f1": 0.8241405558205857,
+        "errors": 0,
+        "probability_rows": 1928,
+        "multiclass_brier": 0.27639004149377594,
+        "nll": 1.0166217482369118,
+        "ece_10_equal_width": 0.09837136929460588,
+        "p50_ms": 154.98075005598366,
+        "p95_ms": 251.23125012032688,
+        "cost_usd": 0.036130458,
+        "reported_cost_usd": 0.036130458,
+        "cost_reported_rows": 1928,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 889,
+            "negative_support": 1039,
+            "tp": 782,
+            "fp": 232,
+            "fn": 107,
+            "tn": 807,
+            "precision": 0.7712031558185405,
+            "recall": 0.8796400449943758,
+            "recall_wilson_95": [
+              0.856601279281074,
+              0.8994120009395499
+            ],
+            "false_positive_rate": 0.22329162656400384,
+            "false_positive_wilson_95": [
+              0.19901462176704793,
+              0.24960722277464925
+            ]
+          },
+          "unsafe": {
+            "support": 1039,
+            "negative_support": 889,
+            "tp": 807,
+            "fp": 107,
+            "fn": 232,
+            "tn": 782,
+            "precision": 0.8829321663019694,
+            "recall": 0.7767083734359962,
+            "recall_wilson_95": [
+              0.7503927772253509,
+              0.8009853782329521
+            ],
+            "false_positive_rate": 0.1203599550056243,
+            "false_positive_wilson_95": [
+              0.1005879990604502,
+              0.14339872071892598
+            ]
+          }
+        },
+        "majority_baseline": 0.5389004149377593,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 1039,
+          "negative_support": 889,
+          "tp": 807,
+          "fp": 107,
+          "fn": 232,
+          "tn": 782,
+          "precision": 0.8829321663019694,
+          "recall": 0.7767083734359962,
+          "recall_wilson_95": [
+            0.7503927772253509,
+            0.8009853782329521
+          ],
+          "false_positive_rate": 0.1203599550056243,
+          "false_positive_wilson_95": [
+            0.1005879990604502,
+            0.14339872071892598
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 1039,
+          "negative_support": 889,
+          "tp": 807,
+          "fp": 107,
+          "fn": 232,
+          "tn": 782,
+          "precision": 0.8829321663019694,
+          "recall": 0.7767083734359962,
+          "recall_wilson_95": [
+            0.7503927772253509,
+            0.8009853782329521
+          ],
+          "false_positive_rate": 0.1203599550056243,
+          "false_positive_wilson_95": [
+            0.1005879990604502,
+            0.14339872071892598
+          ],
+          "f1": 0.82642089093702,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.82642089093702,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.9184769293689494,
+          "scored_rows": 1928,
+          "excluded_rows": 0,
+          "positive_support": 1039,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {
+          "Controlled/Regulated Substances": {
+            "support": 112,
+            "tp": 101,
+            "recall": 0.9017857142857143,
+            "recall_wilson_95": [
+              0.8326536744357279,
+              0.9442702430997637
+            ]
+          },
+          "Copyright/Trademark/Plagiarism": {
+            "support": 4,
+            "tp": 2,
+            "recall": 0.5,
+            "recall_wilson_95": [
+              0.15003898915214947,
+              0.8499610108478506
+            ]
+          },
+          "Criminal Planning/Confessions": {
+            "support": 502,
+            "tp": 469,
+            "recall": 0.9342629482071713,
+            "recall_wilson_95": [
+              0.9091183602043562,
+              0.9528117809439776
+            ]
+          },
+          "Fraud/Deception": {
+            "support": 14,
+            "tp": 12,
+            "recall": 0.8571428571428571,
+            "recall_wilson_95": [
+              0.6005862050302965,
+              0.9599060787285351
+            ]
+          },
+          "Guns and Illegal Weapons": {
+            "support": 62,
+            "tp": 53,
+            "recall": 0.8548387096774194,
+            "recall_wilson_95": [
+              0.7465660628844542,
+              0.9217058859468299
+            ]
+          },
+          "Harassment": {
+            "support": 152,
+            "tp": 109,
+            "recall": 0.7171052631578947,
+            "recall_wilson_95": [
+              0.6408366269338925,
+              0.7826707022418267
+            ]
+          },
+          "Hate/Identity Hate": {
+            "support": 175,
+            "tp": 132,
+            "recall": 0.7542857142857143,
+            "recall_wilson_95": [
+              0.6854924458173186,
+              0.812155026904491
+            ]
+          },
+          "High Risk Gov Decision Making": {
+            "support": 3,
+            "tp": 3,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.4385029682449546,
+              1.0
+            ]
+          },
+          "Illegal Activity": {
+            "support": 12,
+            "tp": 12,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.7575059933447592,
+              1.0
+            ]
+          },
+          "Immoral/Unethical": {
+            "support": 14,
+            "tp": 12,
+            "recall": 0.8571428571428571,
+            "recall_wilson_95": [
+              0.6005862050302965,
+              0.9599060787285351
+            ]
+          },
+          "Malware": {
+            "support": 8,
+            "tp": 7,
+            "recall": 0.875,
+            "recall_wilson_95": [
+              0.5291118177871464,
+              0.9775825085499433
+            ]
+          },
+          "Manipulation": {
+            "support": 2,
+            "tp": 2,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.34238022750665303,
+              1.0
+            ]
+          },
+          "Needs Caution": {
+            "support": 69,
+            "tp": 38,
+            "recall": 0.5507246376811594,
+            "recall_wilson_95": [
+              0.43378767502688115,
+              0.6623114437075628
+            ]
+          },
+          "Other": {
+            "support": 14,
+            "tp": 14,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.7846891972623643,
+              1.0
+            ]
+          },
+          "PII/Privacy": {
+            "support": 99,
+            "tp": 83,
+            "recall": 0.8383838383838383,
+            "recall_wilson_95": [
+              0.7534877137077101,
+              0.8980005165090128
+            ]
+          },
+          "Political/Misinformation/Conspiracy": {
+            "support": 21,
+            "tp": 12,
+            "recall": 0.5714285714285714,
+            "recall_wilson_95": [
+              0.3654655436930671,
+              0.7553003107462404
+            ]
+          },
+          "Profanity": {
+            "support": 98,
+            "tp": 57,
+            "recall": 0.5816326530612245,
+            "recall_wilson_95": [
+              0.48269880400178744,
+              0.6744081363865095
+            ]
+          },
+          "Sexual": {
+            "support": 99,
+            "tp": 64,
+            "recall": 0.6464646464646465,
+            "recall_wilson_95": [
+              0.5484359722410154,
+              0.7335514706886112
+            ]
+          },
+          "Sexual (minor)": {
+            "support": 11,
+            "tp": 11,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.7411670330319684,
+              1.0
+            ]
+          },
+          "Suicide and Self Harm": {
+            "support": 38,
+            "tp": 34,
+            "recall": 0.8947368421052632,
+            "recall_wilson_95": [
+              0.7586947827711269,
+              0.9582974265244647
+            ]
+          },
+          "Threat": {
+            "support": 16,
+            "tp": 15,
+            "recall": 0.9375,
+            "recall_wilson_95": [
+              0.7167126242970107,
+              0.9888806552353576
+            ]
+          },
+          "Unauthorized Advice": {
+            "support": 23,
+            "tp": 2,
+            "recall": 0.08695652173913043,
+            "recall_wilson_95": [
+              0.024180004484220363,
+              0.26795981075743663
+            ]
+          },
+          "Violence": {
+            "support": 176,
+            "tp": 157,
+            "recall": 0.8920454545454546,
+            "recall_wilson_95": [
+              0.8375504777938719,
+              0.9297920521485094
+            ]
+          }
+        },
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "e40c88c472b7423130bc22431de0ac2ede2686ad5ebfade059bc9f5a9ab8e42b",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.21058091286307046,
+          "harmful_f1_delta_fine_minus_reference": 0.22080945631552718,
+          "accuracy_interval": [
+            0.18555040505621906,
+            0.23639427724769863
+          ],
+          "harmful_f1_interval": [
+            0.1925937812011685,
+            0.2504889261097544
+          ],
+          "confidence": 0.95,
+          "n_rows": 1928,
+          "n_text_groups": 1911,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "8f61612fe5fbddd38587f7099b1a8862fef760da477678ee252f2d59b77f4052",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.032157676348547715,
+          "harmful_f1_delta_fine_minus_reference": 0.011128398997821476,
+          "accuracy_interval": [
+            0.011935651271406278,
+            0.051894135962636256
+          ],
+          "harmful_f1_interval": [
+            -0.00842313083558518,
+            0.030253164417997594
+          ],
+          "confidence": 0.95,
+          "n_rows": 1928,
+          "n_text_groups": 1911,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "09eedb4a48b3a6eabf03e25ec73af536f0039cb799f2c030d5c2e12683d06323",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.0020746887966804906,
+          "harmful_f1_delta_fine_minus_reference": -0.010323516488015771,
+          "accuracy_interval": [
+            -0.016571939154723984,
+            0.02073640159263819
+          ],
+          "harmful_f1_interval": [
+            -0.02891301051007206,
+            0.008381949921788307
+          ],
+          "confidence": 0.95,
+          "n_rows": 1928,
+          "n_text_groups": 1911,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "aegis_response",
+      "complete": true,
+      "n": 813,
+      "input_sha256": "fef1d083450b9a330541ac058ce05caf11d16f485700abd0eba0722ee92bc6c5",
+      "summary": {
+        "n": 813,
+        "correct": 664,
+        "accuracy": 0.8167281672816729,
+        "wilson_95": [
+          0.7886651269298349,
+          0.8418121761486911
+        ],
+        "macro_f1": 0.81475058608714,
+        "errors": 0,
+        "probability_rows": 813,
+        "multiclass_brier": 0.27677318573185733,
+        "nll": 0.629632947162706,
+        "ece_10_equal_width": 0.0717712177121771,
+        "p50_ms": 151.8900420051068,
+        "p95_ms": 231.21283296495676,
+        "cost_usd": 0.01904574,
+        "reported_cost_usd": 0.01904574,
+        "cost_reported_rows": 813,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 419,
+            "negative_support": 394,
+            "tp": 374,
+            "fp": 104,
+            "fn": 45,
+            "tn": 290,
+            "precision": 0.7824267782426778,
+            "recall": 0.8926014319809069,
+            "recall_wilson_95": [
+              0.859308711003355,
+              0.9187606886188624
+            ],
+            "false_positive_rate": 0.2639593908629442,
+            "false_positive_wilson_95": [
+              0.22286618952386475,
+              0.30961089179553186
+            ]
+          },
+          "unsafe": {
+            "support": 394,
+            "negative_support": 419,
+            "tp": 290,
+            "fp": 45,
+            "fn": 104,
+            "tn": 374,
+            "precision": 0.8656716417910447,
+            "recall": 0.7360406091370558,
+            "recall_wilson_95": [
+              0.6903891082044681,
+              0.7771338104761353
+            ],
+            "false_positive_rate": 0.10739856801909307,
+            "false_positive_wilson_95": [
+              0.08123931138113771,
+              0.140691288996645
+            ]
+          }
+        },
+        "majority_baseline": 0.5153751537515375,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 394,
+          "negative_support": 419,
+          "tp": 290,
+          "fp": 45,
+          "fn": 104,
+          "tn": 374,
+          "precision": 0.8656716417910447,
+          "recall": 0.7360406091370558,
+          "recall_wilson_95": [
+            0.6903891082044681,
+            0.7771338104761353
+          ],
+          "false_positive_rate": 0.10739856801909307,
+          "false_positive_wilson_95": [
+            0.08123931138113771,
+            0.140691288996645
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 394,
+          "negative_support": 419,
+          "tp": 290,
+          "fp": 45,
+          "fn": 104,
+          "tn": 374,
+          "precision": 0.8656716417910447,
+          "recall": 0.7360406091370558,
+          "recall_wilson_95": [
+            0.6903891082044681,
+            0.7771338104761353
+          ],
+          "false_positive_rate": 0.10739856801909307,
+          "false_positive_wilson_95": [
+            0.08123931138113771,
+            0.140691288996645
+          ],
+          "f1": 0.7956104252400549,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.7956104252400549,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.8874832031789054,
+          "scored_rows": 813,
+          "excluded_rows": 0,
+          "positive_support": 394,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {},
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "f1275223f39be03242201fb22b5059cfe9a45788b5eaff1bb79b13faf13f1ff0",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.2324723247232473,
+          "harmful_f1_delta_fine_minus_reference": 0.4215363511659808,
+          "accuracy_interval": [
+            0.19434194341943423,
+            0.27396419818006523
+          ],
+          "harmful_f1_interval": [
+            0.3605178419808835,
+            0.486251166167629
+          ],
+          "confidence": 0.95,
+          "n_rows": 813,
+          "n_text_groups": 811,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "91281fadaeffccf4c86f10f48fea566fd4c7b5d061fc1e2f20b52059ff65fcb9",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.08241082410824108,
+          "harmful_f1_delta_fine_minus_reference": 0.1006951710027667,
+          "accuracy_interval": [
+            0.049261083743842415,
+            0.11793611793611791
+          ],
+          "harmful_f1_interval": [
+            0.058182043932932415,
+            0.1442322901790756
+          ],
+          "confidence": 0.95,
+          "n_rows": 813,
+          "n_text_groups": 811,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "467c69e9603b3f6fffe25a5a46ad9b7561e0008c5349c6f5ccbda522140588ac",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.027060270602706105,
+          "harmful_f1_delta_fine_minus_reference": 0.025140626582336734,
+          "accuracy_interval": [
+            -0.0036855036855036882,
+            0.05788177339901479
+          ],
+          "harmful_f1_interval": [
+            -0.011175916069853969,
+            0.06281562914138386
+          ],
+          "confidence": 0.95,
+          "n_rows": 813,
+          "n_text_groups": 811,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "toxicchat",
+      "complete": true,
+      "n": 2853,
+      "input_sha256": "18a7ad69b87e305c232b2b9d0bb2321142321b29cc5f57002c905a42acfaf1d1",
+      "summary": {
+        "n": 2853,
+        "correct": 2670,
+        "accuracy": 0.935856992639327,
+        "wilson_95": [
+          0.9262675171942137,
+          0.9442743157525241
+        ],
+        "macro_f1": 0.844660225949736,
+        "errors": 0,
+        "probability_rows": 2853,
+        "multiclass_brier": 0.0909211356466877,
+        "nll": 0.2152046979137234,
+        "ece_10_equal_width": 0.025432877672625316,
+        "p50_ms": 147.6612079422921,
+        "p95_ms": 226.01974988356233,
+        "cost_usd": 0.051638118,
+        "reported_cost_usd": 0.051638118,
+        "cost_reported_rows": 2853,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 2491,
+            "negative_support": 362,
+            "tp": 2428,
+            "fp": 120,
+            "fn": 63,
+            "tn": 242,
+            "precision": 0.9529042386185244,
+            "recall": 0.9747089522280209,
+            "recall_wilson_95": [
+              0.9677738586688475,
+              0.9801821694139673
+            ],
+            "false_positive_rate": 0.3314917127071823,
+            "false_positive_wilson_95": [
+              0.28499043626769616,
+              0.38153177695200735
+            ]
+          },
+          "unsafe": {
+            "support": 362,
+            "negative_support": 2491,
+            "tp": 242,
+            "fp": 63,
+            "fn": 120,
+            "tn": 2428,
+            "precision": 0.7934426229508197,
+            "recall": 0.6685082872928176,
+            "recall_wilson_95": [
+              0.6184682230479925,
+              0.7150095637323037
+            ],
+            "false_positive_rate": 0.025291047771979124,
+            "false_positive_wilson_95": [
+              0.019817830586032842,
+              0.032226141331152584
+            ]
+          }
+        },
+        "majority_baseline": 0.8731160182264284,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 362,
+          "negative_support": 2491,
+          "tp": 242,
+          "fp": 63,
+          "fn": 120,
+          "tn": 2428,
+          "precision": 0.7934426229508197,
+          "recall": 0.6685082872928176,
+          "recall_wilson_95": [
+            0.6184682230479925,
+            0.7150095637323037
+          ],
+          "false_positive_rate": 0.025291047771979124,
+          "false_positive_wilson_95": [
+            0.019817830586032842,
+            0.032226141331152584
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 362,
+          "negative_support": 2491,
+          "tp": 242,
+          "fp": 63,
+          "fn": 120,
+          "tn": 2428,
+          "precision": 0.7934426229508197,
+          "recall": 0.6685082872928176,
+          "recall_wilson_95": [
+            0.6184682230479925,
+            0.7150095637323037
+          ],
+          "false_positive_rate": 0.025291047771979124,
+          "false_positive_wilson_95": [
+            0.019817830586032842,
+            0.032226141331152584
+          ],
+          "f1": 0.7256371814092953,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.7256371814092953,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.8259288402386815,
+          "scored_rows": 2853,
+          "excluded_rows": 0,
+          "positive_support": 362,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {},
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "060d3c8584b344dbd04353feec368afc0af260c034f11846d18669215f94ab63",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.2243252716438836,
+          "harmful_f1_delta_fine_minus_reference": 0.36115841693053086,
+          "accuracy_interval": [
+            0.2066170975993279,
+            0.24220222681491838
+          ],
+          "harmful_f1_interval": [
+            0.3181690683529725,
+            0.4058498517384759
+          ],
+          "confidence": 0.95,
+          "n_rows": 2853,
+          "n_text_groups": 2774,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "b54e4f49b2d3aa1d9ac84471ffd719abf8249687be2f047eeab77cff22874857",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.10234840518752186,
+          "harmful_f1_delta_fine_minus_reference": 0.22094479350522855,
+          "accuracy_interval": [
+            0.08787269031119437,
+            0.11736143349873963
+          ],
+          "harmful_f1_interval": [
+            0.17332526306942062,
+            0.26913101711126325
+          ],
+          "confidence": 0.95,
+          "n_rows": 2853,
+          "n_text_groups": 2774,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "ef089061e60cdba9d3f86a01875277959146bc41fba13b4df92e3abd5cb3b51e",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.08482299334034349,
+          "harmful_f1_delta_fine_minus_reference": 0.19215748876385075,
+          "accuracy_interval": [
+            0.07062492032453305,
+            0.0994078147362786
+          ],
+          "harmful_f1_interval": [
+            0.1446461625275335,
+            0.2398539549669142
+          ],
+          "confidence": 0.95,
+          "n_rows": 2853,
+          "n_text_groups": 2774,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "beavertails",
+      "complete": true,
+      "n": 3021,
+      "input_sha256": "a4afcd3064cd3cb3384b3527bd894f10bacb37a14bc9d54d14faae5c0f70b93b",
+      "summary": {
+        "n": 3021,
+        "correct": 2344,
+        "accuracy": 0.7759020191989408,
+        "wilson_95": [
+          0.760687488269691,
+          0.7904157753869501
+        ],
+        "macro_f1": 0.7759011352224672,
+        "errors": 0,
+        "probability_rows": 3021,
+        "multiclass_brier": 0.3526924197285667,
+        "nll": 1.5508876121127173,
+        "ece_10_equal_width": 0.14396226415094346,
+        "p50_ms": 141.76616608165205,
+        "p95_ms": 220.95687501132488,
+        "cost_usd": 0.06242523,
+        "reported_cost_usd": 0.06242523,
+        "cost_reported_rows": 3021,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 1288,
+            "negative_support": 1733,
+            "tp": 1175,
+            "fp": 564,
+            "fn": 113,
+            "tn": 1169,
+            "precision": 0.6756756756756757,
+            "recall": 0.9122670807453416,
+            "recall_wilson_95": [
+              0.8955653652954327,
+              0.9265169364829033
+            ],
+            "false_positive_rate": 0.3254472013848817,
+            "false_positive_wilson_95": [
+              0.3037947247494368,
+              0.3478718122695541
+            ]
+          },
+          "unsafe": {
+            "support": 1733,
+            "negative_support": 1288,
+            "tp": 1169,
+            "fp": 113,
+            "fn": 564,
+            "tn": 1175,
+            "precision": 0.9118564742589703,
+            "recall": 0.6745527986151183,
+            "recall_wilson_95": [
+              0.6521281877304459,
+              0.6962052752505632
+            ],
+            "false_positive_rate": 0.08773291925465838,
+            "false_positive_wilson_95": [
+              0.07348306351709662,
+              0.10443463470456714
+            ]
+          }
+        },
+        "majority_baseline": 0.5736511089043363,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 1733,
+          "negative_support": 1288,
+          "tp": 1169,
+          "fp": 113,
+          "fn": 564,
+          "tn": 1175,
+          "precision": 0.9118564742589703,
+          "recall": 0.6745527986151183,
+          "recall_wilson_95": [
+            0.6521281877304459,
+            0.6962052752505632
+          ],
+          "false_positive_rate": 0.08773291925465838,
+          "false_positive_wilson_95": [
+            0.07348306351709662,
+            0.10443463470456714
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 1733,
+          "negative_support": 1288,
+          "tp": 1169,
+          "fp": 113,
+          "fn": 564,
+          "tn": 1175,
+          "precision": 0.9118564742589703,
+          "recall": 0.6745527986151183,
+          "recall_wilson_95": [
+            0.6521281877304459,
+            0.6962052752505632
+          ],
+          "false_positive_rate": 0.08773291925465838,
+          "false_positive_wilson_95": [
+            0.07348306351709662,
+            0.10443463470456714
+          ],
+          "f1": 0.7754560530679934,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.7754560530679934,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.9124968614795989,
+          "scored_rows": 3021,
+          "excluded_rows": 0,
+          "positive_support": 1733,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {
+          "animal_abuse": {
+            "support": 44,
+            "tp": 33,
+            "recall": 0.75,
+            "recall_wilson_95": [
+              0.6055943364104086,
+              0.8542578617103511
+            ]
+          },
+          "child_abuse": {
+            "support": 27,
+            "tp": 24,
+            "recall": 0.8888888888888888,
+            "recall_wilson_95": [
+              0.7194219918172017,
+              0.9614796517169016
+            ]
+          },
+          "controversial_topics,politics": {
+            "support": 95,
+            "tp": 15,
+            "recall": 0.15789473684210525,
+            "recall_wilson_95": [
+              0.09808516244102737,
+              0.24429605313861202
+            ]
+          },
+          "discrimination,stereotype,injustice": {
+            "support": 297,
+            "tp": 163,
+            "recall": 0.5488215488215489,
+            "recall_wilson_95": [
+              0.4919645698448747,
+              0.6044317184648573
+            ]
+          },
+          "drug_abuse,weapons,banned_substance": {
+            "support": 151,
+            "tp": 131,
+            "recall": 0.8675496688741722,
+            "recall_wilson_95": [
+              0.8042658408928933,
+              0.9125964313008712
+            ]
+          },
+          "financial_crime,property_crime,theft": {
+            "support": 262,
+            "tp": 241,
+            "recall": 0.9198473282442748,
+            "recall_wilson_95": [
+              0.8805811556617804,
+              0.9469797559279598
+            ]
+          },
+          "hate_speech,offensive_language": {
+            "support": 302,
+            "tp": 150,
+            "recall": 0.4966887417218543,
+            "recall_wilson_95": [
+              0.440695185444668,
+              0.5527654787579163
+            ]
+          },
+          "misinformation_regarding_ethics,laws_and_safety": {
+            "support": 75,
+            "tp": 40,
+            "recall": 0.5333333333333333,
+            "recall_wilson_95": [
+              0.42157537389084965,
+              0.6418430366102965
+            ]
+          },
+          "non_violent_unethical_behavior": {
+            "support": 608,
+            "tp": 375,
+            "recall": 0.6167763157894737,
+            "recall_wilson_95": [
+              0.5775132850963238,
+              0.6545729816200583
+            ]
+          },
+          "privacy_violation": {
+            "support": 155,
+            "tp": 131,
+            "recall": 0.8451612903225807,
+            "recall_wilson_95": [
+              0.7799410071816497,
+              0.8936866514561712
+            ]
+          },
+          "self_harm": {
+            "support": 19,
+            "tp": 18,
+            "recall": 0.9473684210526315,
+            "recall_wilson_95": [
+              0.753612688331012,
+              0.9906480059376995
+            ]
+          },
+          "sexually_explicit,adult_content": {
+            "support": 103,
+            "tp": 34,
+            "recall": 0.3300970873786408,
+            "recall_wilson_95": [
+              0.2468297273744029,
+              0.42558208367416694
+            ]
+          },
+          "terrorism,organized_crime": {
+            "support": 43,
+            "tp": 37,
+            "recall": 0.8604651162790697,
+            "recall_wilson_95": [
+              0.7273641203261714,
+              0.9344427657203511
+            ]
+          },
+          "violence,aiding_and_abetting,incitement": {
+            "support": 724,
+            "tp": 645,
+            "recall": 0.8908839779005525,
+            "recall_wilson_95": [
+              0.8660763315853026,
+              0.9115655478936127
+            ]
+          }
+        },
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "9338773ef5661fcebe17d38de7a06b231271f0c0ef7e8c258748b1229d4b46cd",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.34425686858656074,
+          "harmful_f1_delta_fine_minus_reference": 0.7152480618255194,
+          "accuracy_interval": [
+            0.32251520644400616,
+            0.36609252384486124
+          ],
+          "harmful_f1_interval": [
+            0.6910771661111809,
+            0.7383632502697546
+          ],
+          "confidence": 0.95,
+          "n_rows": 3021,
+          "n_text_groups": 2523,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "151e230f199fa2564702da5d96c384113ad5846c824c9d27db6982e3b405e4ba",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.2363455809334657,
+          "harmful_f1_delta_fine_minus_reference": 0.434385470405748,
+          "accuracy_interval": [
+            0.21543425942426822,
+            0.25701158417234127
+          ],
+          "harmful_f1_interval": [
+            0.40362002735633296,
+            0.4653782761020476
+          ],
+          "confidence": 0.95,
+          "n_rows": 3021,
+          "n_text_groups": 2523,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "39c0094e50529953de98a1d0e3b748122ea316cee9ce7c567e40239c93774258",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.1185038066865276,
+          "harmful_f1_delta_fine_minus_reference": 0.18149763800326213,
+          "accuracy_interval": [
+            0.1001921912184559,
+            0.13634937850748713
+          ],
+          "harmful_f1_interval": [
+            0.15786345894663625,
+            0.20590481923362078
+          ],
+          "confidence": 0.95,
+          "n_rows": 3021,
+          "n_text_groups": 2523,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "wildguard_prompt",
+      "complete": true,
+      "n": 1699,
+      "input_sha256": "6603f2f94b000b62409ac4aed6846ced4707aacd46801866ea36ea1846548aea",
+      "summary": {
+        "n": 1699,
+        "correct": 1518,
+        "accuracy": 0.8934667451442024,
+        "wilson_95": [
+          0.877898712661212,
+          0.9072595256905497
+        ],
+        "macro_f1": 0.8911474544059903,
+        "errors": 0,
+        "probability_rows": 1699,
+        "multiclass_brier": 0.16714938198940554,
+        "nll": 0.5787926282464555,
+        "ece_10_equal_width": 0.04393172454384925,
+        "p50_ms": 140.73691703379154,
+        "p95_ms": 216.73829201608896,
+        "cost_usd": 0.03416847,
+        "reported_cost_usd": 0.03416847,
+        "cost_reported_rows": 1699,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 945,
+            "negative_support": 754,
+            "tp": 883,
+            "fp": 119,
+            "fn": 62,
+            "tn": 635,
+            "precision": 0.8812375249500998,
+            "recall": 0.9343915343915344,
+            "recall_wilson_95": [
+              0.9167808339776627,
+              0.9484848986352578
+            ],
+            "false_positive_rate": 0.15782493368700265,
+            "false_positive_wilson_95": [
+              0.13354490945310749,
+              0.18557389304290905
+            ]
+          },
+          "unsafe": {
+            "support": 754,
+            "negative_support": 945,
+            "tp": 635,
+            "fp": 62,
+            "fn": 119,
+            "tn": 883,
+            "precision": 0.9110473457675753,
+            "recall": 0.8421750663129973,
+            "recall_wilson_95": [
+              0.814426106957091,
+              0.8664550905468925
+            ],
+            "false_positive_rate": 0.0656084656084656,
+            "false_positive_wilson_95": [
+              0.051515101364742306,
+              0.08321916602233734
+            ]
+          }
+        },
+        "majority_baseline": 0.5562095350206003,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 754,
+          "negative_support": 945,
+          "tp": 635,
+          "fp": 62,
+          "fn": 119,
+          "tn": 883,
+          "precision": 0.9110473457675753,
+          "recall": 0.8421750663129973,
+          "recall_wilson_95": [
+            0.814426106957091,
+            0.8664550905468925
+          ],
+          "false_positive_rate": 0.0656084656084656,
+          "false_positive_wilson_95": [
+            0.051515101364742306,
+            0.08321916602233734
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 754,
+          "negative_support": 945,
+          "tp": 635,
+          "fp": 62,
+          "fn": 119,
+          "tn": 883,
+          "precision": 0.9110473457675753,
+          "recall": 0.8421750663129973,
+          "recall_wilson_95": [
+            0.814426106957091,
+            0.8664550905468925
+          ],
+          "false_positive_rate": 0.0656084656084656,
+          "false_positive_wilson_95": [
+            0.051515101364742306,
+            0.08321916602233734
+          ],
+          "f1": 0.8752584424534804,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.8752584424534804,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.9427912703428059,
+          "scored_rows": 1699,
+          "excluded_rows": 0,
+          "positive_support": 754,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {},
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "8a050aa2d2581a804f6cb719f979afe4d3ba3099e04e35fded476171e91dd39b",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.24131842260153025,
+          "harmful_f1_delta_fine_minus_reference": 0.38783433143873625,
+          "accuracy_interval": [
+            0.21718658034137728,
+            0.264861683343143
+          ],
+          "harmful_f1_interval": [
+            0.35211390468530124,
+            0.4241429157440425
+          ],
+          "confidence": 0.95,
+          "n_rows": 1699,
+          "n_text_groups": 1699,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "b786c1e4771b5c23d0498dd7fe9e797dfedc86ec1f531f4629df2a1e3e63ebfe",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.20953502060035312,
+          "harmful_f1_delta_fine_minus_reference": 0.2811541340634577,
+          "accuracy_interval": [
+            0.18658034137728075,
+            0.23307828134196584
+          ],
+          "harmful_f1_interval": [
+            0.2514303205579117,
+            0.312549292122188
+          ],
+          "confidence": 0.95,
+          "n_rows": 1699,
+          "n_text_groups": 1699,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "06d12f551915aa8f3e32fedd9b3971aecb15de258bc4e7aa46fb4f65ec2d36bb",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.1571512654502648,
+          "harmful_f1_delta_fine_minus_reference": 0.2177660877134192,
+          "accuracy_interval": [
+            0.1347851677457328,
+            0.17951736315479694
+          ],
+          "harmful_f1_interval": [
+            0.18817571226107754,
+            0.24861240812260174
+          ],
+          "confidence": 0.95,
+          "n_rows": 1699,
+          "n_text_groups": 1699,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "wildguard_response",
+      "complete": true,
+      "n": 1709,
+      "input_sha256": "710a04999cd616680dfe38a1a2c60e5b6bf186e04038a07eac9537cb1d8c0998",
+      "summary": {
+        "n": 1709,
+        "correct": 1597,
+        "accuracy": 0.9344645991808075,
+        "wilson_95": [
+          0.9217302753718923,
+          0.9452501403301161
+        ],
+        "macro_f1": 0.8793638948833269,
+        "errors": 0,
+        "probability_rows": 1709,
+        "multiclass_brier": 0.10408543007606788,
+        "nll": 0.3616644578710126,
+        "ece_10_equal_width": 0.021205383265067324,
+        "p50_ms": 148.54841586202383,
+        "p95_ms": 227.51250001601875,
+        "cost_usd": 0.061769022,
+        "reported_cost_usd": 0.061769022,
+        "cost_reported_rows": 1709,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 1425,
+            "negative_support": 284,
+            "tp": 1376,
+            "fp": 63,
+            "fn": 49,
+            "tn": 221,
+            "precision": 0.9562195969423211,
+            "recall": 0.9656140350877193,
+            "recall_wilson_95": [
+              0.9548314724927824,
+              0.9738929789206376
+            ],
+            "false_positive_rate": 0.22183098591549297,
+            "false_positive_wilson_95": [
+              0.1774024097927912,
+              0.27368430771018193
+            ]
+          },
+          "unsafe": {
+            "support": 284,
+            "negative_support": 1425,
+            "tp": 221,
+            "fp": 49,
+            "fn": 63,
+            "tn": 1376,
+            "precision": 0.8185185185185185,
+            "recall": 0.778169014084507,
+            "recall_wilson_95": [
+              0.7263156922898181,
+              0.8225975902072088
+            ],
+            "false_positive_rate": 0.0343859649122807,
+            "false_positive_wilson_95": [
+              0.02610702107936239,
+              0.04516852750721753
+            ]
+          }
+        },
+        "majority_baseline": 0.8338209479227618,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 284,
+          "negative_support": 1425,
+          "tp": 221,
+          "fp": 49,
+          "fn": 63,
+          "tn": 1376,
+          "precision": 0.8185185185185185,
+          "recall": 0.778169014084507,
+          "recall_wilson_95": [
+            0.7263156922898181,
+            0.8225975902072088
+          ],
+          "false_positive_rate": 0.0343859649122807,
+          "false_positive_wilson_95": [
+            0.02610702107936239,
+            0.04516852750721753
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 284,
+          "negative_support": 1425,
+          "tp": 221,
+          "fp": 49,
+          "fn": 63,
+          "tn": 1376,
+          "precision": 0.8185185185185185,
+          "recall": 0.778169014084507,
+          "recall_wilson_95": [
+            0.7263156922898181,
+            0.8225975902072088
+          ],
+          "false_positive_rate": 0.0343859649122807,
+          "false_positive_wilson_95": [
+            0.02610702107936239,
+            0.04516852750721753
+          ],
+          "f1": 0.7978339350180506,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.7978339350180506,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.851305328598336,
+          "scored_rows": 1709,
+          "excluded_rows": 0,
+          "positive_support": 284,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {},
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "ca9f87126a89853bf29a6bd52394a084b3341a06762ef9e11c325e596c500ad7",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.1878291398478642,
+          "harmful_f1_delta_fine_minus_reference": 0.589424428619513,
+          "accuracy_interval": [
+            0.1667641895845523,
+            0.20947922761849036
+          ],
+          "harmful_f1_interval": [
+            0.5359786635107636,
+            0.6418288552320001
+          ],
+          "confidence": 0.95,
+          "n_rows": 1709,
+          "n_text_groups": 1709,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "bf8fcb05b79e7d8d8350ff8a9756a367d344a5a89170a270a2ed70afcf8541a8",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.08835576360444708,
+          "harmful_f1_delta_fine_minus_reference": 0.2649742547338587,
+          "accuracy_interval": [
+            0.07197191339964892,
+            0.10532475131655938
+          ],
+          "harmful_f1_interval": [
+            0.21821072291573687,
+            0.3156208438501764
+          ],
+          "confidence": 0.95,
+          "n_rows": 1709,
+          "n_text_groups": 1709,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "ed4ad42e81af1036eddc7f0e8013cdc4de3365cf66aee0506776e92533310f71",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.07606787595084841,
+          "harmful_f1_delta_fine_minus_reference": 0.28183393501805054,
+          "accuracy_interval": [
+            0.05968402574605025,
+            0.09303686366296082
+          ],
+          "harmful_f1_interval": [
+            0.2307369731873419,
+            0.33717204455077426
+          ],
+          "confidence": 0.95,
+          "n_rows": 1709,
+          "n_text_groups": 1709,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "openai_known",
+      "complete": true,
+      "n": 859,
+      "input_sha256": "fb7804ffec011c9faa1b8ac333317f556984255fa6e4eb9f1d978b4b864fa0cd",
+      "summary": {
+        "n": 859,
+        "correct": 729,
+        "accuracy": 0.8486612339930152,
+        "wilson_95": [
+          0.8231461349475222,
+          0.8710717817699885
+        ],
+        "macro_f1": 0.8404386045129284,
+        "errors": 0,
+        "probability_rows": 859,
+        "multiclass_brier": 0.22806472642607684,
+        "nll": 0.7095457243711946,
+        "ece_10_equal_width": 0.07329452852153669,
+        "p50_ms": 152.05979184247553,
+        "p95_ms": 233.5754157975316,
+        "cost_usd": 0.022623972,
+        "reported_cost_usd": 0.022623972,
+        "cost_reported_rows": 859,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 337,
+            "negative_support": 522,
+            "tp": 267,
+            "fp": 60,
+            "fn": 70,
+            "tn": 462,
+            "precision": 0.8165137614678899,
+            "recall": 0.7922848664688428,
+            "recall_wilson_95": [
+              0.7457976632281764,
+              0.832183667686252
+            ],
+            "false_positive_rate": 0.11494252873563218,
+            "false_positive_wilson_95": [
+              0.09034945054916436,
+              0.1451615703932194
+            ]
+          },
+          "unsafe": {
+            "support": 522,
+            "negative_support": 337,
+            "tp": 462,
+            "fp": 70,
+            "fn": 60,
+            "tn": 267,
+            "precision": 0.868421052631579,
+            "recall": 0.8850574712643678,
+            "recall_wilson_95": [
+              0.8548384296067806,
+              0.9096505494508356
+            ],
+            "false_positive_rate": 0.20771513353115728,
+            "false_positive_wilson_95": [
+              0.1678163323137483,
+              0.25420233677182374
+            ]
+          }
+        },
+        "majority_baseline": 0.6076833527357393,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 522,
+          "negative_support": 337,
+          "tp": 462,
+          "fp": 70,
+          "fn": 60,
+          "tn": 267,
+          "precision": 0.868421052631579,
+          "recall": 0.8850574712643678,
+          "recall_wilson_95": [
+            0.8548384296067806,
+            0.9096505494508356
+          ],
+          "false_positive_rate": 0.20771513353115728,
+          "false_positive_wilson_95": [
+            0.1678163323137483,
+            0.25420233677182374
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 522,
+          "negative_support": 337,
+          "tp": 462,
+          "fp": 70,
+          "fn": 60,
+          "tn": 267,
+          "precision": 0.868421052631579,
+          "recall": 0.8850574712643678,
+          "recall_wilson_95": [
+            0.8548384296067806,
+            0.9096505494508356
+          ],
+          "false_positive_rate": 0.20771513353115728,
+          "false_positive_wilson_95": [
+            0.1678163323137483,
+            0.25420233677182374
+          ],
+          "f1": 0.8766603415559773,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.8766603415559773,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.9398373991702065,
+          "scored_rows": 859,
+          "excluded_rows": 0,
+          "positive_support": 522,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {
+          "H": {
+            "support": 162,
+            "tp": 146,
+            "recall": 0.9012345679012346,
+            "recall_wilson_95": [
+              0.8455921876731157,
+              0.9382890017739361
+            ]
+          },
+          "H2": {
+            "support": 41,
+            "tp": 41,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.9143324298155681,
+              0.9999999999999999
+            ]
+          },
+          "HR": {
+            "support": 76,
+            "tp": 57,
+            "recall": 0.75,
+            "recall_wilson_95": [
+              0.6422324815502948,
+              0.8337107259171367
+            ]
+          },
+          "S": {
+            "support": 237,
+            "tp": 232,
+            "recall": 0.9789029535864979,
+            "recall_wilson_95": [
+              0.9515730118442798,
+              0.990955741766206
+            ]
+          },
+          "S3": {
+            "support": 85,
+            "tp": 81,
+            "recall": 0.9529411764705882,
+            "recall_wilson_95": [
+              0.8851627284368122,
+              0.9815497391669292
+            ]
+          },
+          "SH": {
+            "support": 51,
+            "tp": 44,
+            "recall": 0.8627450980392157,
+            "recall_wilson_95": [
+              0.7427830774241833,
+              0.9318889826494312
+            ]
+          },
+          "V": {
+            "support": 94,
+            "tp": 78,
+            "recall": 0.8297872340425532,
+            "recall_wilson_95": [
+              0.7412544169093981,
+              0.8924237880897957
+            ]
+          },
+          "V2": {
+            "support": 24,
+            "tp": 14,
+            "recall": 0.5833333333333334,
+            "recall_wilson_95": [
+              0.3883466586522876,
+              0.7553239739018824
+            ]
+          }
+        },
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "a47314fad877eb18093f1b2540b61f04f3df527b95c6d5020bc7290d0ea9c759",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.24796274738067525,
+          "harmful_f1_delta_fine_minus_reference": 0.28548036539387955,
+          "accuracy_interval": [
+            0.20697171810475984,
+            0.2883760004311621
+          ],
+          "harmful_f1_interval": [
+            0.24105886596130524,
+            0.32912700264264
+          ],
+          "confidence": 0.95,
+          "n_rows": 859,
+          "n_text_groups": 848,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "49a214dbbc472d5ecad6d3fc1a721dace9b7e6723773f53fe1614d2fbdacfd7b",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.08731082654249134,
+          "harmful_f1_delta_fine_minus_reference": 0.058559188051097055,
+          "accuracy_interval": [
+            0.05710955710955712,
+            0.11792431464016494
+          ],
+          "harmful_f1_interval": [
+            0.034799422940164915,
+            0.0833476863963409
+          ],
+          "confidence": 0.95,
+          "n_rows": 859,
+          "n_text_groups": 848,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "446bfb23983b6a0130268b9cf415ceefeda832bd54699435f79ed7fa47e53d70",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.0814901047729919,
+          "harmful_f1_delta_fine_minus_reference": 0.06288008084834229,
+          "accuracy_interval": [
+            0.051222351571594826,
+            0.11214953271028039
+          ],
+          "harmful_f1_interval": [
+            0.03786576803803322,
+            0.08857444166019782
+          ],
+          "confidence": 0.95,
+          "n_rows": 859,
+          "n_text_groups": 848,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    },
+    {
+      "slug": "openai_categories",
+      "complete": true,
+      "n": 9298,
+      "input_sha256": "a774005e0fa5e1eba92c99cb69f75c03806849e78327802e600715299915e316",
+      "summary": {
+        "n": 9298,
+        "correct": 8541,
+        "accuracy": 0.9185846418584642,
+        "wilson_95": [
+          0.9128516271157737,
+          0.9239719238402185
+        ],
+        "macro_f1": 0.796206311267138,
+        "errors": 1,
+        "probability_rows": 9297,
+        "multiclass_brier": 0.11880109712810584,
+        "nll": 0.2504060063546651,
+        "ece_10_equal_width": 0.030531354200279706,
+        "p50_ms": 141.99091703630984,
+        "p95_ms": 220.960833132267,
+        "cost_usd": null,
+        "reported_cost_usd": 0.18761316,
+        "cost_reported_rows": 9297,
+        "cost_unknown_rows": 1,
+        "per_class": {
+          "safe": {
+            "support": 8528,
+            "negative_support": 770,
+            "tp": 7874,
+            "fp": 103,
+            "fn": 654,
+            "tn": 667,
+            "precision": 0.9870878776482387,
+            "recall": 0.923311444652908,
+            "recall_wilson_95": [
+              0.9174713050449312,
+              0.9287703925824387
+            ],
+            "false_positive_rate": 0.13376623376623376,
+            "false_positive_wilson_95": [
+              0.11153194343152562,
+              0.15963659687967036
+            ]
+          },
+          "unsafe": {
+            "support": 770,
+            "negative_support": 8528,
+            "tp": 667,
+            "fp": 653,
+            "fn": 103,
+            "tn": 7874,
+            "precision": 0.5053030303030303,
+            "recall": 0.8662337662337662,
+            "recall_wilson_95": [
+              0.8403634031203295,
+              0.8884680565684744
+            ],
+            "false_positive_rate": 0.07657129455909943,
+            "false_positive_wilson_95": [
+              0.07111635554654008,
+              0.0824075308433678
+            ]
+          }
+        },
+        "majority_baseline": 0.9171864917186492,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 770,
+          "negative_support": 8528,
+          "tp": 667,
+          "fp": 653,
+          "fn": 103,
+          "tn": 7874,
+          "precision": 0.5053030303030303,
+          "recall": 0.8662337662337662,
+          "recall_wilson_95": [
+            0.8403634031203295,
+            0.8884680565684744
+          ],
+          "false_positive_rate": 0.07657129455909943,
+          "false_positive_wilson_95": [
+            0.07111635554654008,
+            0.0824075308433678
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 770,
+          "negative_support": 8528,
+          "tp": 667,
+          "fp": 653,
+          "fn": 103,
+          "tn": 7874,
+          "precision": 0.5053030303030303,
+          "recall": 0.8662337662337662,
+          "recall_wilson_95": [
+            0.8403634031203295,
+            0.8884680565684744
+          ],
+          "false_positive_rate": 0.07657129455909943,
+          "false_positive_wilson_95": [
+            0.07111635554654008,
+            0.0824075308433678
+          ],
+          "f1": 0.6382775119617224,
+          "negative_errors": 1
+        },
+        "harmful_f1": 0.6382775119617224,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.7810467060349242,
+          "scored_rows": 9297,
+          "excluded_rows": 1,
+          "positive_support": 770,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {
+          "H": {
+            "support": 162,
+            "tp": 148,
+            "recall": 0.9135802469135802,
+            "recall_wilson_95": [
+              0.8601761009899326,
+              0.9478245096708747
+            ]
+          },
+          "H2": {
+            "support": 41,
+            "tp": 41,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.9143324298155681,
+              0.9999999999999999
+            ]
+          },
+          "HR": {
+            "support": 76,
+            "tp": 62,
+            "recall": 0.8157894736842105,
+            "recall_wilson_95": [
+              0.7142173789108908,
+              0.8869740410479698
+            ]
+          },
+          "S": {
+            "support": 237,
+            "tp": 225,
+            "recall": 0.9493670886075949,
+            "recall_wilson_95": [
+              0.9135974413817974,
+              0.9708017855742971
+            ]
+          },
+          "S3": {
+            "support": 85,
+            "tp": 65,
+            "recall": 0.7647058823529411,
+            "recall_wilson_95": [
+              0.6643156605319014,
+              0.8422046127430125
+            ]
+          },
+          "SH": {
+            "support": 51,
+            "tp": 41,
+            "recall": 0.803921568627451,
+            "recall_wilson_95": [
+              0.6754192051863439,
+              0.889846574875333
+            ]
+          },
+          "V": {
+            "support": 94,
+            "tp": 75,
+            "recall": 0.7978723404255319,
+            "recall_wilson_95": [
+              0.7057493276333955,
+              0.8666051801078118
+            ]
+          },
+          "V2": {
+            "support": 24,
+            "tp": 10,
+            "recall": 0.4166666666666667,
+            "recall_wilson_95": [
+              0.24467602609811764,
+              0.6116533413477124
+            ]
+          }
+        },
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "cf232b429408dcd8f3ddc820a5a9570cafffa0d171c0dbf8a3a03d7afafef16e",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.2896321789632179,
+          "harmful_f1_delta_fine_minus_reference": 0.40699408950182936,
+          "accuracy_interval": [
+            0.2720095853772773,
+            0.3072621898649296
+          ],
+          "harmful_f1_interval": [
+            0.3839558501835073,
+            0.42987706791327013
+          ],
+          "confidence": 0.95,
+          "n_rows": 9298,
+          "n_text_groups": 1653,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "1f71beffa073c5ad603c822f1c80c3643d85b3e2419f96c432ef36ff17ac453c",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.39234243923424394,
+          "harmful_f1_delta_fine_minus_reference": 0.39191309793263773,
+          "accuracy_interval": [
+            0.37388562731028485,
+            0.4115990307917347
+          ],
+          "harmful_f1_interval": [
+            0.37218994290656887,
+            0.4117824186183537
+          ],
+          "confidence": 0.95,
+          "n_rows": 9298,
+          "n_text_groups": 1653,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "b6cd2974c8996d4791cdaa07e21048d89786eb3ff0ef1e241ef87483f3a04e3a",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.3705097870509787,
+          "harmful_f1_delta_fine_minus_reference": 0.37989417274534404,
+          "accuracy_interval": [
+            0.3518677957398381,
+            0.3895483178608145
+          ],
+          "harmful_f1_interval": [
+            0.3605148148770707,
+            0.39989149856627454
+          ],
+          "confidence": 0.95,
+          "n_rows": 9298,
+          "n_text_groups": 1653,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      },
+      "policy_categories": {
+        "H": {
+          "n": 771,
+          "correct": 670,
+          "accuracy": 0.8690012970168612,
+          "wilson_95": [
+            0.8433448927121847,
+            0.8909988798397075
+          ],
+          "macro_f1": 0.82869116627985,
+          "errors": 0,
+          "probability_rows": 771,
+          "multiclass_brier": 0.18820700389105058,
+          "nll": 0.49018517647225895,
+          "ece_10_equal_width": 0.05603112840466936,
+          "p50_ms": 144.94033297523856,
+          "p95_ms": 226.54020809568465,
+          "cost_usd": 0.016197468,
+          "reported_cost_usd": 0.016197468,
+          "cost_reported_rows": 771,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 609,
+              "negative_support": 162,
+              "tp": 522,
+              "fp": 14,
+              "fn": 87,
+              "tn": 148,
+              "precision": 0.9738805970149254,
+              "recall": 0.8571428571428571,
+              "recall_wilson_95": [
+                0.8271093044226027,
+                0.8826990705477872
+              ],
+              "false_positive_rate": 0.08641975308641975,
+              "false_positive_wilson_95": [
+                0.052175490329125204,
+                0.13982389901006737
+              ]
+            },
+            "unsafe": {
+              "support": 162,
+              "negative_support": 609,
+              "tp": 148,
+              "fp": 87,
+              "fn": 14,
+              "tn": 522,
+              "precision": 0.6297872340425532,
+              "recall": 0.9135802469135802,
+              "recall_wilson_95": [
+                0.8601761009899326,
+                0.9478245096708747
+              ],
+              "false_positive_rate": 0.14285714285714285,
+              "false_positive_wilson_95": [
+                0.1173009294522128,
+                0.17289069557739736
+              ]
+            }
+          },
+          "majority_baseline": 0.7898832684824902,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 162,
+            "negative_support": 609,
+            "tp": 148,
+            "fp": 87,
+            "fn": 14,
+            "tn": 522,
+            "precision": 0.6297872340425532,
+            "recall": 0.9135802469135802,
+            "recall_wilson_95": [
+              0.8601761009899326,
+              0.9478245096708747
+            ],
+            "false_positive_rate": 0.14285714285714285,
+            "false_positive_wilson_95": [
+              0.1173009294522128,
+              0.17289069557739736
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 162,
+            "negative_support": 609,
+            "tp": 148,
+            "fp": 87,
+            "fn": 14,
+            "tn": 522,
+            "precision": 0.6297872340425532,
+            "recall": 0.9135802469135802,
+            "recall_wilson_95": [
+              0.8601761009899326,
+              0.9478245096708747
+            ],
+            "false_positive_rate": 0.14285714285714285,
+            "false_positive_wilson_95": [
+              0.1173009294522128,
+              0.17289069557739736
+            ],
+            "f1": 0.7455919395465995,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.7455919395465995,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.8591566409255974,
+            "scored_rows": 771,
+            "excluded_rows": 0,
+            "positive_support": 162,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "H": {
+              "support": 162,
+              "tp": 148,
+              "recall": 0.9135802469135802,
+              "recall_wilson_95": [
+                0.8601761009899326,
+                0.9478245096708747
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "H2": {
+          "n": 761,
+          "correct": 588,
+          "accuracy": 0.7726675427069645,
+          "wilson_95": [
+            0.7415642438289742,
+            0.8010318657489333
+          ],
+          "macro_f1": 0.5925128062274634,
+          "errors": 0,
+          "probability_rows": 761,
+          "multiclass_brier": 0.3358375821287779,
+          "nll": 0.6475125552135189,
+          "ece_10_equal_width": 0.12943495400788438,
+          "p50_ms": 142.73408381268382,
+          "p95_ms": 224.47050013579428,
+          "cost_usd": 0.015729462,
+          "reported_cost_usd": 0.015729462,
+          "cost_reported_rows": 761,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 720,
+              "negative_support": 41,
+              "tp": 547,
+              "fp": 0,
+              "fn": 173,
+              "tn": 41,
+              "precision": 1.0,
+              "recall": 0.7597222222222222,
+              "recall_wilson_95": [
+                0.7271882722974429,
+                0.7894994573738209
+              ],
+              "false_positive_rate": 0.0,
+              "false_positive_wilson_95": [
+                -6.938893903907228e-18,
+                0.08566757018443186
+              ]
+            },
+            "unsafe": {
+              "support": 41,
+              "negative_support": 720,
+              "tp": 41,
+              "fp": 173,
+              "fn": 0,
+              "tn": 547,
+              "precision": 0.19158878504672897,
+              "recall": 1.0,
+              "recall_wilson_95": [
+                0.9143324298155681,
+                0.9999999999999999
+              ],
+              "false_positive_rate": 0.24027777777777778,
+              "false_positive_wilson_95": [
+                0.21050054262617912,
+                0.2728117277025572
+              ]
+            }
+          },
+          "majority_baseline": 0.9461235216819974,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 41,
+            "negative_support": 720,
+            "tp": 41,
+            "fp": 173,
+            "fn": 0,
+            "tn": 547,
+            "precision": 0.19158878504672897,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.9143324298155681,
+              0.9999999999999999
+            ],
+            "false_positive_rate": 0.24027777777777778,
+            "false_positive_wilson_95": [
+              0.21050054262617912,
+              0.2728117277025572
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 41,
+            "negative_support": 720,
+            "tp": 41,
+            "fp": 173,
+            "fn": 0,
+            "tn": 547,
+            "precision": 0.19158878504672897,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.9143324298155681,
+              0.9999999999999999
+            ],
+            "false_positive_rate": 0.24027777777777778,
+            "false_positive_wilson_95": [
+              0.21050054262617912,
+              0.2728117277025572
+            ],
+            "f1": 0.3215686274509804,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.3215686274509804,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.6602554875896489,
+            "scored_rows": 761,
+            "excluded_rows": 0,
+            "positive_support": 41,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "H2": {
+              "support": 41,
+              "tp": 41,
+              "recall": 1.0,
+              "recall_wilson_95": [
+                0.9143324298155681,
+                0.9999999999999999
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "HR": {
+          "n": 1444,
+          "correct": 1279,
+          "accuracy": 0.8857340720221607,
+          "wilson_95": [
+            0.8682917703755744,
+            0.9011294899517706
+          ],
+          "macro_f1": 0.6827898939038305,
+          "errors": 0,
+          "probability_rows": 1444,
+          "multiclass_brier": 0.1697034626038781,
+          "nll": 0.28559284628117715,
+          "ece_10_equal_width": 0.029314404432132977,
+          "p50_ms": 142.12562516331673,
+          "p95_ms": 224.11933285184205,
+          "cost_usd": 0.027551706,
+          "reported_cost_usd": 0.027551706,
+          "cost_reported_rows": 1444,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 1368,
+              "negative_support": 76,
+              "tp": 1217,
+              "fp": 14,
+              "fn": 151,
+              "tn": 62,
+              "precision": 0.9886271324126726,
+              "recall": 0.8896198830409356,
+              "recall_wilson_95": [
+                0.8719107457018899,
+                0.9051469770734434
+              ],
+              "false_positive_rate": 0.18421052631578946,
+              "false_positive_wilson_95": [
+                0.11302595895203016,
+                0.28578262108910923
+              ]
+            },
+            "unsafe": {
+              "support": 76,
+              "negative_support": 1368,
+              "tp": 62,
+              "fp": 151,
+              "fn": 14,
+              "tn": 1217,
+              "precision": 0.29107981220657275,
+              "recall": 0.8157894736842105,
+              "recall_wilson_95": [
+                0.7142173789108908,
+                0.8869740410479698
+              ],
+              "false_positive_rate": 0.11038011695906433,
+              "false_positive_wilson_95": [
+                0.09485302292655651,
+                0.12808925429811
+              ]
+            }
+          },
+          "majority_baseline": 0.9473684210526315,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 76,
+            "negative_support": 1368,
+            "tp": 62,
+            "fp": 151,
+            "fn": 14,
+            "tn": 1217,
+            "precision": 0.29107981220657275,
+            "recall": 0.8157894736842105,
+            "recall_wilson_95": [
+              0.7142173789108908,
+              0.8869740410479698
+            ],
+            "false_positive_rate": 0.11038011695906433,
+            "false_positive_wilson_95": [
+              0.09485302292655651,
+              0.12808925429811
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 76,
+            "negative_support": 1368,
+            "tp": 62,
+            "fp": 151,
+            "fn": 14,
+            "tn": 1217,
+            "precision": 0.29107981220657275,
+            "recall": 0.8157894736842105,
+            "recall_wilson_95": [
+              0.7142173789108908,
+              0.8869740410479698
+            ],
+            "false_positive_rate": 0.11038011695906433,
+            "false_positive_wilson_95": [
+              0.09485302292655651,
+              0.12808925429811
+            ],
+            "f1": 0.4290657439446367,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.4290657439446367,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.45399886166515774,
+            "scored_rows": 1444,
+            "excluded_rows": 0,
+            "positive_support": 76,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "HR": {
+              "support": 76,
+              "tp": 62,
+              "recall": 0.8157894736842105,
+              "recall_wilson_95": [
+                0.7142173789108908,
+                0.8869740410479698
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "S": {
+          "n": 984,
+          "correct": 939,
+          "accuracy": 0.9542682926829268,
+          "wilson_95": [
+            0.9393554122096959,
+            0.9656481103872154
+          ],
+          "macro_f1": 0.9392705054619515,
+          "errors": 0,
+          "probability_rows": 984,
+          "multiclass_brier": 0.06946280487804878,
+          "nll": 0.1453699329775565,
+          "ece_10_equal_width": 0.021453252032520326,
+          "p50_ms": 142.10458286106586,
+          "p95_ms": 220.38279101252556,
+          "cost_usd": 0.022277346,
+          "reported_cost_usd": 0.022277346,
+          "cost_reported_rows": 984,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 747,
+              "negative_support": 237,
+              "tp": 714,
+              "fp": 12,
+              "fn": 33,
+              "tn": 225,
+              "precision": 0.9834710743801653,
+              "recall": 0.9558232931726908,
+              "recall_wilson_95": [
+                0.9386093053398268,
+                0.9683731101884923
+              ],
+              "false_positive_rate": 0.05063291139240506,
+              "false_positive_wilson_95": [
+                0.029198214425702806,
+                0.08640255861820248
+              ]
+            },
+            "unsafe": {
+              "support": 237,
+              "negative_support": 747,
+              "tp": 225,
+              "fp": 33,
+              "fn": 12,
+              "tn": 714,
+              "precision": 0.872093023255814,
+              "recall": 0.9493670886075949,
+              "recall_wilson_95": [
+                0.9135974413817974,
+                0.9708017855742971
+              ],
+              "false_positive_rate": 0.04417670682730924,
+              "false_positive_wilson_95": [
+                0.03162688981150776,
+                0.061390694660173266
+              ]
+            }
+          },
+          "majority_baseline": 0.7591463414634146,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 237,
+            "negative_support": 747,
+            "tp": 225,
+            "fp": 33,
+            "fn": 12,
+            "tn": 714,
+            "precision": 0.872093023255814,
+            "recall": 0.9493670886075949,
+            "recall_wilson_95": [
+              0.9135974413817974,
+              0.9708017855742971
+            ],
+            "false_positive_rate": 0.04417670682730924,
+            "false_positive_wilson_95": [
+              0.03162688981150776,
+              0.061390694660173266
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 237,
+            "negative_support": 747,
+            "tp": 225,
+            "fp": 33,
+            "fn": 12,
+            "tn": 714,
+            "precision": 0.872093023255814,
+            "recall": 0.9493670886075949,
+            "recall_wilson_95": [
+              0.9135974413817974,
+              0.9708017855742971
+            ],
+            "false_positive_rate": 0.04417670682730924,
+            "false_positive_wilson_95": [
+              0.03162688981150776,
+              0.061390694660173266
+            ],
+            "f1": 0.9090909090909091,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.9090909090909091,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.9743574833984503,
+            "scored_rows": 984,
+            "excluded_rows": 0,
+            "positive_support": 237,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "S": {
+              "support": 237,
+              "tp": 225,
+              "recall": 0.9493670886075949,
+              "recall_wilson_95": [
+                0.9135974413817974,
+                0.9708017855742971
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "S3": {
+          "n": 994,
+          "correct": 917,
+          "accuracy": 0.9225352112676056,
+          "wilson_95": [
+            0.9042422385737159,
+            0.9375748582953196
+          ],
+          "macro_f1": 0.7923925927734243,
+          "errors": 0,
+          "probability_rows": 994,
+          "multiclass_brier": 0.10774547283702214,
+          "nll": 0.17418780641285034,
+          "ece_10_equal_width": 0.03558350100603616,
+          "p50_ms": 141.68775011785328,
+          "p95_ms": 221.33408393710852,
+          "cost_usd": 0.02251872,
+          "reported_cost_usd": 0.02251872,
+          "cost_reported_rows": 994,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 909,
+              "negative_support": 85,
+              "tp": 852,
+              "fp": 20,
+              "fn": 57,
+              "tn": 65,
+              "precision": 0.9770642201834863,
+              "recall": 0.9372937293729373,
+              "recall_wilson_95": [
+                0.9196192692991251,
+                0.951287712760022
+              ],
+              "false_positive_rate": 0.23529411764705882,
+              "false_positive_wilson_95": [
+                0.15779538725698744,
+                0.3356843394680986
+              ]
+            },
+            "unsafe": {
+              "support": 85,
+              "negative_support": 909,
+              "tp": 65,
+              "fp": 57,
+              "fn": 20,
+              "tn": 852,
+              "precision": 0.5327868852459017,
+              "recall": 0.7647058823529411,
+              "recall_wilson_95": [
+                0.6643156605319014,
+                0.8422046127430125
+              ],
+              "false_positive_rate": 0.0627062706270627,
+              "false_positive_wilson_95": [
+                0.048712287239977906,
+                0.08038073070087491
+              ]
+            }
+          },
+          "majority_baseline": 0.9144869215291751,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 85,
+            "negative_support": 909,
+            "tp": 65,
+            "fp": 57,
+            "fn": 20,
+            "tn": 852,
+            "precision": 0.5327868852459017,
+            "recall": 0.7647058823529411,
+            "recall_wilson_95": [
+              0.6643156605319014,
+              0.8422046127430125
+            ],
+            "false_positive_rate": 0.0627062706270627,
+            "false_positive_wilson_95": [
+              0.048712287239977906,
+              0.08038073070087491
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 85,
+            "negative_support": 909,
+            "tp": 65,
+            "fp": 57,
+            "fn": 20,
+            "tn": 852,
+            "precision": 0.5327868852459017,
+            "recall": 0.7647058823529411,
+            "recall_wilson_95": [
+              0.6643156605319014,
+              0.8422046127430125
+            ],
+            "false_positive_rate": 0.0627062706270627,
+            "false_positive_wilson_95": [
+              0.048712287239977906,
+              0.08038073070087491
+            ],
+            "f1": 0.6280193236714976,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.6280193236714976,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.6355250184448208,
+            "scored_rows": 994,
+            "excluded_rows": 0,
+            "positive_support": 85,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "S3": {
+              "support": 85,
+              "tp": 65,
+              "recall": 0.7647058823529411,
+              "recall_wilson_95": [
+                0.6643156605319014,
+                0.8422046127430125
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "SH": {
+          "n": 1447,
+          "correct": 1428,
+          "accuracy": 0.986869384934347,
+          "wilson_95": [
+            0.9795826279860255,
+            0.9915779295192001
+          ],
+          "macro_f1": 0.9025392335151883,
+          "errors": 0,
+          "probability_rows": 1447,
+          "multiclass_brier": 0.018707671043538356,
+          "nll": 0.029782187666372247,
+          "ece_10_equal_width": 0.005348997926744877,
+          "p50_ms": 143.10716721229255,
+          "p95_ms": 221.1481670383364,
+          "cost_usd": 0.02784705,
+          "reported_cost_usd": 0.02784705,
+          "cost_reported_rows": 1447,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 1396,
+              "negative_support": 51,
+              "tp": 1387,
+              "fp": 10,
+              "fn": 9,
+              "tn": 41,
+              "precision": 0.9928418038654259,
+              "recall": 0.9935530085959885,
+              "recall_wilson_95": [
+                0.9877926594219781,
+                0.996604531643434
+              ],
+              "false_positive_rate": 0.19607843137254902,
+              "false_positive_wilson_95": [
+                0.11015342512466689,
+                0.3245807948136561
+              ]
+            },
+            "unsafe": {
+              "support": 51,
+              "negative_support": 1396,
+              "tp": 41,
+              "fp": 9,
+              "fn": 10,
+              "tn": 1387,
+              "precision": 0.82,
+              "recall": 0.803921568627451,
+              "recall_wilson_95": [
+                0.6754192051863439,
+                0.889846574875333
+              ],
+              "false_positive_rate": 0.0064469914040114614,
+              "false_positive_wilson_95": [
+                0.003395468356566003,
+                0.012207340578021928
+              ]
+            }
+          },
+          "majority_baseline": 0.9647546648237734,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 51,
+            "negative_support": 1396,
+            "tp": 41,
+            "fp": 9,
+            "fn": 10,
+            "tn": 1387,
+            "precision": 0.82,
+            "recall": 0.803921568627451,
+            "recall_wilson_95": [
+              0.6754192051863439,
+              0.889846574875333
+            ],
+            "false_positive_rate": 0.0064469914040114614,
+            "false_positive_wilson_95": [
+              0.003395468356566003,
+              0.012207340578021928
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 51,
+            "negative_support": 1396,
+            "tp": 41,
+            "fp": 9,
+            "fn": 10,
+            "tn": 1387,
+            "precision": 0.82,
+            "recall": 0.803921568627451,
+            "recall_wilson_95": [
+              0.6754192051863439,
+              0.889846574875333
+            ],
+            "false_positive_rate": 0.0064469914040114614,
+            "false_positive_wilson_95": [
+              0.003395468356566003,
+              0.012207340578021928
+            ],
+            "f1": 0.8118811881188119,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.8118811881188119,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.9191496275771479,
+            "scored_rows": 1447,
+            "excluded_rows": 0,
+            "positive_support": 51,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "SH": {
+              "support": 51,
+              "tp": 41,
+              "recall": 0.803921568627451,
+              "recall_wilson_95": [
+                0.6754192051863439,
+                0.889846574875333
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "V": {
+          "n": 1450,
+          "correct": 1299,
+          "accuracy": 0.8958620689655172,
+          "wilson_95": [
+            0.8790807456788555,
+            0.9105514339751887
+          ],
+          "macro_f1": 0.7201198007411488,
+          "errors": 0,
+          "probability_rows": 1450,
+          "multiclass_brier": 0.15377986206896552,
+          "nll": 0.41798436191928245,
+          "ece_10_equal_width": 0.04114482758620695,
+          "p50_ms": 139.70383303239942,
+          "p95_ms": 220.82062507979572,
+          "cost_usd": 0.027781446,
+          "reported_cost_usd": 0.027781446,
+          "cost_reported_rows": 1450,
+          "cost_unknown_rows": 0,
+          "per_class": {
+            "safe": {
+              "support": 1356,
+              "negative_support": 94,
+              "tp": 1224,
+              "fp": 19,
+              "fn": 132,
+              "tn": 75,
+              "precision": 0.9847144006436042,
+              "recall": 0.9026548672566371,
+              "recall_wilson_95": [
+                0.885721259182243,
+                0.9173135305843696
+              ],
+              "false_positive_rate": 0.20212765957446807,
+              "false_positive_wilson_95": [
+                0.13339481989218804,
+                0.2942506723666045
+              ]
+            },
+            "unsafe": {
+              "support": 94,
+              "negative_support": 1356,
+              "tp": 75,
+              "fp": 132,
+              "fn": 19,
+              "tn": 1224,
+              "precision": 0.36231884057971014,
+              "recall": 0.7978723404255319,
+              "recall_wilson_95": [
+                0.7057493276333955,
+                0.8666051801078118
+              ],
+              "false_positive_rate": 0.09734513274336283,
+              "false_positive_wilson_95": [
+                0.08268646941563038,
+                0.11427874081775694
+              ]
+            }
+          },
+          "majority_baseline": 0.9351724137931035,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 94,
+            "negative_support": 1356,
+            "tp": 75,
+            "fp": 132,
+            "fn": 19,
+            "tn": 1224,
+            "precision": 0.36231884057971014,
+            "recall": 0.7978723404255319,
+            "recall_wilson_95": [
+              0.7057493276333955,
+              0.8666051801078118
+            ],
+            "false_positive_rate": 0.09734513274336283,
+            "false_positive_wilson_95": [
+              0.08268646941563038,
+              0.11427874081775694
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 94,
+            "negative_support": 1356,
+            "tp": 75,
+            "fp": 132,
+            "fn": 19,
+            "tn": 1224,
+            "precision": 0.36231884057971014,
+            "recall": 0.7978723404255319,
+            "recall_wilson_95": [
+              0.7057493276333955,
+              0.8666051801078118
+            ],
+            "false_positive_rate": 0.09734513274336283,
+            "false_positive_wilson_95": [
+              0.08268646941563038,
+              0.11427874081775694
+            ],
+            "f1": 0.4983388704318937,
+            "negative_errors": 0
+          },
+          "harmful_f1": 0.4983388704318937,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.6163620326578402,
+            "scored_rows": 1450,
+            "excluded_rows": 0,
+            "positive_support": 94,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "V": {
+              "support": 94,
+              "tp": 75,
+              "recall": 0.7978723404255319,
+              "recall_wilson_95": [
+                0.7057493276333955,
+                0.8666051801078118
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        },
+        "V2": {
+          "n": 1447,
+          "correct": 1421,
+          "accuracy": 0.9820317899101589,
+          "wilson_95": [
+            0.9738021235468998,
+            0.987708861350041
+          ],
+          "macro_f1": 0.7176576154806491,
+          "errors": 1,
+          "probability_rows": 1446,
+          "multiclass_brier": 0.023001936376210237,
+          "nll": 0.05503451003541698,
+          "ece_10_equal_width": 0.0026970954356846256,
+          "p50_ms": 141.62150002084672,
+          "p95_ms": 216.26279200427234,
+          "cost_usd": null,
+          "reported_cost_usd": 0.027709962,
+          "cost_reported_rows": 1446,
+          "cost_unknown_rows": 1,
+          "per_class": {
+            "safe": {
+              "support": 1423,
+              "negative_support": 24,
+              "tp": 1411,
+              "fp": 14,
+              "fn": 12,
+              "tn": 10,
+              "precision": 0.9901754385964913,
+              "recall": 0.9915671117357695,
+              "recall_wilson_95": [
+                0.9853178512718236,
+                0.9951694981470071
+              ],
+              "false_positive_rate": 0.5833333333333334,
+              "false_positive_wilson_95": [
+                0.3883466586522876,
+                0.7553239739018824
+              ]
+            },
+            "unsafe": {
+              "support": 24,
+              "negative_support": 1423,
+              "tp": 10,
+              "fp": 11,
+              "fn": 14,
+              "tn": 1411,
+              "precision": 0.47619047619047616,
+              "recall": 0.4166666666666667,
+              "recall_wilson_95": [
+                0.24467602609811764,
+                0.6116533413477124
+              ],
+              "false_positive_rate": 0.007730147575544624,
+              "false_positive_wilson_95": [
+                0.004321836088920224,
+                0.01378911706634657
+              ]
+            }
+          },
+          "majority_baseline": 0.9834139599170698,
+          "safety_positive_class": {
+            "label": "unsafe",
+            "support": 24,
+            "negative_support": 1423,
+            "tp": 10,
+            "fp": 11,
+            "fn": 14,
+            "tn": 1411,
+            "precision": 0.47619047619047616,
+            "recall": 0.4166666666666667,
+            "recall_wilson_95": [
+              0.24467602609811764,
+              0.6116533413477124
+            ],
+            "false_positive_rate": 0.007730147575544624,
+            "false_positive_wilson_95": [
+              0.004321836088920224,
+              0.01378911706634657
+            ]
+          },
+          "harmful_class": {
+            "label": "unsafe",
+            "support": 24,
+            "negative_support": 1423,
+            "tp": 10,
+            "fp": 11,
+            "fn": 14,
+            "tn": 1411,
+            "precision": 0.47619047619047616,
+            "recall": 0.4166666666666667,
+            "recall_wilson_95": [
+              0.24467602609811764,
+              0.6116533413477124
+            ],
+            "false_positive_rate": 0.007730147575544624,
+            "false_positive_wilson_95": [
+              0.004321836088920224,
+              0.01378911706634657
+            ],
+            "f1": 0.4444444444444444,
+            "negative_errors": 1
+          },
+          "harmful_f1": 0.4444444444444444,
+          "harmful_f1_zero_division": 0,
+          "average_precision": {
+            "value": 0.5960290877517891,
+            "scored_rows": 1446,
+            "excluded_rows": 1,
+            "positive_support": 24,
+            "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+          },
+          "per_category_positive_recall": {
+            "V2": {
+              "support": 24,
+              "tp": 10,
+              "recall": 0.4166666666666667,
+              "recall_wilson_95": [
+                0.24467602609811764,
+                0.6116533413477124
+              ]
+            }
+          },
+          "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+        }
+      }
+    },
+    {
+      "slug": "xstest",
+      "complete": true,
+      "n": 450,
+      "input_sha256": "3fdd106e1552fb12677f349f6685173e8c78aa9c6df65f3dd973c1ea8fbf7601",
+      "summary": {
+        "n": 450,
+        "correct": 419,
+        "accuracy": 0.9311111111111111,
+        "wilson_95": [
+          0.9038772186080711,
+          0.951046879794523
+        ],
+        "macro_f1": 0.9304762996446566,
+        "errors": 0,
+        "probability_rows": 450,
+        "multiclass_brier": 0.10146888888888889,
+        "nll": 0.21685008795533858,
+        "ece_10_equal_width": 0.019222222222222207,
+        "p50_ms": 144.15108296088874,
+        "p95_ms": 224.69850000925362,
+        "cost_usd": 0.007474572,
+        "reported_cost_usd": 0.007474572,
+        "cost_reported_rows": 450,
+        "cost_unknown_rows": 0,
+        "per_class": {
+          "safe": {
+            "support": 250,
+            "negative_support": 200,
+            "tp": 231,
+            "fp": 12,
+            "fn": 19,
+            "tn": 188,
+            "precision": 0.9506172839506173,
+            "recall": 0.924,
+            "recall_wilson_95": [
+              0.8843586026895993,
+              0.9508083593382637
+            ],
+            "false_positive_rate": 0.06,
+            "false_positive_wilson_95": [
+              0.03465219425433187,
+              0.1019316929576627
+            ]
+          },
+          "unsafe": {
+            "support": 200,
+            "negative_support": 250,
+            "tp": 188,
+            "fp": 19,
+            "fn": 12,
+            "tn": 231,
+            "precision": 0.9082125603864735,
+            "recall": 0.94,
+            "recall_wilson_95": [
+              0.8980683070423372,
+              0.9653478057456681
+            ],
+            "false_positive_rate": 0.076,
+            "false_positive_wilson_95": [
+              0.04919164066173632,
+              0.11564139731040066
+            ]
+          }
+        },
+        "majority_baseline": 0.5555555555555556,
+        "safety_positive_class": {
+          "label": "unsafe",
+          "support": 200,
+          "negative_support": 250,
+          "tp": 188,
+          "fp": 19,
+          "fn": 12,
+          "tn": 231,
+          "precision": 0.9082125603864735,
+          "recall": 0.94,
+          "recall_wilson_95": [
+            0.8980683070423372,
+            0.9653478057456681
+          ],
+          "false_positive_rate": 0.076,
+          "false_positive_wilson_95": [
+            0.04919164066173632,
+            0.11564139731040066
+          ]
+        },
+        "harmful_class": {
+          "label": "unsafe",
+          "support": 200,
+          "negative_support": 250,
+          "tp": 188,
+          "fp": 19,
+          "fn": 12,
+          "tn": 231,
+          "precision": 0.9082125603864735,
+          "recall": 0.94,
+          "recall_wilson_95": [
+            0.8980683070423372,
+            0.9653478057456681
+          ],
+          "false_positive_rate": 0.076,
+          "false_positive_wilson_95": [
+            0.04919164066173632,
+            0.11564139731040066
+          ],
+          "f1": 0.9238329238329238,
+          "negative_errors": 0
+        },
+        "harmful_f1": 0.9238329238329238,
+        "harmful_f1_zero_division": 0,
+        "average_precision": {
+          "value": 0.9797522025031499,
+          "scored_rows": 450,
+          "excluded_rows": 0,
+          "positive_support": 200,
+          "method": "noninterpolated average precision; tied scores grouped; valid probability rows only"
+        },
+        "per_category_positive_recall": {
+          "contrast_definitions": {
+            "support": 25,
+            "tp": 25,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.8668077490609515,
+              0.9999999999999999
+            ]
+          },
+          "contrast_discr": {
+            "support": 25,
+            "tp": 18,
+            "recall": 0.72,
+            "recall_wilson_95": [
+              0.5242339480963842,
+              0.8571614614904344
+            ]
+          },
+          "contrast_figurative_language": {
+            "support": 25,
+            "tp": 25,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.8668077490609515,
+              0.9999999999999999
+            ]
+          },
+          "contrast_historical_events": {
+            "support": 25,
+            "tp": 24,
+            "recall": 0.96,
+            "recall_wilson_95": [
+              0.8045593626380625,
+              0.9929037664980127
+            ]
+          },
+          "contrast_homonyms": {
+            "support": 25,
+            "tp": 24,
+            "recall": 0.96,
+            "recall_wilson_95": [
+              0.8045593626380625,
+              0.9929037664980127
+            ]
+          },
+          "contrast_privacy": {
+            "support": 25,
+            "tp": 23,
+            "recall": 0.92,
+            "recall_wilson_95": [
+              0.7503389104960468,
+              0.9777795987151524
+            ]
+          },
+          "contrast_safe_contexts": {
+            "support": 25,
+            "tp": 25,
+            "recall": 1.0,
+            "recall_wilson_95": [
+              0.8668077490609515,
+              0.9999999999999999
+            ]
+          },
+          "contrast_safe_targets": {
+            "support": 25,
+            "tp": 24,
+            "recall": 0.96,
+            "recall_wilson_95": [
+              0.8045593626380625,
+              0.9929037664980127
+            ]
+          }
+        },
+        "category_metric_scope": "Positive unsafe rows only; categories do not define negatives or category false-positive rates."
+      },
+      "comparisons": {
+        "jev_vs_base": {
+          "reference": "base",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "504f8d26a73a9db17d85407d92e97196399c26bc06e26814557906e29455f9aa",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.24,
+          "harmful_f1_delta_fine_minus_reference": 0.28487188487188486,
+          "accuracy_interval": [
+            0.19333333333333336,
+            0.2866666666666666
+          ],
+          "harmful_f1_interval": [
+            0.2309170023950856,
+            0.3414470759218479
+          ],
+          "confidence": 0.95,
+          "n_rows": 450,
+          "n_text_groups": 450,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine1000": {
+          "reference": "fine1000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "b3c0fb14d5a5ae5a1c213bb96986c257183f6557e80296b7d46d68462ff8e76f",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.36444444444444446,
+          "harmful_f1_delta_fine_minus_reference": 0.29106456225100286,
+          "accuracy_interval": [
+            0.3177777777777778,
+            0.4111111111111111
+          ],
+          "harmful_f1_interval": [
+            0.2477565164131429,
+            0.33725586023883236
+          ],
+          "confidence": 0.95,
+          "n_rows": 450,
+          "n_text_groups": 450,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        },
+        "jev_vs_fine5000": {
+          "reference": "fine5000",
+          "comparison": "jev",
+          "secondary_posthoc": true,
+          "reference_sha256": "39133728f8b04d68d801c2f522f544bf83d7df27f28a139090dc298fb51639ff",
+          "reference_checkpoint_verification": "local weight/config bytes verified",
+          "accuracy_delta_fine_minus_reference": 0.23111111111111116,
+          "harmful_f1_delta_fine_minus_reference": 0.1932940016772352,
+          "accuracy_interval": [
+            0.18666666666666665,
+            0.27333333333333343
+          ],
+          "harmful_f1_interval": [
+            0.15202272002666548,
+            0.23655596588030142
+          ],
+          "confidence": 0.95,
+          "n_rows": 450,
+          "n_text_groups": 450,
+          "resamples": 5000,
+          "seed": 7,
+          "harmful_f1_zero_division": 0,
+          "method": "paired text-cluster percentile bootstrap; retain all rows per sampled cluster",
+          "limitation": "Conditional on these fitted checkpoints and test set; not training-seed robustness. Confidence level alone does not establish a prespecified multiple-comparison family."
+        }
+      }
+    }
+  ],
+  "model_resolved": [
+    "typesafe/jev-1.13-20260917"
+  ]
+}

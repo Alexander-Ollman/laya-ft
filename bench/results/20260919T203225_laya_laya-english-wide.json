@@ -1,0 +1,4406 @@
+{
+ "target": "laya:laya-english-wide",
+ "cases_file": "/Users/alexanderollman/jevtest/bench/results/public_transfer_controls.jsonl",
+ "rows": [
+  {
+   "id": "agnews:9",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.3,
+   "usage": {
+    "input_tokens": 114,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.4294,
+     "p_correct": 0.7202,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:267",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.7,
+   "usage": {
+    "input_tokens": 139,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.4106,
+     "p_correct": 0.7386,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:292",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.0,
+   "usage": {
+    "input_tokens": 131,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.2639,
+     "p_correct": 0.6553,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:427",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.2,
+   "usage": {
+    "input_tokens": 112,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5594,
+     "p_correct": 0.8344,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:437",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 19.4,
+   "usage": {
+    "input_tokens": 96,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5341,
+     "p_correct": 0.8225,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:484",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.0,
+   "usage": {
+    "input_tokens": 104,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.376,
+     "p_correct": 0.6392,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:532",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.4519,
+     "p_correct": 0.7632,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:635",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 103,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_001",
+     "confidence": 0.4994,
+     "p_correct": 0.1213,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "agnews:672",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 19.6,
+   "usage": {
+    "input_tokens": 96,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5839,
+     "p_correct": 0.8531,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:763",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 120,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5696,
+     "p_correct": 0.8468,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:985",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.4,
+   "usage": {
+    "input_tokens": 126,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5162,
+     "p_correct": 0.7871,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1065",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.6,
+   "usage": {
+    "input_tokens": 145,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5234,
+     "p_correct": 0.8232,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1114",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 27.5,
+   "usage": {
+    "input_tokens": 197,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.327,
+     "p_correct": 0.7029,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1127",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.1,
+   "usage": {
+    "input_tokens": 116,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.6382,
+     "p_correct": 0.8786,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1138",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.1,
+   "usage": {
+    "input_tokens": 115,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.4667,
+     "p_correct": 0.7922,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1262",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.9,
+   "usage": {
+    "input_tokens": 135,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5461,
+     "p_correct": 0.8349,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1330",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.6,
+   "usage": {
+    "input_tokens": 145,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.3413,
+     "p_correct": 0.7132,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1341",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.7,
+   "usage": {
+    "input_tokens": 141,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.5834,
+     "p_correct": 0.8521,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1542",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.4,
+   "usage": {
+    "input_tokens": 130,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.6288,
+     "p_correct": 0.8748,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1551",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 125,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.4919,
+     "p_correct": 0.8037,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1658",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.7,
+   "usage": {
+    "input_tokens": 133,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_001",
+     "confidence": 0.4184,
+     "p_correct": 0.186,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "agnews:1743",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.4,
+   "usage": {
+    "input_tokens": 116,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.2968,
+     "p_correct": 0.5738,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1780",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.3,
+   "usage": {
+    "input_tokens": 131,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.535,
+     "p_correct": 0.8286,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1781",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.9,
+   "usage": {
+    "input_tokens": 116,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.609,
+     "p_correct": 0.8656,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1814",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 26.3,
+   "usage": {
+    "input_tokens": 176,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.4659,
+     "p_correct": 0.7906,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1959",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.3,
+   "usage": {
+    "input_tokens": 100,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.3478,
+     "p_correct": 0.6271,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1970",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 26.7,
+   "usage": {
+    "input_tokens": 185,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.6688,
+     "p_correct": 0.8892,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:1986",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.0,
+   "usage": {
+    "input_tokens": 145,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.546,
+     "p_correct": 0.8241,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2183",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.6,
+   "usage": {
+    "input_tokens": 104,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.5299,
+     "p_correct": 0.8094,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2281",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.1,
+   "usage": {
+    "input_tokens": 107,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.6338,
+     "p_correct": 0.8731,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2310",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 109,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.5943,
+     "p_correct": 0.8487,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2371",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 120,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.7068,
+     "p_correct": 0.908,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2463",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 126,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.7582,
+     "p_correct": 0.9284,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2512",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.8,
+   "usage": {
+    "input_tokens": 125,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.7718,
+     "p_correct": 0.9328,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2657",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.9,
+   "usage": {
+    "input_tokens": 145,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.4237,
+     "p_correct": 0.7098,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2694",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.4,
+   "usage": {
+    "input_tokens": 125,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.6298,
+     "p_correct": 0.873,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2867",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 25.8,
+   "usage": {
+    "input_tokens": 181,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.3856,
+     "p_correct": 0.7243,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:2958",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.1,
+   "usage": {
+    "input_tokens": 132,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.6099,
+     "p_correct": 0.8567,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3102",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.5333,
+     "p_correct": 0.8063,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3150",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.4,
+   "usage": {
+    "input_tokens": 138,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.6773,
+     "p_correct": 0.8918,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3186",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 125,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.7173,
+     "p_correct": 0.9105,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3231",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.0,
+   "usage": {
+    "input_tokens": 140,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.4108,
+     "p_correct": 0.7487,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3300",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.6,
+   "usage": {
+    "input_tokens": 122,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.5043,
+     "p_correct": 0.7953,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3301",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.0,
+   "usage": {
+    "input_tokens": 127,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.7786,
+     "p_correct": 0.9353,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3427",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_002",
+     "confidence": 0.6353,
+     "p_correct": 0.0386,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "agnews:3592",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.8,
+   "usage": {
+    "input_tokens": 133,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.507,
+     "p_correct": 0.8091,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3675",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 125,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.5807,
+     "p_correct": 0.8481,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3720",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.3,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.4299,
+     "p_correct": 0.7435,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3721",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.3,
+   "usage": {
+    "input_tokens": 101,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.5626,
+     "p_correct": 0.8342,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:3739",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.5,
+   "usage": {
+    "input_tokens": 130,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.1593,
+     "p_correct": 0.4526,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4134",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 133,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5964,
+     "p_correct": 0.8596,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4151",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.4,
+   "usage": {
+    "input_tokens": 127,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6363,
+     "p_correct": 0.8782,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4353",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.9,
+   "usage": {
+    "input_tokens": 135,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6033,
+     "p_correct": 0.863,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4364",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 116,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6093,
+     "p_correct": 0.8658,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4442",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.1,
+   "usage": {
+    "input_tokens": 131,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6172,
+     "p_correct": 0.8694,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4479",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 118,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6293,
+     "p_correct": 0.8751,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4495",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 19.7,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6151,
+     "p_correct": 0.8684,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4511",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.4,
+   "usage": {
+    "input_tokens": 143,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6131,
+     "p_correct": 0.8675,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4521",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 128,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6162,
+     "p_correct": 0.869,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4530",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.6,
+   "usage": {
+    "input_tokens": 139,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.596,
+     "p_correct": 0.8589,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4573",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.5,
+   "usage": {
+    "input_tokens": 132,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6407,
+     "p_correct": 0.8793,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4622",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.2,
+   "usage": {
+    "input_tokens": 107,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6007,
+     "p_correct": 0.8617,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4647",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.0,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.4393,
+     "p_correct": 0.7759,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4653",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.2,
+   "usage": {
+    "input_tokens": 117,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5659,
+     "p_correct": 0.8439,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4850",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5889,
+     "p_correct": 0.8561,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4854",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.6,
+   "usage": {
+    "input_tokens": 118,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6175,
+     "p_correct": 0.8695,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4890",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5616,
+     "p_correct": 0.8427,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4932",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.6,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6701,
+     "p_correct": 0.8931,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:4997",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.5,
+   "usage": {
+    "input_tokens": 138,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5772,
+     "p_correct": 0.8502,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5132",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 117,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6167,
+     "p_correct": 0.8692,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5160",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 138,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6221,
+     "p_correct": 0.8717,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5197",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.9,
+   "usage": {
+    "input_tokens": 133,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5638,
+     "p_correct": 0.8438,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5357",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6221,
+     "p_correct": 0.8718,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5527",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 110,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5881,
+     "p_correct": 0.8551,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5619",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.2,
+   "usage": {
+    "input_tokens": 134,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.5883,
+     "p_correct": 0.8557,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5775",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.1,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.625,
+     "p_correct": 0.873,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5839",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 120,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.6034,
+     "p_correct": 0.863,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5895",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.4,
+   "usage": {
+    "input_tokens": 131,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.6971,
+     "p_correct": 0.9045,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:5961",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.5,
+   "usage": {
+    "input_tokens": 134,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.6276,
+     "p_correct": 0.8741,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6000",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.3,
+   "usage": {
+    "input_tokens": 129,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5058,
+     "p_correct": 0.8112,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6004",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.8,
+   "usage": {
+    "input_tokens": 130,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5534,
+     "p_correct": 0.8386,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6044",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 123,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.6406,
+     "p_correct": 0.8801,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6493",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.4,
+   "usage": {
+    "input_tokens": 135,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.2601,
+     "p_correct": 0.5078,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6571",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.6,
+   "usage": {
+    "input_tokens": 123,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5976,
+     "p_correct": 0.8603,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6607",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.9,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5171,
+     "p_correct": 0.8196,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6685",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 122,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5959,
+     "p_correct": 0.8593,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6700",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.4,
+   "usage": {
+    "input_tokens": 141,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.678,
+     "p_correct": 0.8965,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6802",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.4539,
+     "p_correct": 0.7828,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6839",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 130,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.69,
+     "p_correct": 0.9015,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6894",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.5,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.2901,
+     "p_correct": 0.5417,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6904",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 19.8,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.4619,
+     "p_correct": 0.7874,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6936",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.6,
+   "usage": {
+    "input_tokens": 129,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.6368,
+     "p_correct": 0.8781,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6954",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 22.7,
+   "usage": {
+    "input_tokens": 129,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.425,
+     "p_correct": 0.7669,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:6974",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.0,
+   "usage": {
+    "input_tokens": 156,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.4317,
+     "p_correct": 0.766,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:7205",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.1,
+   "usage": {
+    "input_tokens": 123,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.468,
+     "p_correct": 0.7908,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:7344",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.6,
+   "usage": {
+    "input_tokens": 136,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5861,
+     "p_correct": 0.8548,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:7384",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 23.2,
+   "usage": {
+    "input_tokens": 139,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.4825,
+     "p_correct": 0.801,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:7407",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 128,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.6751,
+     "p_correct": 0.8953,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:7409",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 20.4,
+   "usage": {
+    "input_tokens": 110,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.7316,
+     "p_correct": 0.9184,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "agnews:7430",
+   "tier": 1,
+   "category": "agnews",
+   "ms": 24.5,
+   "usage": {
+    "input_tokens": 140,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.4155,
+     "p_correct": 0.761,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:23",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 107,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.8931,
+     "p_correct": 0.9675,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:25",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.2,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.3443,
+     "p_correct": 0.5497,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:50",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 104,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.8642,
+     "p_correct": 0.9515,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:56",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 105,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_001",
+     "confidence": 0.6136,
+     "p_correct": 0.2691,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:63",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.1,
+   "usage": {
+    "input_tokens": 136,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_004",
+     "confidence": 0.6127,
+     "p_correct": 0.0427,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:78",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 112,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.932,
+     "p_correct": 0.9775,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:80",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.6,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_004",
+     "confidence": 0.7374,
+     "p_correct": 0.0283,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:93",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.3,
+   "usage": {
+    "input_tokens": 140,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_002",
+     "confidence": 0.3082,
+     "p_correct": 0.239,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:97",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 117,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_001",
+     "confidence": 0.4997,
+     "p_correct": 0.3616,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:111",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.5,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_001",
+     "confidence": 0.8002,
+     "p_correct": 0.0261,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:157",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 114,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.2636,
+     "p_correct": 0.5463,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:166",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.8,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_004",
+     "confidence": 0.9599,
+     "p_correct": 0.0042,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:172",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.8649,
+     "p_correct": 0.9559,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:180",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 19.8,
+   "usage": {
+    "input_tokens": 112,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_000",
+     "confidence": 0.857,
+     "p_correct": 0.9474,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:183",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 118,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_002",
+     "confidence": 0.28,
+     "p_correct": 0.2927,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:189",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 109,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_004",
+     "confidence": 0.5639,
+     "p_correct": 0.0073,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:220",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.7,
+   "usage": {
+    "input_tokens": 123,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_000",
+     "got": "label_004",
+     "confidence": 0.7443,
+     "p_correct": 0.0067,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:303",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.2,
+   "usage": {
+    "input_tokens": 127,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_004",
+     "confidence": 0.9842,
+     "p_correct": 0.0021,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:311",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.6,
+   "usage": {
+    "input_tokens": 134,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.9999,
+     "p_correct": 1.0,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:345",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 103,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.9347,
+     "p_correct": 0.9822,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:376",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.8,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_002",
+     "confidence": 0.251,
+     "p_correct": 0.3431,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:394",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 106,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.7074,
+     "p_correct": 0.8029,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:395",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.9,
+   "usage": {
+    "input_tokens": 118,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.4869,
+     "p_correct": 0.5902,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:403",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 25.3,
+   "usage": {
+    "input_tokens": 147,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_004",
+     "confidence": 0.5985,
+     "p_correct": 0.4862,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:419",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_004",
+     "confidence": 0.9507,
+     "p_correct": 0.0054,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:420",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.7,
+   "usage": {
+    "input_tokens": 138,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_000",
+     "confidence": 0.3254,
+     "p_correct": 0.3273,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:439",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.3,
+   "usage": {
+    "input_tokens": 106,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_004",
+     "confidence": 0.9255,
+     "p_correct": 0.0137,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:444",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.0,
+   "usage": {
+    "input_tokens": 109,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.9888,
+     "p_correct": 0.9977,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:447",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.2,
+   "usage": {
+    "input_tokens": 118,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.9759,
+     "p_correct": 0.9944,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:465",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.3,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.9985,
+     "p_correct": 0.9997,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:467",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.2,
+   "usage": {
+    "input_tokens": 114,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_002",
+     "confidence": 0.5194,
+     "p_correct": 0.0556,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:472",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.0,
+   "usage": {
+    "input_tokens": 106,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.4352,
+     "p_correct": 0.6915,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:486",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 107,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_001",
+     "confidence": 0.4469,
+     "p_correct": 0.7067,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:488",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 104,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_001",
+     "got": "label_004",
+     "confidence": 0.6391,
+     "p_correct": 0.2117,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:511",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 127,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.2363,
+     "p_correct": 0.5578,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:536",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.2,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.8904,
+     "p_correct": 0.9641,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:567",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.9743,
+     "p_correct": 0.9939,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:584",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 120,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.7714,
+     "p_correct": 0.9054,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:676",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 117,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.9818,
+     "p_correct": 0.996,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:856",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.6,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6561,
+     "p_correct": 0.797,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:860",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.6,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_004",
+     "confidence": 0.7301,
+     "p_correct": 0.0304,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:889",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 112,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.7857,
+     "p_correct": 0.9032,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:951",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.4,
+   "usage": {
+    "input_tokens": 132,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_004",
+     "confidence": 0.6007,
+     "p_correct": 0.0177,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:959",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.8,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.8588,
+     "p_correct": 0.9551,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:964",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.5,
+   "usage": {
+    "input_tokens": 129,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_003",
+     "confidence": 0.5813,
+     "p_correct": 0.3245,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:967",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 105,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.1509,
+     "p_correct": 0.3594,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:998",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.6,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.4606,
+     "p_correct": 0.6802,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1121",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 114,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6947,
+     "p_correct": 0.8019,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1141",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.3,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_004",
+     "confidence": 0.9408,
+     "p_correct": 0.0014,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1148",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 114,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.6846,
+     "p_correct": 0.874,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1153",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.2,
+   "usage": {
+    "input_tokens": 133,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_002",
+     "got": "label_002",
+     "confidence": 0.9519,
+     "p_correct": 0.987,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1196",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.3,
+   "usage": {
+    "input_tokens": 106,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.5886,
+     "p_correct": 0.8103,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1200",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.3,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.4867,
+     "p_correct": 0.4609,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1203",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.659,
+     "p_correct": 0.1136,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1205",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.2,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_000",
+     "confidence": 0.8606,
+     "p_correct": 0.0025,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1211",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.9,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.289,
+     "p_correct": 0.0405,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1212",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 116,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.9265,
+     "p_correct": 0.004,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1214",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.4,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.416,
+     "p_correct": 0.0623,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1234",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.5,
+   "usage": {
+    "input_tokens": 148,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.9251,
+     "p_correct": 0.0112,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1251",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.7371,
+     "p_correct": 0.0218,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1257",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.8,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_004",
+     "confidence": 0.9394,
+     "p_correct": 0.001,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1268",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.5,
+   "usage": {
+    "input_tokens": 122,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_004",
+     "confidence": 0.6849,
+     "p_correct": 0.01,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1290",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.0,
+   "usage": {
+    "input_tokens": 127,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.6194,
+     "p_correct": 0.0229,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1318",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.0,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.4923,
+     "p_correct": 0.2649,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1330",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 25.2,
+   "usage": {
+    "input_tokens": 136,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_004",
+     "confidence": 0.2405,
+     "p_correct": 0.0388,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1338",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.8482,
+     "p_correct": 0.0431,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1343",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 128,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_002",
+     "confidence": 0.5074,
+     "p_correct": 0.0563,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1351",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 25.2,
+   "usage": {
+    "input_tokens": 131,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_003",
+     "got": "label_003",
+     "confidence": 0.3224,
+     "p_correct": 0.4592,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1413",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 104,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.9629,
+     "p_correct": 0.9908,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1466",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.9,
+   "usage": {
+    "input_tokens": 154,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_001",
+     "confidence": 0.7738,
+     "p_correct": 0.003,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1484",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.8,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_002",
+     "confidence": 0.9403,
+     "p_correct": 0.0158,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1503",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.8,
+   "usage": {
+    "input_tokens": 107,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_000",
+     "confidence": 0.9543,
+     "p_correct": 0.0042,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1529",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.3,
+   "usage": {
+    "input_tokens": 126,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_002",
+     "confidence": 0.1782,
+     "p_correct": 0.1138,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1624",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.1,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.9833,
+     "p_correct": 0.9963,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1636",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 27.3,
+   "usage": {
+    "input_tokens": 142,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_002",
+     "confidence": 0.2196,
+     "p_correct": 0.0356,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1690",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.9,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.9976,
+     "p_correct": 0.9996,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1699",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.5,
+   "usage": {
+    "input_tokens": 108,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_000",
+     "confidence": 0.2871,
+     "p_correct": 0.0257,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1735",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.5,
+   "usage": {
+    "input_tokens": 129,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.9989,
+     "p_correct": 0.9998,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1736",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 25.9,
+   "usage": {
+    "input_tokens": 162,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.6765,
+     "p_correct": 0.7742,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1771",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.5,
+   "usage": {
+    "input_tokens": 122,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.9559,
+     "p_correct": 0.9883,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1774",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.3,
+   "usage": {
+    "input_tokens": 111,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_001",
+     "confidence": 0.7026,
+     "p_correct": 0.0252,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1796",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.3,
+   "usage": {
+    "input_tokens": 126,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_004",
+     "confidence": 0.6229,
+     "p_correct": 0.8068,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1909",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_001",
+     "confidence": 0.7528,
+     "p_correct": 0.1357,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1922",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.4,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_004",
+     "got": "label_002",
+     "confidence": 0.9642,
+     "p_correct": 0.0013,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1937",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.4,
+   "usage": {
+    "input_tokens": 113,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_005",
+     "confidence": 0.4744,
+     "p_correct": 0.6358,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1940",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.9,
+   "usage": {
+    "input_tokens": 121,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_005",
+     "confidence": 0.2014,
+     "p_correct": 0.3969,
+     "correct": true
+    }
+   },
+   "pass": true
+  },
+  {
+   "id": "emotiondair:1941",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.1,
+   "usage": {
+    "input_tokens": 126,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.8931,
+     "p_correct": 0.0055,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1947",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 20.7,
+   "usage": {
+    "input_tokens": 119,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.4064,
+     "p_correct": 0.0266,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1948",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.3,
+   "usage": {
+    "input_tokens": 106,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_004",
+     "confidence": 0.9531,
+     "p_correct": 0.002,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1951",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.2,
+   "usage": {
+    "input_tokens": 117,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_004",
+     "confidence": 0.6211,
+     "p_correct": 0.0015,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1954",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.0,
+   "usage": {
+    "input_tokens": 130,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_000",
+     "confidence": 0.9798,
+     "p_correct": 0.0007,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1956",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.7,
+   "usage": {
+    "input_tokens": 115,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.8956,
+     "p_correct": 0.0055,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1961",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.1,
+   "usage": {
+    "input_tokens": 124,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.1835,
+     "p_correct": 0.0246,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1964",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 21.1,
+   "usage": {
+    "input_tokens": 115,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_004",
+     "confidence": 0.9734,
+     "p_correct": 0.0005,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1971",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.0,
+   "usage": {
+    "input_tokens": 153,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.1942,
+     "p_correct": 0.0644,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1972",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 24.4,
+   "usage": {
+    "input_tokens": 138,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.8889,
+     "p_correct": 0.004,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1975",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.1,
+   "usage": {
+    "input_tokens": 126,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.9142,
+     "p_correct": 0.0165,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1979",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 23.4,
+   "usage": {
+    "input_tokens": 129,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_004",
+     "confidence": 0.8656,
+     "p_correct": 0.0013,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1994",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.0,
+   "usage": {
+    "input_tokens": 105,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_004",
+     "confidence": 0.697,
+     "p_correct": 0.0069,
+     "correct": false
+    }
+   },
+   "pass": false
+  },
+  {
+   "id": "emotiondair:1999",
+   "tier": 1,
+   "category": "emotiondair",
+   "ms": 22.8,
+   "usage": {
+    "input_tokens": 118,
+    "output_tokens": 0
+   },
+   "error": null,
+   "questions": {
+    "label": {
+     "type": "choice",
+     "expected": "label_005",
+     "got": "label_002",
+     "confidence": 0.7142,
+     "p_correct": 0.0331,
+     "correct": false
+    }
+   },
+   "pass": false
+  }
+ ]
+}

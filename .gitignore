@@ -10,3 +10,7 @@ train/moderation-study/*/*.jsonl
 train/moderation-study/*/manifest.json
 train/moderation-study/study_manifest.json
 .DS_Store
+
+.era/
+train/workflow-suite/*/
+bench/results/moderation-study/*_jev.progress*

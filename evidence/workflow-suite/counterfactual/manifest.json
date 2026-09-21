@@ -1,0 +1,105 @@
+{
+  "dataset": "SetFit/amazon_counterfactual",
+  "slug": "counterfactual",
+  "config": {
+    "repo": "SetFit/amazon_counterfactual",
+    "revision": "53e2aca73f7af37bfc24e0670c361d39809ad2ab",
+    "files": {
+      "train": "data/EN_train.tsv",
+      "validation": "data/EN_valid.tsv",
+      "test": "data/EN_test.tsv"
+    },
+    "text": "sentence",
+    "label": "is_counterfactual",
+    "labels": [
+      "not_counterfactual",
+      "counterfactual"
+    ],
+    "positive": "counterfactual",
+    "license": "CC-BY-NC-4.0 per original author LICENSE; mirror metadata differs",
+    "instruction": "Does this product-review sentence describe a counterfactual: an imagined alternative to what actually happened, such as what would have happened if something had been different?"
+  },
+  "labels": [
+    "not_counterfactual",
+    "counterfactual"
+  ],
+  "license": "CC-BY-NC-4.0 per original author LICENSE; mirror metadata differs",
+  "raw_sha256": {
+    "train": {
+      "url": "https://huggingface.co/datasets/SetFit/amazon_counterfactual/resolve/53e2aca73f7af37bfc24e0670c361d39809ad2ab/data/EN_train.tsv",
+      "sha256": "fa1d3db89f133725011f022e1e0bb9ba147b0e9b8b38e15f832ad6192070f7d1",
+      "bytes": 444664
+    },
+    "validation": {
+      "url": "https://huggingface.co/datasets/SetFit/amazon_counterfactual/resolve/53e2aca73f7af37bfc24e0670c361d39809ad2ab/data/EN_valid.tsv",
+      "sha256": "47c981cd724394a45c091998ba9fb553ea5c9159aae228b5009ac32a1e51d6be",
+      "bytes": 37707
+    },
+    "test": {
+      "url": "https://huggingface.co/datasets/SetFit/amazon_counterfactual/resolve/53e2aca73f7af37bfc24e0670c361d39809ad2ab/data/EN_test.tsv",
+      "sha256": "ca0bbbc8d32e795526b21eba31c6b400e81c192f4d756bafa95c7b71375893d5",
+      "bytes": 73457
+    },
+    "card": {
+      "sha256": "0723bedc5690d4b9de9ec846a2138521b48740f730324f5f18ed6c281118457c",
+      "revision": "53e2aca73f7af37bfc24e0670c361d39809ad2ab"
+    }
+  },
+  "split_sha256": {
+    "train": "889a359e98665465a6e20c8699988b770b2f2a0573412fa42d0363098bb4a74d",
+    "development": "258d6bf47bbe8ca4b6e2970f6000876818487511ef85b44fd7518337bacecba3",
+    "heldout": "ffe27027e8ea7b6baebfc34af7183bf42dc16413b8c0c519717578fcd02cdcf9"
+  },
+  "train": 1000,
+  "development": 200,
+  "test": 670,
+  "counts": {
+    "train": {
+      "not_counterfactual": 810,
+      "counterfactual": 190
+    },
+    "development": {
+      "not_counterfactual": 165,
+      "counterfactual": 35
+    },
+    "heldout": {
+      "not_counterfactual": 539,
+      "counterfactual": 131
+    }
+  },
+  "source_counts": {
+    "train": 4018,
+    "validation": 335,
+    "test": 670
+  },
+  "exclusions": {
+    "validation": {
+      "duplicates": 0
+    },
+    "train": {
+      "duplicates": 0
+    }
+  },
+  "split_policy": "Official test preserved if <=1000, otherwise fixed proportional sample1000; all official test/validation texts excluded from training.",
+  "protocol": {
+    "max_len": 1024,
+    "head_max_len": 768,
+    "epochs": 3,
+    "seed": 7,
+    "selection": "fixed final epoch; no test-based tuning",
+    "primary": "macro_f1",
+    "secondary": [
+      "accuracy",
+      "per-class recall",
+      "paired grouped bootstrap",
+      "latency",
+      "probability quality"
+    ],
+    "positive_class": "counterfactual",
+    "sampling_seeds": {
+      "test": 7,
+      "development": 8,
+      "train": 9
+    }
+  }
+}

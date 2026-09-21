@@ -1,0 +1,10 @@
+{
+  "run_id": "20260919T193206_banking77_jev",
+  "records_sha256": "04c2dec0dadb3f4adfc704917cec43650b265317f6e04ee3da646584d91ac543",
+  "case_sha256": "577324f12e04f36aeb5aa145097e9c8c49208fa072e867685c8e19311167cb07",
+  "verified_request_and_label_matches": 3080,
+  "resolved_models": [
+    "typesafe/jev-1.13-20260917"
+  ],
+  "note": "Original output file lacked model_resolved/cases_sha256; exact archived requests establish identity and input equivalence."
+}

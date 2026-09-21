@@ -1,0 +1,407 @@
+{
+  "20260920T141940_suite_injection_heldout_laya_base": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T141940_suite_injection_heldout_laya_base",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/injection",
+    "recorder": "client",
+    "models": [
+      "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    ],
+    "outcome": "evaluated 116/116",
+    "prompt_records": 117,
+    "errors": 0,
+    "seconds": 3.1,
+    "meta": {
+      "dataset": "deepset/prompt-injections",
+      "cases_sha256": "d03c3e0330eacc5b86056fb0c8c674acb2e54420e561af6ecf1a39092e090dd8",
+      "target": "laya:base",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "b2d411a7119832748a561149cce7e160c8784868a452ad5d7704dedb85d2d05c"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 254602,
+    "path": "2026-09-20/20260920T141940_suite_injection_heldout_laya_base"
+  },
+  "20260920T142152_suite_injection_heldout_laya_fine": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142152_suite_injection_heldout_laya_fine",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/injection",
+    "recorder": "client",
+    "models": [
+      "sha256:b2290b507a94f1f77ea462da00074aeb7751f9faa6a7f5233d7ace14df4a5d9a"
+    ],
+    "outcome": "evaluated 116/116",
+    "prompt_records": 117,
+    "errors": 0,
+    "seconds": 2.7,
+    "meta": {
+      "dataset": "deepset/prompt-injections",
+      "cases_sha256": "d03c3e0330eacc5b86056fb0c8c674acb2e54420e561af6ecf1a39092e090dd8",
+      "target": "laya:fine",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "d24f0868f9c796bfafa3475dfcd2141d3488a6ca0d4aef8073fbb67ba2b5af53"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 255737,
+    "path": "2026-09-20/20260920T142152_suite_injection_heldout_laya_fine"
+  },
+  "20260920T141919_suite_injection_heldout_jev": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T141919_suite_injection_heldout_jev",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/injection",
+    "recorder": "client",
+    "models": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "outcome": "evaluated 116/116",
+    "prompt_records": 117,
+    "errors": 0,
+    "seconds": 37.3,
+    "meta": {
+      "dataset": "deepset/prompt-injections",
+      "cases_sha256": "d03c3e0330eacc5b86056fb0c8c674acb2e54420e561af6ecf1a39092e090dd8",
+      "target": "jev",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": null
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 250881,
+    "path": "2026-09-20/20260920T141919_suite_injection_heldout_jev"
+  },
+  "20260920T142218_suite_sms_heldout_laya_base": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142218_suite_sms_heldout_laya_base",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/sms",
+    "recorder": "client",
+    "models": [
+      "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 19.1,
+    "meta": {
+      "dataset": "ucirvine/sms_spam",
+      "cases_sha256": "e7d34c14baa0d2889bf13daf16aaac1252b80cafce6eb4212c02855aac363c0c",
+      "target": "laya:base",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "b2d411a7119832748a561149cce7e160c8784868a452ad5d7704dedb85d2d05c"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 1850406,
+    "path": "2026-09-20/20260920T142218_suite_sms_heldout_laya_base"
+  },
+  "20260920T142608_suite_sms_heldout_laya_fine": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142608_suite_sms_heldout_laya_fine",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/sms",
+    "recorder": "client",
+    "models": [
+      "sha256:caabecdf0652a14c30378aed01791bb3c69ed0efc07ae074d5231fef5fa5395b"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 20.2,
+    "meta": {
+      "dataset": "ucirvine/sms_spam",
+      "cases_sha256": "e7d34c14baa0d2889bf13daf16aaac1252b80cafce6eb4212c02855aac363c0c",
+      "target": "laya:fine",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "155d564d18d5c6cca0cebca04610354f939ea7842c766b27b02e26b53e1c1d17"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 1852004,
+    "path": "2026-09-20/20260920T142608_suite_sms_heldout_laya_fine"
+  },
+  "20260920T141957_suite_sms_heldout_jev": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T141957_suite_sms_heldout_jev",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/sms",
+    "recorder": "client",
+    "models": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 207.6,
+    "meta": {
+      "dataset": "ucirvine/sms_spam",
+      "cases_sha256": "e7d34c14baa0d2889bf13daf16aaac1252b80cafce6eb4212c02855aac363c0c",
+      "target": "jev",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": null
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 1822034,
+    "path": "2026-09-20/20260920T141957_suite_sms_heldout_jev"
+  },
+  "20260920T142650_suite_emotion_heldout_laya_base": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142650_suite_emotion_heldout_laya_base",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/emotion",
+    "recorder": "client",
+    "models": [
+      "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 16.6,
+    "meta": {
+      "dataset": "dair-ai/emotion",
+      "cases_sha256": "8783e7c10f538d8dfa510e44f571a2a6c44249999caea983252b4fa440001db7",
+      "target": "laya:base",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "b2d411a7119832748a561149cce7e160c8784868a452ad5d7704dedb85d2d05c"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 2093746,
+    "path": "2026-09-20/20260920T142650_suite_emotion_heldout_laya_base"
+  },
+  "20260920T143020_suite_emotion_heldout_laya_fine": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T143020_suite_emotion_heldout_laya_fine",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/emotion",
+    "recorder": "client",
+    "models": [
+      "sha256:643984f37b506c404de9e49ddbee9bea5c8c3afc87c2c0ec4b1ec21c30d4e8cb"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 17.0,
+    "meta": {
+      "dataset": "dair-ai/emotion",
+      "cases_sha256": "8783e7c10f538d8dfa510e44f571a2a6c44249999caea983252b4fa440001db7",
+      "target": "laya:fine",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "1a8dc1521aa3b170d5e92f27e603040baff3a137898864d5ca48c67eb234c5f4"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 2096975,
+    "path": "2026-09-20/20260920T143020_suite_emotion_heldout_laya_fine"
+  },
+  "20260920T142324_suite_emotion_heldout_jev": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142324_suite_emotion_heldout_jev",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/emotion",
+    "recorder": "client",
+    "models": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 225.2,
+    "meta": {
+      "dataset": "dair-ai/emotion",
+      "cases_sha256": "8783e7c10f538d8dfa510e44f571a2a6c44249999caea983252b4fa440001db7",
+      "target": "jev",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": null
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 2003758,
+    "path": "2026-09-20/20260920T142324_suite_emotion_heldout_jev"
+  },
+  "20260920T143059_suite_counterfactual_heldout_laya_base": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T143059_suite_counterfactual_heldout_laya_base",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/counterfactual",
+    "recorder": "client",
+    "models": [
+      "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    ],
+    "outcome": "evaluated 670/670",
+    "prompt_records": 671,
+    "errors": 0,
+    "seconds": 12.6,
+    "meta": {
+      "dataset": "SetFit/amazon_counterfactual",
+      "cases_sha256": "ffe27027e8ea7b6baebfc34af7183bf42dc16413b8c0c519717578fcd02cdcf9",
+      "target": "laya:base",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "b2d411a7119832748a561149cce7e160c8784868a452ad5d7704dedb85d2d05c"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 1422649,
+    "path": "2026-09-20/20260920T143059_suite_counterfactual_heldout_laya_base"
+  },
+  "20260920T143459_suite_counterfactual_heldout_laya_fine": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T143459_suite_counterfactual_heldout_laya_fine",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/counterfactual",
+    "recorder": "client",
+    "models": [
+      "sha256:dac103497d9e477e8b13621ae1be57c46a532020366017e4ab568246973ca312"
+    ],
+    "outcome": "evaluated 670/670",
+    "prompt_records": 671,
+    "errors": 0,
+    "seconds": 13.4,
+    "meta": {
+      "dataset": "SetFit/amazon_counterfactual",
+      "cases_sha256": "ffe27027e8ea7b6baebfc34af7183bf42dc16413b8c0c519717578fcd02cdcf9",
+      "target": "laya:fine",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "bcb6b3114c8cb768779574b84b722cb4035ccbc70b99b8acf5e791fe6a48516a"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 1429074,
+    "path": "2026-09-20/20260920T143459_suite_counterfactual_heldout_laya_fine"
+  },
+  "20260920T142710_suite_counterfactual_heldout_jev": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142710_suite_counterfactual_heldout_jev",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/counterfactual",
+    "recorder": "client",
+    "models": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "outcome": "evaluated 670/670",
+    "prompt_records": 671,
+    "errors": 0,
+    "seconds": 144.9,
+    "meta": {
+      "dataset": "SetFit/amazon_counterfactual",
+      "cases_sha256": "ffe27027e8ea7b6baebfc34af7183bf42dc16413b8c0c519717578fcd02cdcf9",
+      "target": "jev",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": null
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 1403200,
+    "path": "2026-09-20/20260920T142710_suite_counterfactual_heldout_jev"
+  },
+  "20260920T143536_suite_massive_heldout_laya_base": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T143536_suite_massive_heldout_laya_base",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/massive",
+    "recorder": "client",
+    "models": [
+      "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 54.5,
+    "meta": {
+      "dataset": "AmazonScience/massive",
+      "cases_sha256": "00e923304baa2b36f6f484004ef23a25cf71bcccce669aac523294bb6632ba10",
+      "target": "laya:base",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "b2d411a7119832748a561149cce7e160c8784868a452ad5d7704dedb85d2d05c"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 6206677,
+    "path": "2026-09-20/20260920T143536_suite_massive_heldout_laya_base"
+  },
+  "20260920T144751_suite_massive_heldout_laya_fine": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T144751_suite_massive_heldout_laya_fine",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/massive",
+    "recorder": "client",
+    "models": [
+      "sha256:2a5c5ea5df59c314c73b2198b659a120195832fb08ef796b462e69fafc7634e5"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 54.8,
+    "meta": {
+      "dataset": "AmazonScience/massive",
+      "cases_sha256": "00e923304baa2b36f6f484004ef23a25cf71bcccce669aac523294bb6632ba10",
+      "target": "laya:fine",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": "3e1043c1a037444020fa84d823b0f599e3469622a456fce778d44650234b503c"
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 7283621,
+    "path": "2026-09-20/20260920T144751_suite_massive_heldout_laya_fine"
+  },
+  "20260920T142935_suite_massive_heldout_jev": {
+    "schema": "sysone.telemetry.v1",
+    "date": "2026-09-20",
+    "run_id": "20260920T142935_suite_massive_heldout_jev",
+    "kind": "sysone-bench",
+    "source": "public/workflow-suite/massive",
+    "recorder": "client",
+    "models": [
+      "typesafe/jev-1.13-20260917"
+    ],
+    "outcome": "evaluated 1000/1000",
+    "prompt_records": 1001,
+    "errors": 0,
+    "seconds": 210.9,
+    "meta": {
+      "dataset": "AmazonScience/massive",
+      "cases_sha256": "00e923304baa2b36f6f484004ef23a25cf71bcccce669aac523294bb6632ba10",
+      "target": "jev",
+      "protocol": "workflow-suite-v1",
+      "warmup": "first development request",
+      "config_sha256": null
+    },
+    "seats": null,
+    "executor_turns": null,
+    "bytes": 6076318,
+    "path": "2026-09-20/20260920T142935_suite_massive_heldout_jev"
+  }
+}

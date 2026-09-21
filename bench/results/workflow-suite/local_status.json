@@ -1,0 +1,247 @@
+{
+  "lane": "local",
+  "state": "completed",
+  "started": "2026-09-20T14:19:18-0700",
+  "stages": [
+    {
+      "name": "injection_base",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/injection",
+        "--target",
+        "laya:base",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-english-wide"
+      ],
+      "started": 1789939158.440439,
+      "pid": 91027,
+      "exit_code": 0,
+      "seconds": 25.6
+    },
+    {
+      "name": "injection_train",
+      "command": [
+        "train_public_laya.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/injection",
+        "--out",
+        "/Users/alexanderollman/jevtest/models/laya-suite-injection-s7",
+        "--seed",
+        "7"
+      ],
+      "started": 1789939184.043496,
+      "pid": 92367,
+      "exit_code": 0,
+      "seconds": 106.0
+    },
+    {
+      "name": "injection_fine",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/injection",
+        "--target",
+        "laya:fine",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-suite-injection-s7"
+      ],
+      "started": 1789939290.002787,
+      "pid": 97892,
+      "exit_code": 0,
+      "seconds": 25.8
+    },
+    {
+      "name": "sms_base",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/sms",
+        "--target",
+        "laya:base",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-english-wide"
+      ],
+      "started": 1789939315.809494,
+      "pid": 99228,
+      "exit_code": 0,
+      "seconds": 42.2
+    },
+    {
+      "name": "sms_train",
+      "command": [
+        "train_public_laya.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/sms",
+        "--out",
+        "/Users/alexanderollman/jevtest/models/laya-suite-sms-s7",
+        "--seed",
+        "7"
+      ],
+      "started": 1789939357.977494,
+      "pid": 1726,
+      "exit_code": 0,
+      "seconds": 188.5
+    },
+    {
+      "name": "sms_fine",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/sms",
+        "--target",
+        "laya:fine",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-suite-sms-s7"
+      ],
+      "started": 1789939546.510117,
+      "pid": 11607,
+      "exit_code": 0,
+      "seconds": 42.7
+    },
+    {
+      "name": "emotion_base",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/emotion",
+        "--target",
+        "laya:base",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-english-wide"
+      ],
+      "started": 1789939589.170932,
+      "pid": 13821,
+      "exit_code": 0,
+      "seconds": 38.5
+    },
+    {
+      "name": "emotion_train",
+      "command": [
+        "train_public_laya.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/emotion",
+        "--out",
+        "/Users/alexanderollman/jevtest/models/laya-suite-emotion-s7",
+        "--seed",
+        "7"
+      ],
+      "started": 1789939627.716793,
+      "pid": 15826,
+      "exit_code": 0,
+      "seconds": 170.3
+    },
+    {
+      "name": "emotion_fine",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/emotion",
+        "--target",
+        "laya:fine",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-suite-emotion-s7"
+      ],
+      "started": 1789939797.993587,
+      "pid": 25507,
+      "exit_code": 0,
+      "seconds": 39.9
+    },
+    {
+      "name": "counterfactual_base",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/counterfactual",
+        "--target",
+        "laya:base",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-english-wide"
+      ],
+      "started": 1789939837.8620028,
+      "pid": 27705,
+      "exit_code": 0,
+      "seconds": 34.7
+    },
+    {
+      "name": "counterfactual_train",
+      "command": [
+        "train_public_laya.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/counterfactual",
+        "--out",
+        "/Users/alexanderollman/jevtest/models/laya-suite-counterfactual-s7",
+        "--seed",
+        "7"
+      ],
+      "started": 1789939872.579669,
+      "pid": 29787,
+      "exit_code": 0,
+      "seconds": 204.4
+    },
+    {
+      "name": "counterfactual_fine",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/counterfactual",
+        "--target",
+        "laya:fine",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-suite-counterfactual-s7"
+      ],
+      "started": 1789940076.9516742,
+      "pid": 40950,
+      "exit_code": 0,
+      "seconds": 36.5
+    },
+    {
+      "name": "massive_base",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/massive",
+        "--target",
+        "laya:base",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-english-wide"
+      ],
+      "started": 1789940113.46367,
+      "pid": 42943,
+      "exit_code": 0,
+      "seconds": 77.6
+    },
+    {
+      "name": "massive_train",
+      "command": [
+        "train_public_laya.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/massive",
+        "--out",
+        "/Users/alexanderollman/jevtest/models/laya-suite-massive-s7",
+        "--seed",
+        "7"
+      ],
+      "started": 1789940191.0385542,
+      "pid": 47212,
+      "exit_code": 0,
+      "seconds": 656.1
+    },
+    {
+      "name": "massive_fine",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/massive",
+        "--target",
+        "laya:fine",
+        "--checkpoint",
+        "/Users/alexanderollman/jevtest/models/laya-suite-massive-s7"
+      ],
+      "started": 1789940847.138952,
+      "pid": 82552,
+      "exit_code": 0,
+      "seconds": 79.1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+decision                                           laya:laya-english  laya:laya-era-distill-1k  ya:laya-era-distill-full                       jev
+authoring_moderation / must_block                              12/17                     13/17                     15/17                     17/17
+complexity_band / band                                           2/8                       5/8                       5/8                       7/8
+injection / injection_suspected                                  6/6                       5/6                       5/6                       6/6
+route_classify / above_commodity                                7/13                      9/13                     12/13                     13/13
+route_classify / category                                      19/30                     26/30                     29/30                     28/30
+route_classify / destination                                   12/16                     14/16                     15/16                     16/16
+route_classify / injection_suspected                           17/17                     17/17                     17/17                     17/17
+tool_selection / tool                                          29/38                     31/38                     35/38                     37/38
+ALL QUESTIONS                                         104/145  71.7%            120/145  82.8%            133/145  91.7%            141/145  97.2%
+CASES PASSED                                                  63/100                    76/100                    88/100                    96/100

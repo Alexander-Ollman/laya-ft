@@ -1,0 +1,269 @@
+{
+  "schema": "public-study-analysis-v1",
+  "runs": [
+    {
+      "input": "/Users/alexanderollman/jevtest/bench/results/20260919T193206_banking77_jev.json",
+      "input_sha256": "411e0edbe765df63e51f1b51f96e16cad87b0a95e1a450560dd611d865960cd9",
+      "target": "jev",
+      "split": "heldout",
+      "summary": {
+        "n": 3080,
+        "correct": 2463,
+        "accuracy": 0.7996753246753247,
+        "wilson_95": [
+          0.7851708699398071,
+          0.8134331843379822
+        ],
+        "macro_f1": 0.7926555847490673,
+        "errors": 0,
+        "probability_rows": 3080,
+        "multiclass_brier": 0.30783977926318146,
+        "nll": 2.014241312044607,
+        "ece_10_equal_width": 0.08564161091433808,
+        "p50_ms": 187.19083303585649,
+        "p95_ms": 309.0783749939874,
+        "cost_usd": 0.13345122,
+        "reported_cost_usd": 0.13345122,
+        "cost_reported_rows": 3080,
+        "cost_unknown_rows": 0
+      },
+      "caveats": [
+        "Legacy result lacks cases_sha256; IDs, labels and text-group hashes match frozen data, but input question bytes cannot be established from this file.",
+        "Result lacks resolved model identity for one or more rows; requested target is not a checkpoint hash."
+      ]
+    },
+    {
+      "input": "/Users/alexanderollman/jevtest/bench/results/20260919T202110_banking77_laya_laya-english.json",
+      "input_sha256": "43e2524828e9b54d12ac0efc9a775c5c6e05f2e4258c03e1474ee274d65de619",
+      "target": "laya:laya-english",
+      "split": "heldout",
+      "summary": {
+        "n": 3080,
+        "correct": 1232,
+        "accuracy": 0.4,
+        "wilson_95": [
+          0.38283361311051234,
+          0.4174155215400195
+        ],
+        "macro_f1": 0.3533800061188695,
+        "errors": 0,
+        "probability_rows": 3080,
+        "multiclass_brier": 1.178903808981213,
+        "nll": 15.740777205579763,
+        "ece_10_equal_width": 0.5858755779444773,
+        "p50_ms": 40.35579098854214,
+        "p95_ms": 42.791333980858326,
+        "cost_usd": null,
+        "reported_cost_usd": 0,
+        "cost_reported_rows": 0,
+        "cost_unknown_rows": 3080
+      },
+      "caveats": []
+    },
+    {
+      "input": "/Users/alexanderollman/jevtest/bench/results/20260919T202316_banking77_laya_laya-english-wide.json",
+      "input_sha256": "155f87a2e4ef8722428928e562f4704c8bca7b13cc92614656be1598f6938cb6",
+      "target": "laya:laya-english-wide",
+      "split": "heldout",
+      "summary": {
+        "n": 3080,
+        "correct": 1579,
+        "accuracy": 0.5126623376623377,
+        "wilson_95": [
+          0.49500516897021285,
+          0.5302879600837784
+        ],
+        "macro_f1": 0.49906586362539,
+        "errors": 0,
+        "probability_rows": 3080,
+        "multiclass_brier": 0.9518292440887457,
+        "nll": 12.261833508751343,
+        "ece_10_equal_width": 0.47189263390522895,
+        "p50_ms": 69.06262494158,
+        "p95_ms": 73.23783298488706,
+        "cost_usd": null,
+        "reported_cost_usd": 0,
+        "cost_reported_rows": 0,
+        "cost_unknown_rows": 3080
+      },
+      "caveats": []
+    },
+    {
+      "input": "/Users/alexanderollman/jevtest/bench/results/20260919T202651_banking77_laya_laya-banking77-gold-1k.json",
+      "input_sha256": "76e906a3921c9017bbffa71cdb3ad431f3b1f595d8a12f609ab616ee9edd836d",
+      "target": "laya:laya-banking77-gold-1k",
+      "split": "heldout",
+      "summary": {
+        "n": 3080,
+        "correct": 2447,
+        "accuracy": 0.7944805194805195,
+        "wilson_95": [
+          0.7798473124013202,
+          0.8083800735466266
+        ],
+        "macro_f1": 0.7949167942500572,
+        "errors": 0,
+        "probability_rows": 3080,
+        "multiclass_brier": 0.2969011809886487,
+        "nll": 0.7474599917685537,
+        "ece_10_equal_width": 0.014273973380238579,
+        "p50_ms": 69.8686660034582,
+        "p95_ms": 74.22837498597801,
+        "cost_usd": null,
+        "reported_cost_usd": 0,
+        "cost_reported_rows": 0,
+        "cost_unknown_rows": 3080
+      },
+      "caveats": []
+    },
+    {
+      "input": "/Users/alexanderollman/jevtest/bench/results/20260919T203028_banking77_laya_laya-english-wide.json",
+      "input_sha256": "5aa6fa16a02bd6c25ae8b85bac70b9aca9ff9e26035ea1d44cc585a896b21927",
+      "target": "laya:laya-english-wide",
+      "split": "development",
+      "summary": {
+        "n": 770,
+        "correct": 382,
+        "accuracy": 0.4961038961038961,
+        "wilson_95": [
+          0.4608959676666215,
+          0.5313505061664763
+        ],
+        "macro_f1": 0.48406344600805534,
+        "errors": 0,
+        "probability_rows": 770,
+        "multiclass_brier": 0.969599078421499,
+        "nll": 12.213243886585646,
+        "ece_10_equal_width": 0.481878579080804,
+        "p50_ms": 70.10258303489536,
+        "p95_ms": 74.06312495004386,
+        "cost_usd": null,
+        "reported_cost_usd": 0,
+        "cost_reported_rows": 0,
+        "cost_unknown_rows": 770
+      },
+      "caveats": []
+    },
+    {
+      "input": "/Users/alexanderollman/jevtest/bench/results/20260919T203123_banking77_laya_laya-banking77-gold-1k.json",
+      "input_sha256": "030191574079ffc1ad7fc07fe207cda5c9f104dbb1c6a2aa7b99cfb7baaeeff1",
+      "target": "laya:laya-banking77-gold-1k",
+      "split": "development",
+      "summary": {
+        "n": 770,
+        "correct": 611,
+        "accuracy": 0.7935064935064935,
+        "wilson_95": [
+          0.763492226039354,
+          0.8206067452006096
+        ],
+        "macro_f1": 0.795569214062815,
+        "errors": 0,
+        "probability_rows": 770,
+        "multiclass_brier": 0.29846314314184313,
+        "nll": 0.7503152037982395,
+        "ece_10_equal_width": 0.04410835947830154,
+        "p50_ms": 69.50791704002768,
+        "p95_ms": 72.6248329738155,
+        "cost_usd": null,
+        "reported_cost_usd": 0,
+        "cost_reported_rows": 0,
+        "cost_unknown_rows": 770
+      },
+      "caveats": []
+    }
+  ],
+  "skipped": [
+    {
+      "target": "laya:laya-english",
+      "reason": "No completed development run; calibration skipped."
+    }
+  ],
+  "paired_comparison": {
+    "base_input": "/Users/alexanderollman/jevtest/bench/results/20260919T202316_banking77_laya_laya-english-wide.json",
+    "fine_input": "/Users/alexanderollman/jevtest/bench/results/20260919T202651_banking77_laya_laya-banking77-gold-1k.json",
+    "accuracy_delta_fine_minus_base": 0.2818181818181818,
+    "percentile_95": [
+      0.26395889711554266,
+      0.29957967031836863
+    ],
+    "n_rows": 3080,
+    "n_text_groups": 3076,
+    "resamples": 5000,
+    "seed": 7,
+    "method": "paired request-text cluster bootstrap, row-weighted accuracy",
+    "limitation": "Conditional on these checkpoints and test data; not training-seed robustness."
+  },
+  "calibration": [
+    {
+      "target": "laya:laya-banking77-gold-1k",
+      "development_input": "/Users/alexanderollman/jevtest/bench/results/20260919T203123_banking77_laya_laya-banking77-gold-1k.json",
+      "heldout_input": "/Users/alexanderollman/jevtest/bench/results/20260919T202651_banking77_laya_laya-banking77-gold-1k.json",
+      "temperature": 0.9375285788293332,
+      "development_probability_rows": 770,
+      "development_nll_before": 0.7503152037982395,
+      "development_nll_after": 0.7461267481827942,
+      "temperature_bounds": [
+        0.05,
+        20
+      ],
+      "fit_split": "development",
+      "heldout_before": {
+        "probability_rows": 3080,
+        "multiclass_brier": 0.2969011809886487,
+        "nll": 0.7474599917685537,
+        "ece_10_equal_width": 0.014273973380238579
+      },
+      "heldout_after": {
+        "probability_rows": 3080,
+        "multiclass_brier": 0.29806406187593454,
+        "nll": 0.7436193256019312,
+        "ece_10_equal_width": 0.021007327251144042
+      },
+      "approximation": "Temperature scales log rounded stored probabilities, floored at 1e-12; original logits are unavailable. Predictions stay unchanged."
+    },
+    {
+      "target": "laya:laya-english-wide",
+      "development_input": "/Users/alexanderollman/jevtest/bench/results/20260919T203028_banking77_laya_laya-english-wide.json",
+      "heldout_input": "/Users/alexanderollman/jevtest/bench/results/20260919T202316_banking77_laya_laya-english-wide.json",
+      "temperature": 6.1508546154301555,
+      "development_probability_rows": 770,
+      "development_nll_before": 12.213243886661283,
+      "development_nll_after": 2.668949262731908,
+      "temperature_bounds": [
+        0.05,
+        20
+      ],
+      "fit_split": "development",
+      "heldout_before": {
+        "probability_rows": 3080,
+        "multiclass_brier": 0.9518292440887457,
+        "nll": 12.261833508751343,
+        "ece_10_equal_width": 0.47189263390522895
+      },
+      "heldout_after": {
+        "probability_rows": 3080,
+        "multiclass_brier": 0.7122347599960959,
+        "nll": 2.6662352151309667,
+        "ece_10_equal_width": 0.053117871602472236
+      },
+      "approximation": "Temperature scales log rounded stored probabilities, floored at 1e-12; original logits are unavailable. Predictions stay unchanged."
+    }
+  ],
+  "selection": "Lexicographically latest completed, validated run per target and split; no score-based selection.",
+  "jev_comparison": {
+    "base_input": "/Users/alexanderollman/jevtest/bench/results/20260919T193206_banking77_jev.json",
+    "fine_input": "/Users/alexanderollman/jevtest/bench/results/20260919T202651_banking77_laya_laya-banking77-gold-1k.json",
+    "accuracy_delta_fine_minus_base": -0.005194805194805195,
+    "percentile_95": [
+      -0.019798766634209673,
+      0.00974342318934719
+    ],
+    "n_rows": 3080,
+    "n_text_groups": 3076,
+    "resamples": 5000,
+    "seed": 7,
+    "method": "paired request-text cluster bootstrap, row-weighted accuracy",
+    "limitation": "Conditional on these checkpoints and test data; not training-seed robustness."
+  }
+}

@@ -5,14 +5,14 @@ order: 1
 
 # Reproduce the moderation study
 
-There are two useful levels of reproduction: check the published scores using saved predictions, or download the base model and repeat training and inference. The first is much faster and needs no GPU. Both require the original data to verify example IDs, labels and split hashes; dataset text is deliberately excluded from this repository.
+There are two useful levels of reproduction: check the published scores using saved predictions, or download the base model and repeat training and inference. The first is much faster and needs no GPU. Both require the original data to verify example IDs, labels and split hashes; moderation dataset text is deliberately excluded from this repository.
 
-The publication branch is `research/moderation-publication`. [`PUBLIC_SHA256SUMS.json`](../PUBLIC_SHA256SUMS.json) records the files in the public snapshot; historical evidence retains its own recorded hashes.
+The publication branch is `research/full-report`. [`PUBLIC_SHA256SUMS.json`](../PUBLIC_SHA256SUMS.json) records the files in the public snapshot; historical evidence retains its own recorded hashes.
 
 ## 1. Set up a local copy
 
 ```sh
-git clone --branch research/moderation-publication https://github.com/Alexander-Ollman/laya-ft.git
+git clone --branch research/full-report https://github.com/Alexander-Ollman/laya-ft.git
 cd laya-ft
 python3.12 -m venv .venv
 source .venv/bin/activate
@@ -58,7 +58,7 @@ python -m pip install 'matplotlib==3.11.2'
 python build_public_site.py
 ```
 
-This writes `../index.html` and downloadable charts under `../assets/`. You can rebuild that presentation from the included analysis and evidence manifests without downloading data; independent rescoring still requires steps 1–3.
+This writes `../moderation.html` and downloadable charts under `../assets/`. You can rebuild that presentation from the included analysis and evidence manifests without downloading data; independent rescoring still requires steps 1–3.
 
 Historical filesystem paths in the evidence identify the original run; they are not portable checkpoint downloads. The analysis records whether checkpoint bytes are locally available. Without the original weights, it verifies consistent recorded model identities, rather than independently rehashing unavailable weights. The recorded checkpoint configurations and hashes are in [`checkpoint_manifest.json`](../bench/results/moderation-study/checkpoint_manifest.json).
 

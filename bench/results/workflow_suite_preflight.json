@@ -1,0 +1,117 @@
+{
+  "sms": {
+    "train": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 249,
+      "option_tokens": 4,
+      "instruction_tokens": 18
+    },
+    "development": {
+      "n": 200,
+      "input_truncated": 0,
+      "longest_tokens": 115,
+      "option_tokens": 4,
+      "instruction_tokens": 18
+    },
+    "heldout": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 170,
+      "option_tokens": 4,
+      "instruction_tokens": 18
+    }
+  },
+  "massive": {
+    "train": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 383,
+      "option_tokens": 316,
+      "instruction_tokens": 24
+    },
+    "development": {
+      "n": 200,
+      "input_truncated": 0,
+      "longest_tokens": 378,
+      "option_tokens": 316,
+      "instruction_tokens": 24
+    },
+    "heldout": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 375,
+      "option_tokens": 316,
+      "instruction_tokens": 24
+    }
+  },
+  "injection": {
+    "train": {
+      "n": 446,
+      "input_truncated": 0,
+      "longest_tokens": 602,
+      "option_tokens": 6,
+      "instruction_tokens": 47
+    },
+    "development": {
+      "n": 100,
+      "input_truncated": 1,
+      "longest_tokens": 1060,
+      "option_tokens": 6,
+      "instruction_tokens": 47
+    },
+    "heldout": {
+      "n": 116,
+      "input_truncated": 0,
+      "longest_tokens": 264,
+      "option_tokens": 6,
+      "instruction_tokens": 47
+    }
+  },
+  "counterfactual": {
+    "train": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 145,
+      "option_tokens": 10,
+      "instruction_tokens": 35
+    },
+    "development": {
+      "n": 200,
+      "input_truncated": 0,
+      "longest_tokens": 134,
+      "option_tokens": 10,
+      "instruction_tokens": 35
+    },
+    "heldout": {
+      "n": 670,
+      "input_truncated": 0,
+      "longest_tokens": 168,
+      "option_tokens": 10,
+      "instruction_tokens": 35
+    }
+  },
+  "emotion": {
+    "train": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 98,
+      "option_tokens": 12,
+      "instruction_tokens": 16
+    },
+    "development": {
+      "n": 200,
+      "input_truncated": 0,
+      "longest_tokens": 98,
+      "option_tokens": 12,
+      "instruction_tokens": 16
+    },
+    "heldout": {
+      "n": 1000,
+      "input_truncated": 0,
+      "longest_tokens": 97,
+      "option_tokens": 12,
+      "instruction_tokens": 16
+    }
+  }
+}

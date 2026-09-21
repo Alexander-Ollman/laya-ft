@@ -1,0 +1,5174 @@
+{
+  "schema": "workflow-suite-analysis-v1",
+  "tasks": [
+    {
+      "slug": "injection",
+      "dataset": "deepset/prompt-injections",
+      "manifest": "/Users/alexanderollman/jevtest/train/workflow-suite/injection/manifest.json",
+      "manifest_sha256": "487ec7a21b22dd04a47ee05d84c1e408edbfb51a53ed30954cfa3716f6047050",
+      "cases": "/Users/alexanderollman/jevtest/train/workflow-suite/injection/heldout.jsonl",
+      "cases_sha256": "d03c3e0330eacc5b86056fb0c8c674acb2e54420e561af6ecf1a39092e090dd8",
+      "source": "https://huggingface.co/datasets/deepset/prompt-injections",
+      "train": 446,
+      "development": 100,
+      "test": 116,
+      "labels": [
+        "benign",
+        "prompt_injection"
+      ],
+      "runs": {
+        "laya:base": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T141940_suite_injection_heldout_laya_base.json",
+          "input_sha256": "04ff89b201db7bb6bf2758baecbf1da42b30b4222ad2c260f1b3b8e45292c1ce",
+          "target": "laya:base",
+          "summary": {
+            "n": 116,
+            "correct": 82,
+            "accuracy": 0.7068965517241379,
+            "wilson_95": [
+              0.618499809228177,
+              0.7820293604961104
+            ],
+            "macro_f1": 0.6979166666666667,
+            "errors": 0,
+            "probability_rows": 116,
+            "multiclass_brier": 0.40245676224137933,
+            "nll": 0.5955518465255618,
+            "ece_10_equal_width": 0.06185948275862072,
+            "p50_ms": 19.204417010769248,
+            "p95_ms": 33.003624994307756,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 116,
+            "per_class": {
+              "benign": {
+                "support": 56,
+                "negative_support": 60,
+                "tp": 51,
+                "fp": 29,
+                "fn": 5,
+                "tn": 31,
+                "precision": 0.6375,
+                "recall": 0.9107142857142857,
+                "recall_wilson_95": [
+                  0.8074399861448884,
+                  0.9612578515504131
+                ],
+                "false_positive_rate": 0.48333333333333334,
+                "false_positive_wilson_95": [
+                  0.36175049539732784,
+                  0.6069218996740751
+                ]
+              },
+              "prompt_injection": {
+                "support": 60,
+                "negative_support": 56,
+                "tp": 31,
+                "fp": 5,
+                "fn": 29,
+                "tn": 51,
+                "precision": 0.8611111111111112,
+                "recall": 0.5166666666666667,
+                "recall_wilson_95": [
+                  0.39307810032592494,
+                  0.6382495046026722
+                ],
+                "false_positive_rate": 0.08928571428571429,
+                "false_positive_wilson_95": [
+                  0.03874214844958693,
+                  0.19256001385511162
+                ]
+              }
+            },
+            "majority_baseline": 0.5172413793103449,
+            "safety_positive_class": {
+              "label": "prompt_injection",
+              "support": 60,
+              "negative_support": 56,
+              "tp": 31,
+              "fp": 5,
+              "fn": 29,
+              "tn": 51,
+              "precision": 0.8611111111111112,
+              "recall": 0.5166666666666667,
+              "recall_wilson_95": [
+                0.39307810032592494,
+                0.6382495046026722
+              ],
+              "false_positive_rate": 0.08928571428571429,
+              "false_positive_wilson_95": [
+                0.03874214844958693,
+                0.19256001385511162
+              ]
+            }
+          },
+          "model_resolved": [
+            "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "laya:fine": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142152_suite_injection_heldout_laya_fine.json",
+          "input_sha256": "5b22ec811f975cf6e73828b80916ed064abae937e828cebad7a8cd5911f08111",
+          "target": "laya:fine",
+          "summary": {
+            "n": 116,
+            "correct": 110,
+            "accuracy": 0.9482758620689655,
+            "wilson_95": [
+              0.8917318545323354,
+              0.976081346536954
+            ],
+            "macro_f1": 0.9482142857142857,
+            "errors": 0,
+            "probability_rows": 116,
+            "multiclass_brier": 0.06801858706896552,
+            "nll": 0.12537128624303268,
+            "ece_10_equal_width": 0.07056982758620686,
+            "p50_ms": 21.686124964617193,
+            "p95_ms": 28.560625039972365,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 116,
+            "per_class": {
+              "benign": {
+                "support": 56,
+                "negative_support": 60,
+                "tp": 53,
+                "fp": 3,
+                "fn": 3,
+                "tn": 57,
+                "precision": 0.9464285714285714,
+                "recall": 0.9464285714285714,
+                "recall_wilson_95": [
+                  0.8539269093117847,
+                  0.9816142186178909
+                ],
+                "false_positive_rate": 0.05,
+                "false_positive_wilson_95": [
+                  0.01714950216439568,
+                  0.1370051647634852
+                ]
+              },
+              "prompt_injection": {
+                "support": 60,
+                "negative_support": 56,
+                "tp": 57,
+                "fp": 3,
+                "fn": 3,
+                "tn": 53,
+                "precision": 0.95,
+                "recall": 0.95,
+                "recall_wilson_95": [
+                  0.8629948352365147,
+                  0.9828504978356043
+                ],
+                "false_positive_rate": 0.05357142857142857,
+                "false_positive_wilson_95": [
+                  0.018385781382109126,
+                  0.14607309068821533
+                ]
+              }
+            },
+            "majority_baseline": 0.5172413793103449,
+            "safety_positive_class": {
+              "label": "prompt_injection",
+              "support": 60,
+              "negative_support": 56,
+              "tp": 57,
+              "fp": 3,
+              "fn": 3,
+              "tn": 53,
+              "precision": 0.95,
+              "recall": 0.95,
+              "recall_wilson_95": [
+                0.8629948352365147,
+                0.9828504978356043
+              ],
+              "false_positive_rate": 0.05357142857142857,
+              "false_positive_wilson_95": [
+                0.018385781382109126,
+                0.14607309068821533
+              ]
+            }
+          },
+          "model_resolved": [
+            "sha256:b2290b507a94f1f77ea462da00074aeb7751f9faa6a7f5233d7ace14df4a5d9a"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "jev": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T141919_suite_injection_heldout_jev.json",
+          "input_sha256": "9ee2deb9fd3e7b6a48fa6042c4f962aee0f1f19990ad5226a45fe037fe7f85a6",
+          "target": "jev",
+          "summary": {
+            "n": 116,
+            "correct": 92,
+            "accuracy": 0.7931034482758621,
+            "wilson_95": [
+              0.7105774078005253,
+              0.8568389159755486
+            ],
+            "macro_f1": 0.7867647058823529,
+            "errors": 0,
+            "probability_rows": 116,
+            "multiclass_brier": 0.33585862068965516,
+            "nll": 1.4028211836288964,
+            "ece_10_equal_width": 0.14034482758620687,
+            "p50_ms": 203.11291597317904,
+            "p95_ms": 364.0929580433294,
+            "cost_usd": 0.001784916,
+            "reported_cost_usd": 0.001784916,
+            "cost_reported_rows": 116,
+            "cost_unknown_rows": 0,
+            "per_class": {
+              "benign": {
+                "support": 56,
+                "negative_support": 60,
+                "tp": 56,
+                "fp": 24,
+                "fn": 0,
+                "tn": 36,
+                "precision": 0.7,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.9358060632812366,
+                  1.0
+                ],
+                "false_positive_rate": 0.4,
+                "false_positive_wilson_95": [
+                  0.2856949053488255,
+                  0.5263394650795924
+                ]
+              },
+              "prompt_injection": {
+                "support": 60,
+                "negative_support": 56,
+                "tp": 36,
+                "fp": 0,
+                "fn": 24,
+                "tn": 56,
+                "precision": 1.0,
+                "recall": 0.6,
+                "recall_wilson_95": [
+                  0.4736605349204075,
+                  0.7143050946511744
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  6.938893903907228e-18,
+                  0.06419393671876342
+                ]
+              }
+            },
+            "majority_baseline": 0.5172413793103449,
+            "safety_positive_class": {
+              "label": "prompt_injection",
+              "support": 60,
+              "negative_support": 56,
+              "tp": 36,
+              "fp": 0,
+              "fn": 24,
+              "tn": 56,
+              "precision": 1.0,
+              "recall": 0.6,
+              "recall_wilson_95": [
+                0.4736605349204075,
+                0.7143050946511744
+              ],
+              "false_positive_rate": 0.0,
+              "false_positive_wilson_95": [
+                6.938893903907228e-18,
+                0.06419393671876342
+              ]
+            }
+          },
+          "model_resolved": [
+            "typesafe/jev-1.13-20260917"
+          ],
+          "missing_model_identity_rows": 0
+        }
+      },
+      "basecomparison": {
+        "reference_target": "laya:base",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T141940_suite_injection_heldout_laya_base.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142152_suite_injection_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.25029761904761894,
+        "macro_f1_interval": [
+          0.13972567810294623,
+          0.3650534424460807
+        ],
+        "macro_f1_confidence": 0.99,
+        "accuracy_delta_fine_minus_reference": 0.24137931034482762,
+        "accuracy_interval_95": [
+          0.15517241379310354,
+          0.3275862068965517
+        ],
+        "n_rows": 116,
+        "n_text_groups": 116,
+        "classes": 2,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "99% macro-F1 interval: Bonferroni family of five primary contrasts",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "jevcomparison": {
+        "reference_target": "jev",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T141919_suite_injection_heldout_jev.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142152_suite_injection_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.16144957983193275,
+        "macro_f1_interval": [
+          0.08466151897259483,
+          0.2435317145062854
+        ],
+        "macro_f1_confidence": 0.95,
+        "accuracy_delta_fine_minus_reference": 0.15517241379310343,
+        "accuracy_interval_95": [
+          0.07758620689655171,
+          0.23275862068965514
+        ],
+        "n_rows": 116,
+        "n_text_groups": 116,
+        "classes": 2,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "Descriptive secondary 95% intervals; no multiplicity correction",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "pending": []
+    },
+    {
+      "slug": "sms",
+      "dataset": "ucirvine/sms_spam",
+      "manifest": "/Users/alexanderollman/jevtest/train/workflow-suite/sms/manifest.json",
+      "manifest_sha256": "52c3dff58602806c3a9c6abfc01d277cf8116428511e65ef8efe979f23ea4e50",
+      "cases": "/Users/alexanderollman/jevtest/train/workflow-suite/sms/heldout.jsonl",
+      "cases_sha256": "e7d34c14baa0d2889bf13daf16aaac1252b80cafce6eb4212c02855aac363c0c",
+      "source": "https://huggingface.co/datasets/ucirvine/sms_spam",
+      "train": 1000,
+      "development": 200,
+      "test": 1000,
+      "labels": [
+        "legitimate",
+        "spam"
+      ],
+      "runs": {
+        "laya:base": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142218_suite_sms_heldout_laya_base.json",
+          "input_sha256": "4992d170ec237830dc85b88ac8a43f1a313e6b36c231bd27936d45953d24718d",
+          "target": "laya:base",
+          "summary": {
+            "n": 1000,
+            "correct": 852,
+            "accuracy": 0.852,
+            "wilson_95": [
+              0.828644950702635,
+              0.8726610113235342
+            ],
+            "macro_f1": 0.7595841455490578,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.22512705408,
+            "nll": 0.38012646186469723,
+            "ece_10_equal_width": 0.050978800000000046,
+            "p50_ms": 18.08000006712973,
+            "p95_ms": 23.536125081591308,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 1000,
+            "per_class": {
+              "legitimate": {
+                "support": 877,
+                "negative_support": 123,
+                "tp": 736,
+                "fp": 7,
+                "fn": 141,
+                "tn": 116,
+                "precision": 0.990578734858681,
+                "recall": 0.8392246294184721,
+                "recall_wilson_95": [
+                  0.8134425441118529,
+                  0.8620479133838808
+                ],
+                "false_positive_rate": 0.056910569105691054,
+                "false_positive_wilson_95": [
+                  0.027837979583125644,
+                  0.11282154125946575
+                ]
+              },
+              "spam": {
+                "support": 123,
+                "negative_support": 877,
+                "tp": 116,
+                "fp": 141,
+                "fn": 7,
+                "tn": 736,
+                "precision": 0.45136186770428016,
+                "recall": 0.943089430894309,
+                "recall_wilson_95": [
+                  0.8871784587405342,
+                  0.9721620204168744
+                ],
+                "false_positive_rate": 0.16077537058152794,
+                "false_positive_wilson_95": [
+                  0.13795208661611935,
+                  0.18655745588814715
+                ]
+              }
+            },
+            "majority_baseline": 0.877,
+            "safety_positive_class": {
+              "label": "spam",
+              "support": 123,
+              "negative_support": 877,
+              "tp": 116,
+              "fp": 141,
+              "fn": 7,
+              "tn": 736,
+              "precision": 0.45136186770428016,
+              "recall": 0.943089430894309,
+              "recall_wilson_95": [
+                0.8871784587405342,
+                0.9721620204168744
+              ],
+              "false_positive_rate": 0.16077537058152794,
+              "false_positive_wilson_95": [
+                0.13795208661611935,
+                0.18655745588814715
+              ]
+            }
+          },
+          "model_resolved": [
+            "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "laya:fine": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142608_suite_sms_heldout_laya_fine.json",
+          "input_sha256": "dcaf5ef57024eb9de0ae3c572d0a3280de387b413de0a60d92346bad424c1933",
+          "target": "laya:fine",
+          "summary": {
+            "n": 1000,
+            "correct": 992,
+            "accuracy": 0.992,
+            "wilson_95": [
+              0.9842936654690199,
+              0.995940804181194
+            ],
+            "macro_f1": 0.980923129751333,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.020235877380000003,
+            "nll": 0.07286128078602429,
+            "ece_10_equal_width": 0.04025050000000002,
+            "p50_ms": 19.176417030394077,
+            "p95_ms": 28.094375040382147,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 1000,
+            "per_class": {
+              "legitimate": {
+                "support": 877,
+                "negative_support": 123,
+                "tp": 877,
+                "fp": 8,
+                "fn": 0,
+                "tn": 115,
+                "precision": 0.9909604519774011,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.9956388760063166,
+                  1.0000000000000002
+                ],
+                "false_positive_rate": 0.06504065040650407,
+                "false_positive_wilson_95": [
+                  0.033322636380229045,
+                  0.12310459967625977
+                ]
+              },
+              "spam": {
+                "support": 123,
+                "negative_support": 877,
+                "tp": 115,
+                "fp": 0,
+                "fn": 8,
+                "tn": 877,
+                "precision": 1.0,
+                "recall": 0.9349593495934959,
+                "recall_wilson_95": [
+                  0.8768954003237401,
+                  0.966677363619771
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.004361123993683522
+                ]
+              }
+            },
+            "majority_baseline": 0.877,
+            "safety_positive_class": {
+              "label": "spam",
+              "support": 123,
+              "negative_support": 877,
+              "tp": 115,
+              "fp": 0,
+              "fn": 8,
+              "tn": 877,
+              "precision": 1.0,
+              "recall": 0.9349593495934959,
+              "recall_wilson_95": [
+                0.8768954003237401,
+                0.966677363619771
+              ],
+              "false_positive_rate": 0.0,
+              "false_positive_wilson_95": [
+                0.0,
+                0.004361123993683522
+              ]
+            }
+          },
+          "model_resolved": [
+            "sha256:caabecdf0652a14c30378aed01791bb3c69ed0efc07ae074d5231fef5fa5395b"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "jev": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T141957_suite_sms_heldout_jev.json",
+          "input_sha256": "5eafeaa0dcd34f6e9359827b6029ed160ccc25db341fc615f5957b296aa9536c",
+          "target": "jev",
+          "summary": {
+            "n": 1000,
+            "correct": 955,
+            "accuracy": 0.955,
+            "wilson_95": [
+              0.9403171620637766,
+              0.9662004877143683
+            ],
+            "macro_f1": 0.9084679363180922,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.0655604,
+            "nll": 0.1111536418666352,
+            "ece_10_equal_width": 0.009799999999999915,
+            "p50_ms": 190.39141689427197,
+            "p95_ms": 310.7826249906793,
+            "cost_usd": 0.013785618,
+            "reported_cost_usd": 0.013785618,
+            "cost_reported_rows": 1000,
+            "cost_unknown_rows": 0,
+            "per_class": {
+              "legitimate": {
+                "support": 877,
+                "negative_support": 123,
+                "tp": 834,
+                "fp": 2,
+                "fn": 43,
+                "tn": 121,
+                "precision": 0.9976076555023924,
+                "recall": 0.95096921322691,
+                "recall_wilson_95": [
+                  0.9346075801833932,
+                  0.963397380957994
+                ],
+                "false_positive_rate": 0.016260162601626018,
+                "false_positive_wilson_95": [
+                  0.004470508507497795,
+                  0.0573504362656066
+                ]
+              },
+              "spam": {
+                "support": 123,
+                "negative_support": 877,
+                "tp": 121,
+                "fp": 43,
+                "fn": 2,
+                "tn": 834,
+                "precision": 0.7378048780487805,
+                "recall": 0.983739837398374,
+                "recall_wilson_95": [
+                  0.9426495637343935,
+                  0.9955294914925021
+                ],
+                "false_positive_rate": 0.04903078677309008,
+                "false_positive_wilson_95": [
+                  0.036602619042006096,
+                  0.06539241981660698
+                ]
+              }
+            },
+            "majority_baseline": 0.877,
+            "safety_positive_class": {
+              "label": "spam",
+              "support": 123,
+              "negative_support": 877,
+              "tp": 121,
+              "fp": 43,
+              "fn": 2,
+              "tn": 834,
+              "precision": 0.7378048780487805,
+              "recall": 0.983739837398374,
+              "recall_wilson_95": [
+                0.9426495637343935,
+                0.9955294914925021
+              ],
+              "false_positive_rate": 0.04903078677309008,
+              "false_positive_wilson_95": [
+                0.036602619042006096,
+                0.06539241981660698
+              ]
+            }
+          },
+          "model_resolved": [
+            "typesafe/jev-1.13-20260917"
+          ],
+          "missing_model_identity_rows": 0
+        }
+      },
+      "basecomparison": {
+        "reference_target": "laya:base",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142218_suite_sms_heldout_laya_base.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142608_suite_sms_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.22133898420227516,
+        "macro_f1_interval": [
+          0.17798538921032706,
+          0.2654030390131007
+        ],
+        "macro_f1_confidence": 0.99,
+        "accuracy_delta_fine_minus_reference": 0.14,
+        "accuracy_interval_95": [
+          0.11699999999999999,
+          0.16200000000000003
+        ],
+        "n_rows": 1000,
+        "n_text_groups": 1000,
+        "classes": 2,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "99% macro-F1 interval: Bonferroni family of five primary contrasts",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "jevcomparison": {
+        "reference_target": "jev",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T141957_suite_sms_heldout_jev.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142608_suite_sms_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.0724551934332408,
+        "macro_f1_interval": [
+          0.04488805268868835,
+          0.10185808814634624
+        ],
+        "macro_f1_confidence": 0.95,
+        "accuracy_delta_fine_minus_reference": 0.03700000000000003,
+        "accuracy_interval_95": [
+          0.02400000000000002,
+          0.051000000000000045
+        ],
+        "n_rows": 1000,
+        "n_text_groups": 1000,
+        "classes": 2,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "Descriptive secondary 95% intervals; no multiplicity correction",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "pending": []
+    },
+    {
+      "slug": "emotion",
+      "dataset": "dair-ai/emotion",
+      "manifest": "/Users/alexanderollman/jevtest/train/workflow-suite/emotion/manifest.json",
+      "manifest_sha256": "592ced514f4c6f35cce6ee6c63800edefcd02d56907136d40f9dd7af8516ed74",
+      "cases": "/Users/alexanderollman/jevtest/train/workflow-suite/emotion/heldout.jsonl",
+      "cases_sha256": "8783e7c10f538d8dfa510e44f571a2a6c44249999caea983252b4fa440001db7",
+      "source": "https://huggingface.co/datasets/dair-ai/emotion",
+      "train": 1000,
+      "development": 200,
+      "test": 1000,
+      "labels": [
+        "sadness",
+        "joy",
+        "love",
+        "anger",
+        "fear",
+        "surprise"
+      ],
+      "runs": {
+        "laya:base": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142650_suite_emotion_heldout_laya_base.json",
+          "input_sha256": "f5d1a18f2d8ec0c95a81d39591930c4313fcd1ddd92e3ebd4b61c88c22f39028",
+          "target": "laya:base",
+          "summary": {
+            "n": 1000,
+            "correct": 568,
+            "accuracy": 0.568,
+            "wilson_95": [
+              0.5370956553028252,
+              0.5983839055431392
+            ],
+            "macro_f1": 0.47062703352326185,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.7385966843577463,
+            "nll": 2.3583238610642474,
+            "ece_10_equal_width": 0.33769120876800096,
+            "p50_ms": 15.841540996916592,
+            "p95_ms": 19.334457931108773,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 1000,
+            "per_class": {
+              "sadness": {
+                "support": 291,
+                "negative_support": 709,
+                "tp": 206,
+                "fp": 175,
+                "fn": 85,
+                "tn": 534,
+                "precision": 0.5406824146981627,
+                "recall": 0.7079037800687286,
+                "recall_wilson_95": [
+                  0.6532200227040902,
+                  0.7571700238109943
+                ],
+                "false_positive_rate": 0.2468265162200282,
+                "false_positive_wilson_95": [
+                  0.21650990772550383,
+                  0.2798717974099972
+                ]
+              },
+              "joy": {
+                "support": 347,
+                "negative_support": 653,
+                "tp": 227,
+                "fp": 89,
+                "fn": 120,
+                "tn": 564,
+                "precision": 0.7183544303797469,
+                "recall": 0.654178674351585,
+                "recall_wilson_95": [
+                  0.6026920143838014,
+                  0.702289045607415
+                ],
+                "false_positive_rate": 0.1362940275650842,
+                "false_positive_wilson_95": [
+                  0.11209652965952474,
+                  0.1647457073502642
+                ]
+              },
+              "love": {
+                "support": 80,
+                "negative_support": 920,
+                "tp": 27,
+                "fp": 72,
+                "fn": 53,
+                "tn": 848,
+                "precision": 0.2727272727272727,
+                "recall": 0.3375,
+                "recall_wilson_95": [
+                  0.24345612608081602,
+                  0.4464347660182303
+                ],
+                "false_positive_rate": 0.0782608695652174,
+                "false_positive_wilson_95": [
+                  0.0626068461433829,
+                  0.0974221906671293
+                ]
+              },
+              "anger": {
+                "support": 137,
+                "negative_support": 863,
+                "tp": 56,
+                "fp": 56,
+                "fn": 81,
+                "tn": 807,
+                "precision": 0.5,
+                "recall": 0.40875912408759124,
+                "recall_wilson_95": [
+                  0.3300202944904852,
+                  0.4924751538715798
+                ],
+                "false_positive_rate": 0.06488991888760139,
+                "false_positive_wilson_95": [
+                  0.050306880091260525,
+                  0.08332938942714965
+                ]
+              },
+              "fear": {
+                "support": 112,
+                "negative_support": 888,
+                "tp": 44,
+                "fp": 26,
+                "fn": 68,
+                "tn": 862,
+                "precision": 0.6285714285714286,
+                "recall": 0.39285714285714285,
+                "recall_wilson_95": [
+                  0.3074029431755071,
+                  0.48541734548169513
+                ],
+                "false_positive_rate": 0.02927927927927928,
+                "false_positive_wilson_95": [
+                  0.02005809649511671,
+                  0.042555564563581755
+                ]
+              },
+              "surprise": {
+                "support": 33,
+                "negative_support": 967,
+                "tp": 8,
+                "fp": 14,
+                "fn": 25,
+                "tn": 953,
+                "precision": 0.36363636363636365,
+                "recall": 0.24242424242424243,
+                "recall_wilson_95": [
+                  0.1283171337717501,
+                  0.4102461982955736
+                ],
+                "false_positive_rate": 0.014477766287487074,
+                "false_positive_wilson_95": [
+                  0.008643415905669728,
+                  0.024154378761415005
+                ]
+              }
+            },
+            "majority_baseline": 0.347
+          },
+          "model_resolved": [
+            "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "laya:fine": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143020_suite_emotion_heldout_laya_fine.json",
+          "input_sha256": "ec01b1bb53915864453bcb2093730684ad9b6029ce3cf8580a2103403bbbe65c",
+          "target": "laya:fine",
+          "summary": {
+            "n": 1000,
+            "correct": 731,
+            "accuracy": 0.731,
+            "wilson_95": [
+              0.7026702288645861,
+              0.7575618087150875
+            ],
+            "macro_f1": 0.6588501841103009,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.3888691976809072,
+            "nll": 0.7599551702597527,
+            "ece_10_equal_width": 0.06843553470047845,
+            "p50_ms": 16.340957954525948,
+            "p95_ms": 20.27554204687476,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 1000,
+            "per_class": {
+              "sadness": {
+                "support": 291,
+                "negative_support": 709,
+                "tp": 217,
+                "fp": 51,
+                "fn": 74,
+                "tn": 658,
+                "precision": 0.8097014925373134,
+                "recall": 0.7457044673539519,
+                "recall_wilson_95": [
+                  0.6926944876929252,
+                  0.792311930915811
+                ],
+                "false_positive_rate": 0.07193229901269393,
+                "false_positive_wilson_95": [
+                  0.05513215540808711,
+                  0.09334610369288526
+                ]
+              },
+              "joy": {
+                "support": 347,
+                "negative_support": 653,
+                "tp": 286,
+                "fp": 86,
+                "fn": 61,
+                "tn": 567,
+                "precision": 0.7688172043010753,
+                "recall": 0.8242074927953891,
+                "recall_wilson_95": [
+                  0.7806697082526072,
+                  0.860645604813035
+                ],
+                "false_positive_rate": 0.13169984686064318,
+                "false_positive_wilson_95": [
+                  0.107903255567629,
+                  0.15980435706754678
+                ]
+              },
+              "love": {
+                "support": 80,
+                "negative_support": 920,
+                "tp": 34,
+                "fp": 28,
+                "fn": 46,
+                "tn": 892,
+                "precision": 0.5483870967741935,
+                "recall": 0.425,
+                "recall_wilson_95": [
+                  0.3225656178960177,
+                  0.5343071015343113
+                ],
+                "false_positive_rate": 0.030434782608695653,
+                "false_positive_wilson_95": [
+                  0.021139511689547242,
+                  0.04363508599638384
+                ]
+              },
+              "anger": {
+                "support": 137,
+                "negative_support": 863,
+                "tp": 87,
+                "fp": 39,
+                "fn": 50,
+                "tn": 824,
+                "precision": 0.6904761904761905,
+                "recall": 0.635036496350365,
+                "recall_wilson_95": [
+                  0.5517608247830071,
+                  0.7109459116411366
+                ],
+                "false_positive_rate": 0.04519119351100811,
+                "false_positive_wilson_95": [
+                  0.03323246515070242,
+                  0.06118094573072499
+                ]
+              },
+              "fear": {
+                "support": 112,
+                "negative_support": 888,
+                "tp": 92,
+                "fp": 57,
+                "fn": 20,
+                "tn": 831,
+                "precision": 0.6174496644295302,
+                "recall": 0.8214285714285714,
+                "recall_wilson_95": [
+                  0.7402157394774973,
+                  0.8813233945508958
+                ],
+                "false_positive_rate": 0.06418918918918919,
+                "false_positive_wilson_95": [
+                  0.04987190437442539,
+                  0.08226083923733611
+                ]
+              },
+              "surprise": {
+                "support": 33,
+                "negative_support": 967,
+                "tp": 15,
+                "fp": 8,
+                "fn": 18,
+                "tn": 959,
+                "precision": 0.6521739130434783,
+                "recall": 0.45454545454545453,
+                "recall_wilson_95": [
+                  0.29842938513876116,
+                  0.6201406146378254
+                ],
+                "false_positive_rate": 0.008273009307135471,
+                "false_positive_wilson_95": [
+                  0.004197911671517108,
+                  0.016239471425817914
+                ]
+              }
+            },
+            "majority_baseline": 0.347
+          },
+          "model_resolved": [
+            "sha256:643984f37b506c404de9e49ddbee9bea5c8c3afc87c2c0ec4b1ec21c30d4e8cb"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "jev": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142324_suite_emotion_heldout_jev.json",
+          "input_sha256": "5f13c2761efdff6fdbcb0998c7fd87188420962036ce2fa2aab3abf7faa17df1",
+          "target": "jev",
+          "summary": {
+            "n": 1000,
+            "correct": 586,
+            "accuracy": 0.586,
+            "wilson_95": [
+              0.5551996791811112,
+              0.6161421183593733
+            ],
+            "macro_f1": 0.49696371084837043,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.6798107193143557,
+            "nll": 5.0826967280941835,
+            "ece_10_equal_width": 0.28033353535353533,
+            "p50_ms": 185.867290943861,
+            "p95_ms": 358.8937500026077,
+            "cost_usd": 0.01459605,
+            "reported_cost_usd": 0.01459605,
+            "cost_reported_rows": 1000,
+            "cost_unknown_rows": 0,
+            "per_class": {
+              "sadness": {
+                "support": 291,
+                "negative_support": 709,
+                "tp": 199,
+                "fp": 136,
+                "fn": 92,
+                "tn": 573,
+                "precision": 0.5940298507462687,
+                "recall": 0.6838487972508591,
+                "recall_wilson_95": [
+                  0.6283254903178893,
+                  0.7345814103194167
+                ],
+                "false_positive_rate": 0.1918194640338505,
+                "false_positive_wilson_95": [
+                  0.1645289427310159,
+                  0.22243151728072205
+                ]
+              },
+              "joy": {
+                "support": 347,
+                "negative_support": 653,
+                "tp": 224,
+                "fp": 82,
+                "fn": 123,
+                "tn": 571,
+                "precision": 0.7320261437908496,
+                "recall": 0.6455331412103746,
+                "recall_wilson_95": [
+                  0.5938601930959467,
+                  0.6940191252135192
+                ],
+                "false_positive_rate": 0.12557427258805512,
+                "false_positive_wilson_95": [
+                  0.10232827930530085,
+                  0.15319983416372396
+                ]
+              },
+              "love": {
+                "support": 80,
+                "negative_support": 920,
+                "tp": 18,
+                "fp": 48,
+                "fn": 62,
+                "tn": 872,
+                "precision": 0.2727272727272727,
+                "recall": 0.225,
+                "recall_wilson_95": [
+                  0.14733207340846635,
+                  0.3278678978360735
+                ],
+                "false_positive_rate": 0.05217391304347826,
+                "false_positive_wilson_95": [
+                  0.03957592395100816,
+                  0.06849614606427797
+                ]
+              },
+              "anger": {
+                "support": 137,
+                "negative_support": 863,
+                "tp": 69,
+                "fp": 54,
+                "fn": 68,
+                "tn": 809,
+                "precision": 0.5609756097560976,
+                "recall": 0.5036496350364964,
+                "recall_wilson_95": [
+                  0.42097642170800376,
+                  0.5861237603575137
+                ],
+                "false_positive_rate": 0.06257242178447277,
+                "false_positive_wilson_95": [
+                  0.048272060166205194,
+                  0.08074975539491289
+                ]
+              },
+              "fear": {
+                "support": 112,
+                "negative_support": 888,
+                "tp": 63,
+                "fp": 69,
+                "fn": 49,
+                "tn": 819,
+                "precision": 0.4772727272727273,
+                "recall": 0.5625,
+                "recall_wilson_95": [
+                  0.4700664958263496,
+                  0.6507883357902824
+                ],
+                "false_positive_rate": 0.0777027027027027,
+                "false_positive_wilson_95": [
+                  0.06185833432084842,
+                  0.09718502189209877
+                ]
+              },
+              "surprise": {
+                "support": 33,
+                "negative_support": 967,
+                "tp": 13,
+                "fp": 25,
+                "fn": 20,
+                "tn": 942,
+                "precision": 0.34210526315789475,
+                "recall": 0.3939393939393939,
+                "recall_wilson_95": [
+                  0.2468310743447709,
+                  0.5631655918005977
+                ],
+                "false_positive_rate": 0.025853154084798345,
+                "false_positive_wilson_95": [
+                  0.017571923325548,
+                  0.037886625886077885
+                ]
+              }
+            },
+            "majority_baseline": 0.347
+          },
+          "model_resolved": [
+            "typesafe/jev-1.13-20260917"
+          ],
+          "missing_model_identity_rows": 0
+        }
+      },
+      "basecomparison": {
+        "reference_target": "laya:base",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142650_suite_emotion_heldout_laya_base.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143020_suite_emotion_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.18822315058703903,
+        "macro_f1_interval": [
+          0.14186125635298072,
+          0.23656037679727834
+        ],
+        "macro_f1_confidence": 0.99,
+        "accuracy_delta_fine_minus_reference": 0.16300000000000003,
+        "accuracy_interval_95": [
+          0.136,
+          0.18999999999999995
+        ],
+        "n_rows": 1000,
+        "n_text_groups": 1000,
+        "classes": 6,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "99% macro-F1 interval: Bonferroni family of five primary contrasts",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "jevcomparison": {
+        "reference_target": "jev",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142324_suite_emotion_heldout_jev.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143020_suite_emotion_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.16188647326193056,
+        "macro_f1_interval": [
+          0.11820465435006879,
+          0.2050170737395765
+        ],
+        "macro_f1_confidence": 0.95,
+        "accuracy_delta_fine_minus_reference": 0.14500000000000002,
+        "accuracy_interval_95": [
+          0.11499999999999999,
+          0.17600000000000005
+        ],
+        "n_rows": 1000,
+        "n_text_groups": 1000,
+        "classes": 6,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "Descriptive secondary 95% intervals; no multiplicity correction",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "pending": []
+    },
+    {
+      "slug": "counterfactual",
+      "dataset": "SetFit/amazon_counterfactual",
+      "manifest": "/Users/alexanderollman/jevtest/train/workflow-suite/counterfactual/manifest.json",
+      "manifest_sha256": "658e4e23d744ea8296e89bd9b9aaf07c560cf2ad722829e6000bf18ee21e6313",
+      "cases": "/Users/alexanderollman/jevtest/train/workflow-suite/counterfactual/heldout.jsonl",
+      "cases_sha256": "ffe27027e8ea7b6baebfc34af7183bf42dc16413b8c0c519717578fcd02cdcf9",
+      "source": "https://huggingface.co/datasets/SetFit/amazon_counterfactual",
+      "train": 1000,
+      "development": 200,
+      "test": 670,
+      "labels": [
+        "not_counterfactual",
+        "counterfactual"
+      ],
+      "runs": {
+        "laya:base": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143059_suite_counterfactual_heldout_laya_base.json",
+          "input_sha256": "f85586724983311ccbc737a8ef47ef67300cfbeb5fd16746d0b070c3ba761489",
+          "target": "laya:base",
+          "summary": {
+            "n": 670,
+            "correct": 546,
+            "accuracy": 0.8149253731343283,
+            "wilson_95": [
+              0.7837525852083813,
+              0.8425074860234365
+            ],
+            "macro_f1": 0.5780513570615959,
+            "errors": 0,
+            "probability_rows": 670,
+            "multiclass_brier": 0.2594765525671642,
+            "nll": 0.4079356007433222,
+            "ece_10_equal_width": 0.030503731343283588,
+            "p50_ms": 18.358999979682267,
+            "p95_ms": 20.68670908920467,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 670,
+            "per_class": {
+              "not_counterfactual": {
+                "support": 539,
+                "negative_support": 131,
+                "tp": 524,
+                "fp": 109,
+                "fn": 15,
+                "tn": 22,
+                "precision": 0.8278041074249605,
+                "recall": 0.9721706864564007,
+                "recall_wilson_95": [
+                  0.9545948596003385,
+                  0.9830638098494605
+                ],
+                "false_positive_rate": 0.8320610687022901,
+                "false_positive_wilson_95": [
+                  0.7588015983551506,
+                  0.8864005580208685
+                ]
+              },
+              "counterfactual": {
+                "support": 131,
+                "negative_support": 539,
+                "tp": 22,
+                "fp": 15,
+                "fn": 109,
+                "tn": 524,
+                "precision": 0.5945945945945946,
+                "recall": 0.16793893129770993,
+                "recall_wilson_95": [
+                  0.11359944197913169,
+                  0.24119840164484946
+                ],
+                "false_positive_rate": 0.027829313543599257,
+                "false_positive_wilson_95": [
+                  0.016936190150539446,
+                  0.045405140399661384
+                ]
+              }
+            },
+            "majority_baseline": 0.8044776119402985,
+            "safety_positive_class": {
+              "label": "counterfactual",
+              "support": 131,
+              "negative_support": 539,
+              "tp": 22,
+              "fp": 15,
+              "fn": 109,
+              "tn": 524,
+              "precision": 0.5945945945945946,
+              "recall": 0.16793893129770993,
+              "recall_wilson_95": [
+                0.11359944197913169,
+                0.24119840164484946
+              ],
+              "false_positive_rate": 0.027829313543599257,
+              "false_positive_wilson_95": [
+                0.016936190150539446,
+                0.045405140399661384
+              ]
+            }
+          },
+          "model_resolved": [
+            "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "laya:fine": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143459_suite_counterfactual_heldout_laya_fine.json",
+          "input_sha256": "8ef36fe9831ad1b11b3b35c680d1ea50e2abb17358338224a0e1686aff859984",
+          "target": "laya:fine",
+          "summary": {
+            "n": 670,
+            "correct": 625,
+            "accuracy": 0.9328358208955224,
+            "wilson_95": [
+              0.9113088108656467,
+              0.9494277799268992
+            ],
+            "macro_f1": 0.8997256173609378,
+            "errors": 0,
+            "probability_rows": 670,
+            "multiclass_brier": 0.09566832988059701,
+            "nll": 0.18562602550939014,
+            "ece_10_equal_width": 0.046880746268656674,
+            "p50_ms": 19.61195794865489,
+            "p95_ms": 22.644542041234672,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 670,
+            "per_class": {
+              "not_counterfactual": {
+                "support": 539,
+                "negative_support": 131,
+                "tp": 505,
+                "fp": 11,
+                "fn": 34,
+                "tn": 120,
+                "precision": 0.9786821705426356,
+                "recall": 0.9369202226345084,
+                "recall_wilson_95": [
+                  0.9131452248725376,
+                  0.9545114221036026
+                ],
+                "false_positive_rate": 0.08396946564885496,
+                "false_positive_wilson_95": [
+                  0.04753307496909216,
+                  0.14411020037589567
+                ]
+              },
+              "counterfactual": {
+                "support": 131,
+                "negative_support": 539,
+                "tp": 120,
+                "fp": 34,
+                "fn": 11,
+                "tn": 505,
+                "precision": 0.7792207792207793,
+                "recall": 0.916030534351145,
+                "recall_wilson_95": [
+                  0.8558897996241043,
+                  0.9524669250309078
+                ],
+                "false_positive_rate": 0.06307977736549165,
+                "false_positive_wilson_95": [
+                  0.04548857789639732,
+                  0.08685477512746237
+                ]
+              }
+            },
+            "majority_baseline": 0.8044776119402985,
+            "safety_positive_class": {
+              "label": "counterfactual",
+              "support": 131,
+              "negative_support": 539,
+              "tp": 120,
+              "fp": 34,
+              "fn": 11,
+              "tn": 505,
+              "precision": 0.7792207792207793,
+              "recall": 0.916030534351145,
+              "recall_wilson_95": [
+                0.8558897996241043,
+                0.9524669250309078
+              ],
+              "false_positive_rate": 0.06307977736549165,
+              "false_positive_wilson_95": [
+                0.04548857789639732,
+                0.08685477512746237
+              ]
+            }
+          },
+          "model_resolved": [
+            "sha256:dac103497d9e477e8b13621ae1be57c46a532020366017e4ab568246973ca312"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "jev": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142710_suite_counterfactual_heldout_jev.json",
+          "input_sha256": "a9cba690e3a72ac0c944e240b67c662e4c27755eaecdfdffcf1debdd648a50bc",
+          "target": "jev",
+          "summary": {
+            "n": 670,
+            "correct": 614,
+            "accuracy": 0.9164179104477612,
+            "wilson_95": [
+              0.8930131132220556,
+              0.9350748482645663
+            ],
+            "macro_f1": 0.864794741697417,
+            "errors": 0,
+            "probability_rows": 670,
+            "multiclass_brier": 0.13631044776119403,
+            "nll": 0.33881156189499767,
+            "ece_10_equal_width": 0.028268656716417907,
+            "p50_ms": 194.8829999892041,
+            "p95_ms": 361.19795800186694,
+            "cost_usd": 0.009936696,
+            "reported_cost_usd": 0.009936696,
+            "cost_reported_rows": 670,
+            "cost_unknown_rows": 0,
+            "per_class": {
+              "not_counterfactual": {
+                "support": 539,
+                "negative_support": 131,
+                "tp": 514,
+                "fp": 31,
+                "fn": 25,
+                "tn": 100,
+                "precision": 0.9431192660550459,
+                "recall": 0.9536178107606679,
+                "recall_wilson_95": [
+                  0.9324269910981342,
+                  0.9683885086286865
+                ],
+                "false_positive_rate": 0.2366412213740458,
+                "false_positive_wilson_95": [
+                  0.17201524951636923,
+                  0.31627269542678826
+                ]
+              },
+              "counterfactual": {
+                "support": 131,
+                "negative_support": 539,
+                "tp": 100,
+                "fp": 25,
+                "fn": 31,
+                "tn": 514,
+                "precision": 0.8,
+                "recall": 0.7633587786259542,
+                "recall_wilson_95": [
+                  0.6837273045732117,
+                  0.8279847504836308
+                ],
+                "false_positive_rate": 0.04638218923933209,
+                "false_positive_wilson_95": [
+                  0.03161149137131346,
+                  0.06757300890186572
+                ]
+              }
+            },
+            "majority_baseline": 0.8044776119402985,
+            "safety_positive_class": {
+              "label": "counterfactual",
+              "support": 131,
+              "negative_support": 539,
+              "tp": 100,
+              "fp": 25,
+              "fn": 31,
+              "tn": 514,
+              "precision": 0.8,
+              "recall": 0.7633587786259542,
+              "recall_wilson_95": [
+                0.6837273045732117,
+                0.8279847504836308
+              ],
+              "false_positive_rate": 0.04638218923933209,
+              "false_positive_wilson_95": [
+                0.03161149137131346,
+                0.06757300890186572
+              ]
+            }
+          },
+          "model_resolved": [
+            "typesafe/jev-1.13-20260917"
+          ],
+          "missing_model_identity_rows": 0
+        }
+      },
+      "basecomparison": {
+        "reference_target": "laya:base",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143059_suite_counterfactual_heldout_laya_base.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143459_suite_counterfactual_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.3216742602993419,
+        "macro_f1_interval": [
+          0.24968430224155316,
+          0.3906718921856456
+        ],
+        "macro_f1_confidence": 0.99,
+        "accuracy_delta_fine_minus_reference": 0.11791044776119408,
+        "accuracy_interval_95": [
+          0.08507462686567169,
+          0.15074626865671636
+        ],
+        "n_rows": 670,
+        "n_text_groups": 670,
+        "classes": 2,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "99% macro-F1 interval: Bonferroni family of five primary contrasts",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "jevcomparison": {
+        "reference_target": "jev",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142710_suite_counterfactual_heldout_jev.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143459_suite_counterfactual_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.03493087566352082,
+        "macro_f1_interval": [
+          0.002873247234916218,
+          0.06756028643081412
+        ],
+        "macro_f1_confidence": 0.95,
+        "accuracy_delta_fine_minus_reference": 0.016417910447761197,
+        "accuracy_interval_95": [
+          -0.004477611940298498,
+          0.03731343283582089
+        ],
+        "n_rows": 670,
+        "n_text_groups": 670,
+        "classes": 2,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "Descriptive secondary 95% intervals; no multiplicity correction",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "pending": []
+    },
+    {
+      "slug": "massive",
+      "dataset": "AmazonScience/massive",
+      "manifest": "/Users/alexanderollman/jevtest/train/workflow-suite/massive/manifest.json",
+      "manifest_sha256": "fa9c07a7157e8caf3cf7ec6150c1d2fe7971a8aa7886abf443d620b96269e15e",
+      "cases": "/Users/alexanderollman/jevtest/train/workflow-suite/massive/heldout.jsonl",
+      "cases_sha256": "00e923304baa2b36f6f484004ef23a25cf71bcccce669aac523294bb6632ba10",
+      "source": "https://huggingface.co/datasets/AmazonScience/massive",
+      "train": 1000,
+      "development": 200,
+      "test": 1000,
+      "labels": [
+        "datetime_query",
+        "iot_hue_lightchange",
+        "transport_ticket",
+        "takeaway_query",
+        "qa_stock",
+        "general_greet",
+        "recommendation_events",
+        "music_dislikeness",
+        "iot_wemo_off",
+        "cooking_recipe",
+        "qa_currency",
+        "transport_traffic",
+        "general_quirky",
+        "weather_query",
+        "audio_volume_up",
+        "email_addcontact",
+        "takeaway_order",
+        "email_querycontact",
+        "iot_hue_lightup",
+        "recommendation_locations",
+        "play_audiobook",
+        "lists_createoradd",
+        "news_query",
+        "alarm_query",
+        "iot_wemo_on",
+        "general_joke",
+        "qa_definition",
+        "social_query",
+        "music_settings",
+        "audio_volume_other",
+        "calendar_remove",
+        "iot_hue_lightdim",
+        "calendar_query",
+        "email_sendemail",
+        "iot_cleaning",
+        "audio_volume_down",
+        "play_radio",
+        "cooking_query",
+        "datetime_convert",
+        "qa_maths",
+        "iot_hue_lightoff",
+        "iot_hue_lighton",
+        "transport_query",
+        "music_likeness",
+        "email_query",
+        "play_music",
+        "audio_volume_mute",
+        "social_post",
+        "alarm_set",
+        "qa_factoid",
+        "calendar_set",
+        "play_game",
+        "alarm_remove",
+        "lists_remove",
+        "transport_taxi",
+        "recommendation_movies",
+        "iot_coffee",
+        "music_query",
+        "play_podcasts",
+        "lists_query"
+      ],
+      "runs": {
+        "laya:base": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143536_suite_massive_heldout_laya_base.json",
+          "input_sha256": "19cfa2e46b19bb28f1017eb52b59bfc79dcc4d5a31b21b55927c7259c62b2699",
+          "target": "laya:base",
+          "summary": {
+            "n": 1000,
+            "correct": 561,
+            "accuracy": 0.561,
+            "wilson_95": [
+              0.5300663276081151,
+              0.5914668078566473
+            ],
+            "macro_f1": 0.4568296860797244,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.8462673187048673,
+            "nll": 10.921466301420738,
+            "ece_10_equal_width": 0.4187604498403794,
+            "p50_ms": 56.806957931257784,
+            "p95_ms": 63.898000051267445,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 1000,
+            "per_class": {
+              "datetime_query": {
+                "support": 30,
+                "negative_support": 970,
+                "tp": 1,
+                "fp": 2,
+                "fn": 29,
+                "tn": 968,
+                "precision": 0.3333333333333333,
+                "recall": 0.03333333333333333,
+                "recall_wilson_95": [
+                  0.005908590381612455,
+                  0.16670390991409173
+                ],
+                "false_positive_rate": 0.002061855670103093,
+                "false_positive_wilson_95": [
+                  0.0005656174167544001,
+                  0.007486472325029649
+                ]
+              },
+              "iot_hue_lightchange": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 9,
+                "fp": 31,
+                "fn": 3,
+                "tn": 957,
+                "precision": 0.225,
+                "recall": 0.75,
+                "recall_wilson_95": [
+                  0.46769466506643426,
+                  0.9110583316059453
+                ],
+                "false_positive_rate": 0.03137651821862348,
+                "false_positive_wilson_95": [
+                  0.022191327073485718,
+                  0.04419172057505687
+                ]
+              },
+              "transport_ticket": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 6,
+                "fp": 2,
+                "fn": 6,
+                "tn": 986,
+                "precision": 0.75,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.2537815976337061,
+                  0.7462184023662939
+                ],
+                "false_positive_rate": 0.0020242914979757085,
+                "false_positive_wilson_95": [
+                  0.0005553093844934257,
+                  0.007350650535772128
+                ]
+              },
+              "takeaway_query": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 1,
+                "fp": 0,
+                "fn": 11,
+                "tn": 988,
+                "precision": 1.0,
+                "recall": 0.08333333333333333,
+                "recall_wilson_95": [
+                  0.014865094404917095,
+                  0.35387991114111694
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.003873057318315413
+                ]
+              },
+              "qa_stock": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 6,
+                "fp": 2,
+                "fn": 3,
+                "tn": 989,
+                "precision": 0.75,
+                "recall": 0.6666666666666666,
+                "recall_wilson_95": [
+                  0.3542021355803963,
+                  0.879416181613089
+                ],
+                "false_positive_rate": 0.0020181634712411706,
+                "false_positive_wilson_95": [
+                  0.0005536277963730236,
+                  0.00732849126005387
+                ]
+              },
+              "general_greet": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 1,
+                "fp": 12,
+                "fn": 0,
+                "tn": 987,
+                "precision": 0.07692307692307693,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.20654931437723745,
+                  1.0
+                ],
+                "false_positive_rate": 0.012012012012012012,
+                "false_positive_wilson_95": [
+                  0.006884545313121704,
+                  0.02087802730073362
+                ]
+              },
+              "recommendation_events": {
+                "support": 15,
+                "negative_support": 985,
+                "tp": 13,
+                "fp": 29,
+                "fn": 2,
+                "tn": 956,
+                "precision": 0.30952380952380953,
+                "recall": 0.8666666666666667,
+                "recall_wilson_95": [
+                  0.6211801716767764,
+                  0.9626387408969346
+                ],
+                "false_positive_rate": 0.029441624365482234,
+                "false_positive_wilson_95": [
+                  0.020576227653198456,
+                  0.041963078591552946
+                ]
+              },
+              "music_dislikeness": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "tn": 999,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.7934506856227626
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038305744012733026
+                ]
+              },
+              "iot_wemo_off": {
+                "support": 6,
+                "negative_support": 994,
+                "tp": 4,
+                "fp": 8,
+                "fn": 2,
+                "tn": 986,
+                "precision": 0.3333333333333333,
+                "recall": 0.6666666666666666,
+                "recall_wilson_95": [
+                  0.299993315138392,
+                  0.9032285888942195
+                ],
+                "false_positive_rate": 0.008048289738430584,
+                "false_positive_wilson_95": [
+                  0.0040837308828117645,
+                  0.01580064919109686
+                ]
+              },
+              "cooking_recipe": {
+                "support": 24,
+                "negative_support": 976,
+                "tp": 14,
+                "fp": 3,
+                "fn": 10,
+                "tn": 973,
+                "precision": 0.8235294117647058,
+                "recall": 0.5833333333333334,
+                "recall_wilson_95": [
+                  0.3883466586522876,
+                  0.7553239739018824
+                ],
+                "false_positive_rate": 0.0030737704918032786,
+                "false_positive_wilson_95": [
+                  0.0010458980671250477,
+                  0.008998031725903907
+                ]
+              },
+              "qa_currency": {
+                "support": 13,
+                "negative_support": 987,
+                "tp": 11,
+                "fp": 2,
+                "fn": 2,
+                "tn": 985,
+                "precision": 0.8461538461538461,
+                "recall": 0.8461538461538461,
+                "recall_wilson_95": [
+                  0.5776536898051745,
+                  0.9567418216419186
+                ],
+                "false_positive_rate": 0.002026342451874367,
+                "false_positive_wilson_95": [
+                  0.0005558721862357814,
+                  0.007358066770282126
+                ]
+              },
+              "transport_traffic": {
+                "support": 5,
+                "negative_support": 995,
+                "tp": 4,
+                "fp": 4,
+                "fn": 1,
+                "tn": 991,
+                "precision": 0.5,
+                "recall": 0.8,
+                "recall_wilson_95": [
+                  0.37553462976252533,
+                  0.9637758913675698
+                ],
+                "false_positive_rate": 0.004020100502512563,
+                "false_positive_wilson_95": [
+                  0.0015644155844517652,
+                  0.010290777966159386
+                ]
+              },
+              "general_quirky": {
+                "support": 57,
+                "negative_support": 943,
+                "tp": 0,
+                "fp": 0,
+                "fn": 57,
+                "tn": 943,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.06313883485297894
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0040571299290999814
+                ]
+              },
+              "weather_query": {
+                "support": 53,
+                "negative_support": 947,
+                "tp": 40,
+                "fp": 15,
+                "fn": 13,
+                "tn": 932,
+                "precision": 0.7272727272727273,
+                "recall": 0.7547169811320755,
+                "recall_wilson_95": [
+                  0.6243344231264808,
+                  0.8506709789194319
+                ],
+                "false_positive_rate": 0.01583949313621964,
+                "false_positive_wilson_95": [
+                  0.009622098096790871,
+                  0.025968965488790338
+                ]
+              },
+              "audio_volume_up": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 1,
+                "fp": 0,
+                "fn": 3,
+                "tn": 996,
+                "precision": 1.0,
+                "recall": 0.25,
+                "recall_wilson_95": [
+                  0.04558726080970055,
+                  0.6993581574175981
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.0038420679466773643
+                ]
+              },
+              "email_addcontact": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 2,
+                "fp": 4,
+                "fn": 2,
+                "tn": 992,
+                "precision": 0.3333333333333333,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.15003898915214947,
+                  0.8499610108478506
+                ],
+                "false_positive_rate": 0.004016064257028112,
+                "false_positive_wilson_95": [
+                  0.0015628438042055047,
+                  0.010280492673020634
+                ]
+              },
+              "takeaway_order": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 6,
+                "fp": 5,
+                "fn": 1,
+                "tn": 988,
+                "precision": 0.5454545454545454,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.4868721707256811,
+                  0.9743203756552565
+                ],
+                "false_positive_rate": 0.005035246727089627,
+                "false_positive_wilson_95": [
+                  0.0021526168010746497,
+                  0.011732699362509837
+                ]
+              },
+              "email_querycontact": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 0,
+                "fp": 0,
+                "fn": 9,
+                "tn": 991,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.2991450484195441
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038613778975876926
+                ]
+              },
+              "iot_hue_lightup": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 0,
+                "fp": 0,
+                "fn": 9,
+                "tn": 991,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.2991450484195441
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038613778975876926
+                ]
+              },
+              "recommendation_locations": {
+                "support": 10,
+                "negative_support": 990,
+                "tp": 9,
+                "fp": 20,
+                "fn": 1,
+                "tn": 970,
+                "precision": 0.3103448275862069,
+                "recall": 0.9,
+                "recall_wilson_95": [
+                  0.5958499732047615,
+                  0.9821237869049271
+                ],
+                "false_positive_rate": 0.020202020202020204,
+                "false_positive_wilson_95": [
+                  0.013115202987922792,
+                  0.030997928368779716
+                ]
+              },
+              "play_audiobook": {
+                "support": 14,
+                "negative_support": 986,
+                "tp": 7,
+                "fp": 3,
+                "fn": 7,
+                "tn": 983,
+                "precision": 0.7,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.26799202452413634,
+                  0.7320079754758637
+                ],
+                "false_positive_rate": 0.0030425963488843813,
+                "false_positive_wilson_95": [
+                  0.001035285167553579,
+                  0.00890717453949822
+                ]
+              },
+              "lists_createoradd": {
+                "support": 13,
+                "negative_support": 987,
+                "tp": 10,
+                "fp": 19,
+                "fn": 3,
+                "tn": 968,
+                "precision": 0.3448275862068966,
+                "recall": 0.7692307692307693,
+                "recall_wilson_95": [
+                  0.49743624053272495,
+                  0.9182047128150143
+                ],
+                "false_positive_rate": 0.019250253292806486,
+                "false_positive_wilson_95": [
+                  0.012357973175553302,
+                  0.029870234423363777
+                ]
+              },
+              "news_query": {
+                "support": 42,
+                "negative_support": 958,
+                "tp": 38,
+                "fp": 6,
+                "fn": 4,
+                "tn": 952,
+                "precision": 0.8636363636363636,
+                "recall": 0.9047619047619048,
+                "recall_wilson_95": [
+                  0.7793489419142897,
+                  0.9623377511944261
+                ],
+                "false_positive_rate": 0.006263048016701462,
+                "false_positive_wilson_95": [
+                  0.002873478986219355,
+                  0.01359644823038993
+                ]
+              },
+              "alarm_query": {
+                "support": 11,
+                "negative_support": 989,
+                "tp": 2,
+                "fp": 9,
+                "fn": 9,
+                "tn": 980,
+                "precision": 0.18181818181818182,
+                "recall": 0.18181818181818182,
+                "recall_wilson_95": [
+                  0.05136768974608513,
+                  0.4769805619608442
+                ],
+                "false_positive_rate": 0.00910010111223458,
+                "false_positive_wilson_95": [
+                  0.004794882356632785,
+                  0.017204056775741484
+                ]
+              },
+              "iot_wemo_on": {
+                "support": 3,
+                "negative_support": 997,
+                "tp": 1,
+                "fp": 11,
+                "fn": 2,
+                "tn": 986,
+                "precision": 0.08333333333333333,
+                "recall": 0.3333333333333333,
+                "recall_wilson_95": [
+                  0.06149194472039621,
+                  0.7923403991979522
+                ],
+                "false_positive_rate": 0.011033099297893681,
+                "false_positive_wilson_95": [
+                  0.006171721710927625,
+                  0.019648010868039967
+                ]
+              },
+              "general_joke": {
+                "support": 6,
+                "negative_support": 994,
+                "tp": 4,
+                "fp": 1,
+                "fn": 2,
+                "tn": 993,
+                "precision": 0.8,
+                "recall": 0.6666666666666666,
+                "recall_wilson_95": [
+                  0.299993315138392,
+                  0.9032285888942195
+                ],
+                "false_positive_rate": 0.001006036217303823,
+                "false_positive_wilson_95": [
+                  0.00017761217539598133,
+                  0.005676482950695386
+                ]
+              },
+              "qa_definition": {
+                "support": 19,
+                "negative_support": 981,
+                "tp": 13,
+                "fp": 5,
+                "fn": 6,
+                "tn": 976,
+                "precision": 0.7222222222222222,
+                "recall": 0.6842105263157895,
+                "recall_wilson_95": [
+                  0.46010407675327475,
+                  0.8463562091220773
+                ],
+                "false_positive_rate": 0.0050968399592252805,
+                "false_positive_wilson_95": [
+                  0.002178971585127025,
+                  0.011875533022415273
+                ]
+              },
+              "social_query": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 6,
+                "fp": 6,
+                "fn": 2,
+                "tn": 986,
+                "precision": 0.5,
+                "recall": 0.75,
+                "recall_wilson_95": [
+                  0.40927543031016883,
+                  0.9285207872478909
+                ],
+                "false_positive_rate": 0.006048387096774193,
+                "false_positive_wilson_95": [
+                  0.002774891027494844,
+                  0.013132720249760137
+                ]
+              },
+              "music_settings": {
+                "support": 2,
+                "negative_support": 998,
+                "tp": 1,
+                "fp": 1,
+                "fn": 1,
+                "tn": 997,
+                "precision": 0.5,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.09453120573423074,
+                  0.9054687942657693
+                ],
+                "false_positive_rate": 0.001002004008016032,
+                "false_positive_wilson_95": [
+                  0.0001769002147854709,
+                  0.005653821571843652
+                ]
+              },
+              "audio_volume_other": {
+                "support": 2,
+                "negative_support": 998,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "tn": 998,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.6576197724933469
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038343979347950454
+                ]
+              },
+              "calendar_remove": {
+                "support": 23,
+                "negative_support": 977,
+                "tp": 20,
+                "fp": 4,
+                "fn": 3,
+                "tn": 973,
+                "precision": 0.8333333333333334,
+                "recall": 0.8695652173913043,
+                "recall_wilson_95": [
+                  0.6787251772990404,
+                  0.9546234090636876
+                ],
+                "false_positive_rate": 0.0040941658137154556,
+                "false_positive_wilson_95": [
+                  0.001593258219074671,
+                  0.010479496979233928
+                ]
+              },
+              "iot_hue_lightdim": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 6,
+                "fp": 4,
+                "fn": 1,
+                "tn": 989,
+                "precision": 0.6,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.4868721707256811,
+                  0.9743203756552565
+                ],
+                "false_positive_rate": 0.004028197381671702,
+                "false_positive_wilson_95": [
+                  0.0015675686486724804,
+                  0.010311410416567317
+                ]
+              },
+              "calendar_query": {
+                "support": 42,
+                "negative_support": 958,
+                "tp": 2,
+                "fp": 1,
+                "fn": 40,
+                "tn": 957,
+                "precision": 0.6666666666666666,
+                "recall": 0.047619047619047616,
+                "recall_wilson_95": [
+                  0.013157524908905607,
+                  0.15789852396958842
+                ],
+                "false_positive_rate": 0.0010438413361169101,
+                "false_positive_wilson_95": [
+                  0.00018428739802284384,
+                  0.0058889160048085235
+                ]
+              },
+              "email_sendemail": {
+                "support": 38,
+                "negative_support": 962,
+                "tp": 27,
+                "fp": 4,
+                "fn": 11,
+                "tn": 958,
+                "precision": 0.8709677419354839,
+                "recall": 0.7105263157894737,
+                "recall_wilson_95": [
+                  0.5524286232424794,
+                  0.8299672217151693
+                ],
+                "false_positive_rate": 0.004158004158004158,
+                "false_positive_wilson_95": [
+                  0.0016181188400077751,
+                  0.010642132273205682
+                ]
+              },
+              "iot_cleaning": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 3,
+                "fp": 5,
+                "fn": 6,
+                "tn": 986,
+                "precision": 0.375,
+                "recall": 0.3333333333333333,
+                "recall_wilson_95": [
+                  0.1205838183869109,
+                  0.6457978644196036
+                ],
+                "false_positive_rate": 0.005045408678102927,
+                "false_positive_wilson_95": [
+                  0.0021569649030327214,
+                  0.011756265891652976
+                ]
+              },
+              "audio_volume_down": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 1,
+                "fp": 0,
+                "fn": 3,
+                "tn": 996,
+                "precision": 1.0,
+                "recall": 0.25,
+                "recall_wilson_95": [
+                  0.04558726080970055,
+                  0.6993581574175981
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.0038420679466773643
+                ]
+              },
+              "play_radio": {
+                "support": 24,
+                "negative_support": 976,
+                "tp": 9,
+                "fp": 2,
+                "fn": 15,
+                "tn": 974,
+                "precision": 0.8181818181818182,
+                "recall": 0.375,
+                "recall_wilson_95": [
+                  0.21159367559548778,
+                  0.5729003755732572
+                ],
+                "false_positive_rate": 0.0020491803278688526,
+                "false_positive_wilson_95": [
+                  0.0005621391464266678,
+                  0.00744064411009307
+                ]
+              },
+              "cooking_query": {
+                "support": 0,
+                "negative_support": 1000,
+                "tp": 0,
+                "fp": 6,
+                "fn": 0,
+                "tn": 994,
+                "precision": 0.0,
+                "recall": null,
+                "recall_wilson_95": null,
+                "false_positive_rate": 0.006,
+                "false_positive_wilson_95": [
+                  0.0027526691418763745,
+                  0.01302816824185209
+                ]
+              },
+              "datetime_convert": {
+                "support": 5,
+                "negative_support": 995,
+                "tp": 3,
+                "fp": 18,
+                "fn": 2,
+                "tn": 977,
+                "precision": 0.14285714285714285,
+                "recall": 0.6,
+                "recall_wilson_95": [
+                  0.2307242812760128,
+                  0.882379225767352
+                ],
+                "false_positive_rate": 0.018090452261306532,
+                "false_positive_wilson_95": [
+                  0.011473254948957701,
+                  0.02841441538035952
+                ]
+              },
+              "qa_maths": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 2,
+                "fn": 0,
+                "tn": 990,
+                "precision": 0.8,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.0020161290322580645,
+                "false_positive_wilson_95": [
+                  0.0005530695279113585,
+                  0.007321134494464072
+                ]
+              },
+              "iot_hue_lightoff": {
+                "support": 15,
+                "negative_support": 985,
+                "tp": 2,
+                "fp": 5,
+                "fn": 13,
+                "tn": 980,
+                "precision": 0.2857142857142857,
+                "recall": 0.13333333333333333,
+                "recall_wilson_95": [
+                  0.03736125910306537,
+                  0.37881982832322364
+                ],
+                "false_positive_rate": 0.005076142131979695,
+                "false_positive_wilson_95": [
+                  0.00217011524508918,
+                  0.01182753695408301
+                ]
+              },
+              "iot_hue_lighton": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "tn": 999,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.7934506856227626
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038305744012733026
+                ]
+              },
+              "transport_query": {
+                "support": 17,
+                "negative_support": 983,
+                "tp": 1,
+                "fp": 0,
+                "fn": 16,
+                "tn": 983,
+                "precision": 1.0,
+                "recall": 0.058823529411764705,
+                "recall_wilson_95": [
+                  0.010460400984997592,
+                  0.26982030637575405
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038926808215828173
+                ]
+              },
+              "music_likeness": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 1,
+                "fp": 3,
+                "fn": 11,
+                "tn": 985,
+                "precision": 0.25,
+                "recall": 0.08333333333333333,
+                "recall_wilson_95": [
+                  0.014865094404917095,
+                  0.35387991114111694
+                ],
+                "false_positive_rate": 0.003036437246963563,
+                "false_positive_wilson_95": [
+                  0.0010331883811014282,
+                  0.008889222840139193
+                ]
+              },
+              "email_query": {
+                "support": 40,
+                "negative_support": 960,
+                "tp": 36,
+                "fp": 11,
+                "fn": 4,
+                "tn": 949,
+                "precision": 0.7659574468085106,
+                "recall": 0.9,
+                "recall_wilson_95": [
+                  0.7694822477247771,
+                  0.9604204713173936
+                ],
+                "false_positive_rate": 0.011458333333333333,
+                "false_positive_wilson_95": [
+                  0.006410024462030979,
+                  0.020400877459860176
+                ]
+              },
+              "play_music": {
+                "support": 59,
+                "negative_support": 941,
+                "tp": 50,
+                "fp": 19,
+                "fn": 9,
+                "tn": 922,
+                "precision": 0.7246376811594203,
+                "recall": 0.847457627118644,
+                "recall_wilson_95": [
+                  0.7348201621622644,
+                  0.9176153600140352
+                ],
+                "false_positive_rate": 0.020191285866099893,
+                "false_positive_wilson_95": [
+                  0.012963816577164916,
+                  0.031320288899026424
+                ]
+              },
+              "audio_volume_mute": {
+                "support": 11,
+                "negative_support": 989,
+                "tp": 6,
+                "fp": 9,
+                "fn": 5,
+                "tn": 980,
+                "precision": 0.4,
+                "recall": 0.5454545454545454,
+                "recall_wilson_95": [
+                  0.280091537409322,
+                  0.7872872837754024
+                ],
+                "false_positive_rate": 0.00910010111223458,
+                "false_positive_wilson_95": [
+                  0.004794882356632785,
+                  0.017204056775741484
+                ]
+              },
+              "social_post": {
+                "support": 27,
+                "negative_support": 973,
+                "tp": 14,
+                "fp": 3,
+                "fn": 13,
+                "tn": 970,
+                "precision": 0.8235294117647058,
+                "recall": 0.5185185185185185,
+                "recall_wilson_95": [
+                  0.3398561575495229,
+                  0.6925677302378153
+                ],
+                "false_positive_rate": 0.003083247687564234,
+                "false_positive_wilson_95": [
+                  0.0010491244978690821,
+                  0.009025651436165665
+                ]
+              },
+              "alarm_set": {
+                "support": 14,
+                "negative_support": 986,
+                "tp": 13,
+                "fp": 15,
+                "fn": 1,
+                "tn": 971,
+                "precision": 0.4642857142857143,
+                "recall": 0.9285714285714286,
+                "recall_wilson_95": [
+                  0.6853129557584889,
+                  0.9872777847521093
+                ],
+                "false_positive_rate": 0.015212981744421906,
+                "false_positive_wilson_95": [
+                  0.009240638953070443,
+                  0.02494812786319641
+                ]
+              },
+              "qa_factoid": {
+                "support": 47,
+                "negative_support": 953,
+                "tp": 11,
+                "fp": 2,
+                "fn": 36,
+                "tn": 951,
+                "precision": 0.8461538461538461,
+                "recall": 0.23404255319148937,
+                "recall_wilson_95": [
+                  0.13603274586227188,
+                  0.37224257550155593
+                ],
+                "false_positive_rate": 0.002098635886673662,
+                "false_positive_wilson_95": [
+                  0.0005757104401366404,
+                  0.0076194390785294
+                ]
+              },
+              "calendar_set": {
+                "support": 70,
+                "negative_support": 930,
+                "tp": 47,
+                "fp": 19,
+                "fn": 23,
+                "tn": 911,
+                "precision": 0.7121212121212122,
+                "recall": 0.6714285714285714,
+                "recall_wilson_95": [
+                  0.5550093573883407,
+                  0.770011306928139
+                ],
+                "false_positive_rate": 0.02043010752688172,
+                "false_positive_wilson_95": [
+                  0.01311759756502821,
+                  0.03168814373664178
+                ]
+              },
+              "play_game": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 21,
+                "fn": 1,
+                "tn": 967,
+                "precision": 0.34375,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.02125506072874494,
+                "false_positive_wilson_95": [
+                  0.013943549124835744,
+                  0.032274985513956134
+                ]
+              },
+              "alarm_remove": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 6,
+                "fp": 23,
+                "fn": 1,
+                "tn": 970,
+                "precision": 0.20689655172413793,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.4868721707256811,
+                  0.9743203756552565
+                ],
+                "false_positive_rate": 0.023162134944612285,
+                "false_positive_wilson_95": [
+                  0.015482995252549227,
+                  0.034516388681239685
+                ]
+              },
+              "lists_remove": {
+                "support": 18,
+                "negative_support": 982,
+                "tp": 14,
+                "fp": 10,
+                "fn": 4,
+                "tn": 972,
+                "precision": 0.5833333333333334,
+                "recall": 0.7777777777777778,
+                "recall_wilson_95": [
+                  0.5478541568378739,
+                  0.9099907189139831
+                ],
+                "false_positive_rate": 0.010183299389002037,
+                "false_positive_wilson_95": [
+                  0.005540647463771005,
+                  0.018643219635117593
+                ]
+              },
+              "transport_taxi": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 22,
+                "fn": 0,
+                "tn": 970,
+                "precision": 0.26666666666666666,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.02217741935483871,
+                "false_positive_wilson_95": [
+                  0.014690586489337428,
+                  0.033350653807435765
+                ]
+              },
+              "recommendation_movies": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 6,
+                "fp": 12,
+                "fn": 1,
+                "tn": 981,
+                "precision": 0.3333333333333333,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.4868721707256811,
+                  0.9743203756552565
+                ],
+                "false_positive_rate": 0.012084592145015106,
+                "false_positive_wilson_95": [
+                  0.0069262226455646825,
+                  0.02100345320643264
+                ]
+              },
+              "iot_coffee": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 1,
+                "fn": 1,
+                "tn": 987,
+                "precision": 0.9166666666666666,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "music_query": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 7,
+                "fp": 7,
+                "fn": 5,
+                "tn": 981,
+                "precision": 0.5,
+                "recall": 0.5833333333333334,
+                "recall_wilson_95": [
+                  0.31951131254954973,
+                  0.8067396863412435
+                ],
+                "false_positive_rate": 0.00708502024291498,
+                "false_positive_wilson_95": [
+                  0.0034361509855386453,
+                  0.014552065439602257
+                ]
+              },
+              "play_podcasts": {
+                "support": 21,
+                "negative_support": 979,
+                "tp": 18,
+                "fp": 6,
+                "fn": 3,
+                "tn": 973,
+                "precision": 0.75,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.6536393971937906,
+                  0.9501898750027473
+                ],
+                "false_positive_rate": 0.006128702757916241,
+                "false_positive_wilson_95": [
+                  0.0028117769920183505,
+                  0.013306243547837791
+                ]
+              },
+              "lists_query": {
+                "support": 17,
+                "negative_support": 983,
+                "tp": 10,
+                "fp": 5,
+                "fn": 7,
+                "tn": 978,
+                "precision": 0.6666666666666666,
+                "recall": 0.5882352941176471,
+                "recall_wilson_95": [
+                  0.3600544264299978,
+                  0.7838894320978518
+                ],
+                "false_positive_rate": 0.00508646998982706,
+                "false_positive_wilson_95": [
+                  0.0021745343977171766,
+                  0.011851486395161849
+                ]
+              }
+            },
+            "majority_baseline": 0.07
+          },
+          "model_resolved": [
+            "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "laya:fine": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T144751_suite_massive_heldout_laya_fine.json",
+          "input_sha256": "e9025b490a1d87fb78b5bf8c6ce878fd183bfb759708cdc67401966bf381dbce",
+          "target": "laya:fine",
+          "summary": {
+            "n": 1000,
+            "correct": 815,
+            "accuracy": 0.815,
+            "wilson_95": [
+              0.7897439459386497,
+              0.8378451962154505
+            ],
+            "macro_f1": 0.7501932251144504,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.2774422629968104,
+            "nll": 0.7611629223582992,
+            "ece_10_equal_width": 0.018850019722189762,
+            "p50_ms": 57.25508299656212,
+            "p95_ms": 63.704708009026945,
+            "cost_usd": null,
+            "reported_cost_usd": 0,
+            "cost_reported_rows": 0,
+            "cost_unknown_rows": 1000,
+            "per_class": {
+              "datetime_query": {
+                "support": 30,
+                "negative_support": 970,
+                "tp": 28,
+                "fp": 4,
+                "fn": 2,
+                "tn": 966,
+                "precision": 0.875,
+                "recall": 0.9333333333333333,
+                "recall_wilson_95": [
+                  0.7867654163738308,
+                  0.9815229762087295
+                ],
+                "false_positive_rate": 0.004123711340206186,
+                "false_positive_wilson_95": [
+                  0.0016047640909551079,
+                  0.01055477041380292
+                ]
+              },
+              "iot_hue_lightchange": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 1,
+                "fn": 1,
+                "tn": 987,
+                "precision": 0.9166666666666666,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "transport_ticket": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 12,
+                "fp": 2,
+                "fn": 0,
+                "tn": 986,
+                "precision": 0.8571428571428571,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7575059933447592,
+                  1.0
+                ],
+                "false_positive_rate": 0.0020242914979757085,
+                "false_positive_wilson_95": [
+                  0.0005553093844934257,
+                  0.007350650535772128
+                ]
+              },
+              "takeaway_query": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 9,
+                "fp": 2,
+                "fn": 3,
+                "tn": 986,
+                "precision": 0.8181818181818182,
+                "recall": 0.75,
+                "recall_wilson_95": [
+                  0.46769466506643426,
+                  0.9110583316059453
+                ],
+                "false_positive_rate": 0.0020242914979757085,
+                "false_positive_wilson_95": [
+                  0.0005553093844934257,
+                  0.007350650535772128
+                ]
+              },
+              "qa_stock": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 9,
+                "fp": 3,
+                "fn": 0,
+                "tn": 988,
+                "precision": 0.75,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7008549515804559,
+                  1.0
+                ],
+                "false_positive_rate": 0.0030272452068617556,
+                "false_positive_wilson_95": [
+                  0.001030059078203186,
+                  0.008862430557643308
+                ]
+              },
+              "general_greet": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 1,
+                "fp": 1,
+                "fn": 0,
+                "tn": 998,
+                "precision": 0.5,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.20654931437723745,
+                  1.0
+                ],
+                "false_positive_rate": 0.001001001001001001,
+                "false_positive_wilson_95": [
+                  0.0001767231155846813,
+                  0.005648184470070455
+                ]
+              },
+              "recommendation_events": {
+                "support": 15,
+                "negative_support": 985,
+                "tp": 9,
+                "fp": 1,
+                "fn": 6,
+                "tn": 984,
+                "precision": 0.9,
+                "recall": 0.6,
+                "recall_wilson_95": [
+                  0.357468301206246,
+                  0.8017550385865841
+                ],
+                "false_positive_rate": 0.0010152284263959391,
+                "false_positive_wilson_95": [
+                  0.00017923523140044462,
+                  0.005728141293508542
+                ]
+              },
+              "music_dislikeness": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 0,
+                "fp": 1,
+                "fn": 1,
+                "tn": 998,
+                "precision": 0.0,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.7934506856227626
+                ],
+                "false_positive_rate": 0.001001001001001001,
+                "false_positive_wilson_95": [
+                  0.0001767231155846813,
+                  0.005648184470070455
+                ]
+              },
+              "iot_wemo_off": {
+                "support": 6,
+                "negative_support": 994,
+                "tp": 5,
+                "fp": 0,
+                "fn": 1,
+                "tn": 994,
+                "precision": 1.0,
+                "recall": 0.8333333333333334,
+                "recall_wilson_95": [
+                  0.43649717781352987,
+                  0.9699466302516935
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.003849768704974616
+                ]
+              },
+              "cooking_recipe": {
+                "support": 24,
+                "negative_support": 976,
+                "tp": 20,
+                "fp": 4,
+                "fn": 4,
+                "tn": 972,
+                "precision": 0.8333333333333334,
+                "recall": 0.8333333333333334,
+                "recall_wilson_95": [
+                  0.6414692935030095,
+                  0.9332132367136705
+                ],
+                "false_positive_rate": 0.004098360655737705,
+                "false_positive_wilson_95": [
+                  0.0015948918032603811,
+                  0.010490184526277794
+                ]
+              },
+              "qa_currency": {
+                "support": 13,
+                "negative_support": 987,
+                "tp": 11,
+                "fp": 0,
+                "fn": 2,
+                "tn": 987,
+                "precision": 1.0,
+                "recall": 0.8461538461538461,
+                "recall_wilson_95": [
+                  0.5776536898051745,
+                  0.9567418216419186
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.0038769661750591806
+                ]
+              },
+              "transport_traffic": {
+                "support": 5,
+                "negative_support": 995,
+                "tp": 5,
+                "fp": 0,
+                "fn": 0,
+                "tn": 995,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.5655175352168251,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038459144709808452
+                ]
+              },
+              "general_quirky": {
+                "support": 57,
+                "negative_support": 943,
+                "tp": 24,
+                "fp": 10,
+                "fn": 33,
+                "tn": 933,
+                "precision": 0.7058823529411765,
+                "recall": 0.42105263157894735,
+                "recall_wilson_95": [
+                  0.3018759668275172,
+                  0.5501985860440057
+                ],
+                "false_positive_rate": 0.010604453870625663,
+                "false_positive_wilson_95": [
+                  0.005770187329896409,
+                  0.01940980304609435
+                ]
+              },
+              "weather_query": {
+                "support": 53,
+                "negative_support": 947,
+                "tp": 52,
+                "fp": 3,
+                "fn": 1,
+                "tn": 944,
+                "precision": 0.9454545454545454,
+                "recall": 0.9811320754716981,
+                "recall_wilson_95": [
+                  0.9005708794749876,
+                  0.9966615466117361
+                ],
+                "false_positive_rate": 0.0031678986272439284,
+                "false_positive_wilson_95": [
+                  0.001077943646121459,
+                  0.009272318986410625
+                ]
+              },
+              "audio_volume_up": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 2,
+                "fp": 3,
+                "fn": 2,
+                "tn": 993,
+                "precision": 0.4,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.15003898915214947,
+                  0.8499610108478506
+                ],
+                "false_positive_rate": 0.0030120481927710845,
+                "false_positive_wilson_95": [
+                  0.001024885486156592,
+                  0.008818133858432355
+                ]
+              },
+              "email_addcontact": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 3,
+                "fp": 2,
+                "fn": 1,
+                "tn": 994,
+                "precision": 0.6,
+                "recall": 0.75,
+                "recall_wilson_95": [
+                  0.30064184258240184,
+                  0.9544127391902995
+                ],
+                "false_positive_rate": 0.002008032128514056,
+                "false_positive_wilson_95": [
+                  0.0005508476677955156,
+                  0.007291854544156236
+                ]
+              },
+              "takeaway_order": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 5,
+                "fp": 3,
+                "fn": 2,
+                "tn": 990,
+                "precision": 0.625,
+                "recall": 0.7142857142857143,
+                "recall_wilson_95": [
+                  0.35893445183261935,
+                  0.9177810759959433
+                ],
+                "false_positive_rate": 0.0030211480362537764,
+                "false_positive_wilson_95": [
+                  0.0010279833861392192,
+                  0.008844658580755888
+                ]
+              },
+              "email_querycontact": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 6,
+                "fp": 4,
+                "fn": 3,
+                "tn": 987,
+                "precision": 0.6,
+                "recall": 0.6666666666666666,
+                "recall_wilson_95": [
+                  0.3542021355803963,
+                  0.879416181613089
+                ],
+                "false_positive_rate": 0.004036326942482341,
+                "false_positive_wilson_95": [
+                  0.0015707344485087144,
+                  0.01033212576675738
+                ]
+              },
+              "iot_hue_lightup": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 8,
+                "fp": 0,
+                "fn": 1,
+                "tn": 991,
+                "precision": 1.0,
+                "recall": 0.8888888888888888,
+                "recall_wilson_95": [
+                  0.5650002944233439,
+                  0.9801091123614551
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038613778975876926
+                ]
+              },
+              "recommendation_locations": {
+                "support": 10,
+                "negative_support": 990,
+                "tp": 9,
+                "fp": 2,
+                "fn": 1,
+                "tn": 988,
+                "precision": 0.8181818181818182,
+                "recall": 0.9,
+                "recall_wilson_95": [
+                  0.5958499732047615,
+                  0.9821237869049271
+                ],
+                "false_positive_rate": 0.00202020202020202,
+                "false_positive_wilson_95": [
+                  0.0005541871930061179,
+                  0.007335862825634589
+                ]
+              },
+              "play_audiobook": {
+                "support": 14,
+                "negative_support": 986,
+                "tp": 11,
+                "fp": 13,
+                "fn": 3,
+                "tn": 973,
+                "precision": 0.4583333333333333,
+                "recall": 0.7857142857142857,
+                "recall_wilson_95": [
+                  0.524107694133997,
+                  0.9242861328730683
+                ],
+                "false_positive_rate": 0.013184584178498986,
+                "false_positive_wilson_95": [
+                  0.007721133421354917,
+                  0.022426582210042758
+                ]
+              },
+              "lists_createoradd": {
+                "support": 13,
+                "negative_support": 987,
+                "tp": 11,
+                "fp": 5,
+                "fn": 2,
+                "tn": 982,
+                "precision": 0.6875,
+                "recall": 0.8461538461538461,
+                "recall_wilson_95": [
+                  0.5776536898051745,
+                  0.9567418216419186
+                ],
+                "false_positive_rate": 0.005065856129685917,
+                "false_positive_wilson_95": [
+                  0.0021657140175133866,
+                  0.011803684111192612
+                ]
+              },
+              "news_query": {
+                "support": 42,
+                "negative_support": 958,
+                "tp": 39,
+                "fp": 9,
+                "fn": 3,
+                "tn": 949,
+                "precision": 0.8125,
+                "recall": 0.9285714285714286,
+                "recall_wilson_95": [
+                  0.8099057319884169,
+                  0.9754095901266941
+                ],
+                "false_positive_rate": 0.009394572025052192,
+                "false_positive_wilson_95": [
+                  0.004950279845701961,
+                  0.01775768165917407
+                ]
+              },
+              "alarm_query": {
+                "support": 11,
+                "negative_support": 989,
+                "tp": 9,
+                "fp": 0,
+                "fn": 2,
+                "tn": 989,
+                "precision": 1.0,
+                "recall": 0.8181818181818182,
+                "recall_wilson_95": [
+                  0.523019438039156,
+                  0.9486323102539149
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.003869156335652063
+                ]
+              },
+              "iot_wemo_on": {
+                "support": 3,
+                "negative_support": 997,
+                "tp": 3,
+                "fp": 6,
+                "fn": 0,
+                "tn": 991,
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.4385029682449546,
+                  1.0
+                ],
+                "false_positive_rate": 0.006018054162487462,
+                "false_positive_wilson_95": [
+                  0.002760960514546132,
+                  0.013067179578051893
+                ]
+              },
+              "general_joke": {
+                "support": 6,
+                "negative_support": 994,
+                "tp": 6,
+                "fp": 1,
+                "fn": 0,
+                "tn": 993,
+                "precision": 0.8571428571428571,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6096657120978346,
+                  1.0
+                ],
+                "false_positive_rate": 0.001006036217303823,
+                "false_positive_wilson_95": [
+                  0.00017761217539598133,
+                  0.005676482950695386
+                ]
+              },
+              "qa_definition": {
+                "support": 19,
+                "negative_support": 981,
+                "tp": 15,
+                "fp": 0,
+                "fn": 4,
+                "tn": 981,
+                "precision": 1.0,
+                "recall": 0.7894736842105263,
+                "recall_wilson_95": [
+                  0.5666572155618583,
+                  0.9149232336708375
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.003900586014417091
+                ]
+              },
+              "social_query": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 7,
+                "fp": 2,
+                "fn": 1,
+                "tn": 990,
+                "precision": 0.7777777777777778,
+                "recall": 0.875,
+                "recall_wilson_95": [
+                  0.5291118177871464,
+                  0.9775825085499433
+                ],
+                "false_positive_rate": 0.0020161290322580645,
+                "false_positive_wilson_95": [
+                  0.0005530695279113585,
+                  0.007321134494464072
+                ]
+              },
+              "music_settings": {
+                "support": 2,
+                "negative_support": 998,
+                "tp": 1,
+                "fp": 1,
+                "fn": 1,
+                "tn": 997,
+                "precision": 0.5,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.09453120573423074,
+                  0.9054687942657693
+                ],
+                "false_positive_rate": 0.001002004008016032,
+                "false_positive_wilson_95": [
+                  0.0001769002147854709,
+                  0.005653821571843652
+                ]
+              },
+              "audio_volume_other": {
+                "support": 2,
+                "negative_support": 998,
+                "tp": 0,
+                "fp": 0,
+                "fn": 2,
+                "tn": 998,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.6576197724933469
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038343979347950454
+                ]
+              },
+              "calendar_remove": {
+                "support": 23,
+                "negative_support": 977,
+                "tp": 21,
+                "fp": 5,
+                "fn": 2,
+                "tn": 972,
+                "precision": 0.8076923076923077,
+                "recall": 0.9130434782608695,
+                "recall_wilson_95": [
+                  0.7320401892425634,
+                  0.9758199955157796
+                ],
+                "false_positive_rate": 0.00511770726714432,
+                "false_positive_wilson_95": [
+                  0.002187900507707355,
+                  0.011923920211347772
+                ]
+              },
+              "iot_hue_lightdim": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 6,
+                "fp": 1,
+                "fn": 1,
+                "tn": 992,
+                "precision": 0.8571428571428571,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.4868721707256811,
+                  0.9743203756552565
+                ],
+                "false_positive_rate": 0.0010070493454179255,
+                "false_positive_wilson_95": [
+                  0.0001777910618845106,
+                  0.005682176708321215
+                ]
+              },
+              "calendar_query": {
+                "support": 42,
+                "negative_support": 958,
+                "tp": 28,
+                "fp": 5,
+                "fn": 14,
+                "tn": 953,
+                "precision": 0.8484848484848485,
+                "recall": 0.6666666666666666,
+                "recall_wilson_95": [
+                  0.5155250737683379,
+                  0.7898753292764273
+                ],
+                "false_positive_rate": 0.005219206680584551,
+                "false_positive_wilson_95": [
+                  0.002231332056289023,
+                  0.012159250397564677
+                ]
+              },
+              "email_sendemail": {
+                "support": 38,
+                "negative_support": 962,
+                "tp": 34,
+                "fp": 3,
+                "fn": 4,
+                "tn": 959,
+                "precision": 0.918918918918919,
+                "recall": 0.8947368421052632,
+                "recall_wilson_95": [
+                  0.7586947827711269,
+                  0.9582974265244647
+                ],
+                "false_positive_rate": 0.0031185031185031187,
+                "false_positive_wilson_95": [
+                  0.0010611269997951554,
+                  0.009128390887240554
+                ]
+              },
+              "iot_cleaning": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 5,
+                "fp": 4,
+                "fn": 4,
+                "tn": 987,
+                "precision": 0.5555555555555556,
+                "recall": 0.5555555555555556,
+                "recall_wilson_95": [
+                  0.26665129349549305,
+                  0.8112214789023355
+                ],
+                "false_positive_rate": 0.004036326942482341,
+                "false_positive_wilson_95": [
+                  0.0015707344485087144,
+                  0.01033212576675738
+                ]
+              },
+              "audio_volume_down": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 4,
+                "fp": 0,
+                "fn": 0,
+                "tn": 996,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.5101091635454027,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.0038420679466773643
+                ]
+              },
+              "play_radio": {
+                "support": 24,
+                "negative_support": 976,
+                "tp": 12,
+                "fp": 2,
+                "fn": 12,
+                "tn": 974,
+                "precision": 0.8571428571428571,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.3142742581957335,
+                  0.6857257418042665
+                ],
+                "false_positive_rate": 0.0020491803278688526,
+                "false_positive_wilson_95": [
+                  0.0005621391464266678,
+                  0.00744064411009307
+                ]
+              },
+              "cooking_query": {
+                "support": 0,
+                "negative_support": 1000,
+                "tp": 0,
+                "fp": 2,
+                "fn": 0,
+                "tn": 998,
+                "precision": 0.0,
+                "recall": null,
+                "recall_wilson_95": null,
+                "false_positive_rate": 0.002,
+                "false_positive_wilson_95": [
+                  0.000548643588120728,
+                  0.007262807863492177
+                ]
+              },
+              "datetime_convert": {
+                "support": 5,
+                "negative_support": 995,
+                "tp": 3,
+                "fp": 0,
+                "fn": 2,
+                "tn": 995,
+                "precision": 1.0,
+                "recall": 0.6,
+                "recall_wilson_95": [
+                  0.2307242812760128,
+                  0.882379225767352
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038459144709808452
+                ]
+              },
+              "qa_maths": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 2,
+                "fn": 0,
+                "tn": 990,
+                "precision": 0.8,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.0020161290322580645,
+                "false_positive_wilson_95": [
+                  0.0005530695279113585,
+                  0.007321134494464072
+                ]
+              },
+              "iot_hue_lightoff": {
+                "support": 15,
+                "negative_support": 985,
+                "tp": 13,
+                "fp": 2,
+                "fn": 2,
+                "tn": 983,
+                "precision": 0.8666666666666667,
+                "recall": 0.8666666666666667,
+                "recall_wilson_95": [
+                  0.6211801716767764,
+                  0.9626387408969346
+                ],
+                "false_positive_rate": 0.0020304568527918783,
+                "false_positive_wilson_95": [
+                  0.0005570012190431813,
+                  0.007372944224431606
+                ]
+              },
+              "iot_hue_lighton": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 0,
+                "fp": 1,
+                "fn": 1,
+                "tn": 998,
+                "precision": 0.0,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.7934506856227626
+                ],
+                "false_positive_rate": 0.001001001001001001,
+                "false_positive_wilson_95": [
+                  0.0001767231155846813,
+                  0.005648184470070455
+                ]
+              },
+              "transport_query": {
+                "support": 17,
+                "negative_support": 983,
+                "tp": 13,
+                "fp": 6,
+                "fn": 4,
+                "tn": 977,
+                "precision": 0.6842105263157895,
+                "recall": 0.7647058823529411,
+                "recall_wilson_95": [
+                  0.5273820188043501,
+                  0.9044495567791988
+                ],
+                "false_positive_rate": 0.006103763987792472,
+                "false_positive_wilson_95": [
+                  0.0028003234437005645,
+                  0.013252365343437702
+                ]
+              },
+              "music_likeness": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 6,
+                "fp": 3,
+                "fn": 6,
+                "tn": 985,
+                "precision": 0.6666666666666666,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.2537815976337061,
+                  0.7462184023662939
+                ],
+                "false_positive_rate": 0.003036437246963563,
+                "false_positive_wilson_95": [
+                  0.0010331883811014282,
+                  0.008889222840139193
+                ]
+              },
+              "email_query": {
+                "support": 40,
+                "negative_support": 960,
+                "tp": 37,
+                "fp": 3,
+                "fn": 3,
+                "tn": 957,
+                "precision": 0.925,
+                "recall": 0.925,
+                "recall_wilson_95": [
+                  0.8013576647568946,
+                  0.9741639742254119
+                ],
+                "false_positive_rate": 0.003125,
+                "false_positive_wilson_95": [
+                  0.0010633388399886338,
+                  0.009147322602958238
+                ]
+              },
+              "play_music": {
+                "support": 59,
+                "negative_support": 941,
+                "tp": 52,
+                "fp": 11,
+                "fn": 7,
+                "tn": 930,
+                "precision": 0.8253968253968254,
+                "recall": 0.8813559322033898,
+                "recall_wilson_95": [
+                  0.7747635960001831,
+                  0.9413241722420971
+                ],
+                "false_positive_rate": 0.011689691817215728,
+                "false_positive_wilson_95": [
+                  0.006539692228054949,
+                  0.020810355316374565
+                ]
+              },
+              "audio_volume_mute": {
+                "support": 11,
+                "negative_support": 989,
+                "tp": 8,
+                "fp": 4,
+                "fn": 3,
+                "tn": 985,
+                "precision": 0.6666666666666666,
+                "recall": 0.7272727272727273,
+                "recall_wilson_95": [
+                  0.43435469882387084,
+                  0.902539407099751
+                ],
+                "false_positive_rate": 0.004044489383215369,
+                "false_positive_wilson_95": [
+                  0.001573913061277743,
+                  0.010352924517361967
+                ]
+              },
+              "social_post": {
+                "support": 27,
+                "negative_support": 973,
+                "tp": 22,
+                "fp": 1,
+                "fn": 5,
+                "tn": 972,
+                "precision": 0.9565217391304348,
+                "recall": 0.8148148148148148,
+                "recall_wilson_95": [
+                  0.6330131638145156,
+                  0.9181929285702346
+                ],
+                "false_positive_rate": 0.0010277492291880781,
+                "false_positive_wilson_95": [
+                  0.00018144601865463603,
+                  0.005798499619347165
+                ]
+              },
+              "alarm_set": {
+                "support": 14,
+                "negative_support": 986,
+                "tp": 14,
+                "fp": 6,
+                "fn": 0,
+                "tn": 980,
+                "precision": 0.7,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7846891972623643,
+                  1.0
+                ],
+                "false_positive_rate": 0.006085192697768763,
+                "false_positive_wilson_95": [
+                  0.002791794330872968,
+                  0.013212242153482594
+                ]
+              },
+              "qa_factoid": {
+                "support": 47,
+                "negative_support": 953,
+                "tp": 39,
+                "fp": 16,
+                "fn": 8,
+                "tn": 937,
+                "precision": 0.7090909090909091,
+                "recall": 0.8297872340425532,
+                "recall_wilson_95": [
+                  0.6986022402737561,
+                  0.9111363612350974
+                ],
+                "false_positive_rate": 0.016789087093389297,
+                "false_positive_wilson_95": [
+                  0.010360330379169528,
+                  0.027097765202170228
+                ]
+              },
+              "calendar_set": {
+                "support": 70,
+                "negative_support": 930,
+                "tp": 61,
+                "fp": 15,
+                "fn": 9,
+                "tn": 915,
+                "precision": 0.8026315789473685,
+                "recall": 0.8714285714285714,
+                "recall_wilson_95": [
+                  0.7733524405057483,
+                  0.9308589988466248
+                ],
+                "false_positive_rate": 0.016129032258064516,
+                "false_positive_wilson_95": [
+                  0.009798411877498218,
+                  0.0264405647721688
+                ]
+              },
+              "play_game": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 9,
+                "fp": 1,
+                "fn": 3,
+                "tn": 987,
+                "precision": 0.9,
+                "recall": 0.75,
+                "recall_wilson_95": [
+                  0.46769466506643426,
+                  0.9110583316059453
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "alarm_remove": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 7,
+                "fp": 0,
+                "fn": 0,
+                "tn": 993,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6456695649333126,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038536306718610345
+                ]
+              },
+              "lists_remove": {
+                "support": 18,
+                "negative_support": 982,
+                "tp": 14,
+                "fp": 1,
+                "fn": 4,
+                "tn": 981,
+                "precision": 0.9333333333333333,
+                "recall": 0.7777777777777778,
+                "recall_wilson_95": [
+                  0.5478541568378739,
+                  0.9099907189139831
+                ],
+                "false_positive_rate": 0.0010183299389002036,
+                "false_positive_wilson_95": [
+                  0.00017978286212692656,
+                  0.005745570315535057
+                ]
+              },
+              "transport_taxi": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 1,
+                "fn": 0,
+                "tn": 991,
+                "precision": 0.8888888888888888,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010080645161290322,
+                "false_positive_wilson_95": [
+                  0.0001779703090762255,
+                  0.005687881899579316
+                ]
+              },
+              "recommendation_movies": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 6,
+                "fp": 2,
+                "fn": 1,
+                "tn": 991,
+                "precision": 0.75,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.4868721707256811,
+                  0.9743203756552565
+                ],
+                "false_positive_rate": 0.002014098690835851,
+                "false_positive_wilson_95": [
+                  0.0005525123842116775,
+                  0.007313792484338739
+                ]
+              },
+              "iot_coffee": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 0,
+                "fn": 1,
+                "tn": 988,
+                "precision": 1.0,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.003873057318315413
+                ]
+              },
+              "music_query": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 0,
+                "fn": 1,
+                "tn": 988,
+                "precision": 1.0,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.003873057318315413
+                ]
+              },
+              "play_podcasts": {
+                "support": 21,
+                "negative_support": 979,
+                "tp": 18,
+                "fp": 1,
+                "fn": 3,
+                "tn": 978,
+                "precision": 0.9473684210526315,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.6536393971937906,
+                  0.9501898750027473
+                ],
+                "false_positive_rate": 0.0010214504596527069,
+                "false_positive_wilson_95": [
+                  0.00018033384954314413,
+                  0.005763105723817202
+                ]
+              },
+              "lists_query": {
+                "support": 17,
+                "negative_support": 983,
+                "tp": 14,
+                "fp": 4,
+                "fn": 3,
+                "tn": 979,
+                "precision": 0.7777777777777778,
+                "recall": 0.8235294117647058,
+                "recall_wilson_95": [
+                  0.5897054143116588,
+                  0.9380887336237901
+                ],
+                "false_positive_rate": 0.004069175991861648,
+                "false_positive_wilson_95": [
+                  0.0015835265597994733,
+                  0.01041582623882031
+                ]
+              }
+            },
+            "majority_baseline": 0.07
+          },
+          "model_resolved": [
+            "sha256:2a5c5ea5df59c314c73b2198b659a120195832fb08ef796b462e69fafc7634e5"
+          ],
+          "missing_model_identity_rows": 0
+        },
+        "jev": {
+          "input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142935_suite_massive_heldout_jev.json",
+          "input_sha256": "e3a132eb91d3a2b47a31634026d291a5c6155ddf4a2cf7cce5f21c31ede09ff2",
+          "target": "jev",
+          "summary": {
+            "n": 1000,
+            "correct": 828,
+            "accuracy": 0.828,
+            "wilson_95": [
+              0.8033660485432,
+              0.8501235978902758
+            ],
+            "macro_f1": 0.7993860548600782,
+            "errors": 0,
+            "probability_rows": 1000,
+            "multiclass_brier": 0.2486701526987042,
+            "nll": 1.3096153742530328,
+            "ece_10_equal_width": 0.05408464646464639,
+            "p50_ms": 192.29741697199643,
+            "p95_ms": 335.473750019446,
+            "cost_usd": 0.03357375,
+            "reported_cost_usd": 0.03357375,
+            "cost_reported_rows": 1000,
+            "cost_unknown_rows": 0,
+            "per_class": {
+              "datetime_query": {
+                "support": 30,
+                "negative_support": 970,
+                "tp": 29,
+                "fp": 9,
+                "fn": 1,
+                "tn": 961,
+                "precision": 0.7631578947368421,
+                "recall": 0.9666666666666667,
+                "recall_wilson_95": [
+                  0.8332960900859082,
+                  0.9940914096183874
+                ],
+                "false_positive_rate": 0.009278350515463918,
+                "false_positive_wilson_95": [
+                  0.004888945907323127,
+                  0.017539200504869852
+                ]
+              },
+              "iot_hue_lightchange": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 0,
+                "fn": 1,
+                "tn": 988,
+                "precision": 1.0,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.003873057318315413
+                ]
+              },
+              "transport_ticket": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 12,
+                "fp": 1,
+                "fn": 0,
+                "tn": 987,
+                "precision": 0.9230769230769231,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7575059933447592,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "takeaway_query": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 9,
+                "fp": 1,
+                "fn": 3,
+                "tn": 987,
+                "precision": 0.9,
+                "recall": 0.75,
+                "recall_wilson_95": [
+                  0.46769466506643426,
+                  0.9110583316059453
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "qa_stock": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 9,
+                "fp": 1,
+                "fn": 0,
+                "tn": 990,
+                "precision": 0.9,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7008549515804559,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010090817356205853,
+                "false_positive_wilson_95": [
+                  0.0001781499180632004,
+                  0.0056935985589440935
+                ]
+              },
+              "general_greet": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 1,
+                "fp": 7,
+                "fn": 0,
+                "tn": 992,
+                "precision": 0.125,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.20654931437723745,
+                  1.0
+                ],
+                "false_positive_rate": 0.007007007007007007,
+                "false_positive_wilson_95": [
+                  0.003398270691199981,
+                  0.014392636000746167
+                ]
+              },
+              "recommendation_events": {
+                "support": 15,
+                "negative_support": 985,
+                "tp": 11,
+                "fp": 2,
+                "fn": 4,
+                "tn": 983,
+                "precision": 0.8461538461538461,
+                "recall": 0.7333333333333333,
+                "recall_wilson_95": [
+                  0.4804956594401943,
+                  0.8910254667430761
+                ],
+                "false_positive_rate": 0.0020304568527918783,
+                "false_positive_wilson_95": [
+                  0.0005570012190431813,
+                  0.007372944224431606
+                ]
+              },
+              "music_dislikeness": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 1,
+                "fp": 0,
+                "fn": 0,
+                "tn": 999,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.20654931437723745,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038305744012733026
+                ]
+              },
+              "iot_wemo_off": {
+                "support": 6,
+                "negative_support": 994,
+                "tp": 6,
+                "fp": 0,
+                "fn": 0,
+                "tn": 994,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6096657120978346,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.003849768704974616
+                ]
+              },
+              "cooking_recipe": {
+                "support": 24,
+                "negative_support": 976,
+                "tp": 16,
+                "fp": 1,
+                "fn": 8,
+                "tn": 975,
+                "precision": 0.9411764705882353,
+                "recall": 0.6666666666666666,
+                "recall_wilson_95": [
+                  0.4670631683813174,
+                  0.8202780967270225
+                ],
+                "false_positive_rate": 0.0010245901639344263,
+                "false_positive_wilson_95": [
+                  0.00018088822460609905,
+                  0.00578074849540442
+                ]
+              },
+              "qa_currency": {
+                "support": 13,
+                "negative_support": 987,
+                "tp": 13,
+                "fp": 1,
+                "fn": 0,
+                "tn": 986,
+                "precision": 0.9285714285714286,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7719046276458016,
+                  0.9999999999999999
+                ],
+                "false_positive_rate": 0.0010131712259371835,
+                "false_positive_wilson_95": [
+                  0.00017887199396007716,
+                  0.005716580571828467
+                ]
+              },
+              "transport_traffic": {
+                "support": 5,
+                "negative_support": 995,
+                "tp": 5,
+                "fp": 0,
+                "fn": 0,
+                "tn": 995,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.5655175352168251,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038459144709808452
+                ]
+              },
+              "general_quirky": {
+                "support": 57,
+                "negative_support": 943,
+                "tp": 11,
+                "fp": 8,
+                "fn": 46,
+                "tn": 935,
+                "precision": 0.5789473684210527,
+                "recall": 0.19298245614035087,
+                "recall_wilson_95": [
+                  0.11132746980050533,
+                  0.3134069024776395
+                ],
+                "false_positive_rate": 0.008483563096500531,
+                "false_positive_wilson_95": [
+                  0.004304902557982642,
+                  0.016650515728629963
+                ]
+              },
+              "weather_query": {
+                "support": 53,
+                "negative_support": 947,
+                "tp": 49,
+                "fp": 1,
+                "fn": 4,
+                "tn": 946,
+                "precision": 0.98,
+                "recall": 0.9245283018867925,
+                "recall_wilson_95": [
+                  0.8214152251634678,
+                  0.9702604449130533
+                ],
+                "false_positive_rate": 0.0010559662090813093,
+                "false_positive_wilson_95": [
+                  0.00018642829133203552,
+                  0.0059570341823585275
+                ]
+              },
+              "audio_volume_up": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 4,
+                "fp": 1,
+                "fn": 0,
+                "tn": 995,
+                "precision": 0.8,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.5101091635454027,
+                  1.0
+                ],
+                "false_positive_rate": 0.001004016064257028,
+                "false_positive_wilson_95": [
+                  0.0001772554801821179,
+                  0.005665129599132441
+                ]
+              },
+              "email_addcontact": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 4,
+                "fp": 2,
+                "fn": 0,
+                "tn": 994,
+                "precision": 0.6666666666666666,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.5101091635454027,
+                  1.0
+                ],
+                "false_positive_rate": 0.002008032128514056,
+                "false_positive_wilson_95": [
+                  0.0005508476677955156,
+                  0.007291854544156236
+                ]
+              },
+              "takeaway_order": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 5,
+                "fp": 3,
+                "fn": 2,
+                "tn": 990,
+                "precision": 0.625,
+                "recall": 0.7142857142857143,
+                "recall_wilson_95": [
+                  0.35893445183261935,
+                  0.9177810759959433
+                ],
+                "false_positive_rate": 0.0030211480362537764,
+                "false_positive_wilson_95": [
+                  0.0010279833861392192,
+                  0.008844658580755888
+                ]
+              },
+              "email_querycontact": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 4,
+                "fp": 1,
+                "fn": 5,
+                "tn": 990,
+                "precision": 0.8,
+                "recall": 0.4444444444444444,
+                "recall_wilson_95": [
+                  0.18877852109766452,
+                  0.733348706504507
+                ],
+                "false_positive_rate": 0.0010090817356205853,
+                "false_positive_wilson_95": [
+                  0.0001781499180632004,
+                  0.0056935985589440935
+                ]
+              },
+              "iot_hue_lightup": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 9,
+                "fp": 0,
+                "fn": 0,
+                "tn": 991,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7008549515804559,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038613778975876926
+                ]
+              },
+              "recommendation_locations": {
+                "support": 10,
+                "negative_support": 990,
+                "tp": 10,
+                "fp": 3,
+                "fn": 0,
+                "tn": 987,
+                "precision": 0.7692307692307693,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7224672001371107,
+                  0.9999999999999999
+                ],
+                "false_positive_rate": 0.0030303030303030303,
+                "false_positive_wilson_95": [
+                  0.0010311000708227687,
+                  0.008871343355488039
+                ]
+              },
+              "play_audiobook": {
+                "support": 14,
+                "negative_support": 986,
+                "tp": 12,
+                "fp": 0,
+                "fn": 2,
+                "tn": 986,
+                "precision": 1.0,
+                "recall": 0.8571428571428571,
+                "recall_wilson_95": [
+                  0.6005862050302965,
+                  0.9599060787285351
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.003880882929748036
+                ]
+              },
+              "lists_createoradd": {
+                "support": 13,
+                "negative_support": 987,
+                "tp": 11,
+                "fp": 7,
+                "fn": 2,
+                "tn": 980,
+                "precision": 0.6111111111111112,
+                "recall": 0.8461538461538461,
+                "recall_wilson_95": [
+                  0.5776536898051745,
+                  0.9567418216419186
+                ],
+                "false_positive_rate": 0.0070921985815602835,
+                "false_positive_wilson_95": [
+                  0.003439636567159901,
+                  0.01456673434300482
+                ]
+              },
+              "news_query": {
+                "support": 42,
+                "negative_support": 958,
+                "tp": 38,
+                "fp": 5,
+                "fn": 4,
+                "tn": 953,
+                "precision": 0.8837209302325582,
+                "recall": 0.9047619047619048,
+                "recall_wilson_95": [
+                  0.7793489419142897,
+                  0.9623377511944261
+                ],
+                "false_positive_rate": 0.005219206680584551,
+                "false_positive_wilson_95": [
+                  0.002231332056289023,
+                  0.012159250397564677
+                ]
+              },
+              "alarm_query": {
+                "support": 11,
+                "negative_support": 989,
+                "tp": 10,
+                "fp": 1,
+                "fn": 1,
+                "tn": 988,
+                "precision": 0.9090909090909091,
+                "recall": 0.9090909090909091,
+                "recall_wilson_95": [
+                  0.6226415635484043,
+                  0.9837678271141151
+                ],
+                "false_positive_rate": 0.0010111223458038423,
+                "false_positive_wilson_95": [
+                  0.00017851022581330707,
+                  0.005705066420585668
+                ]
+              },
+              "iot_wemo_on": {
+                "support": 3,
+                "negative_support": 997,
+                "tp": 3,
+                "fp": 2,
+                "fn": 0,
+                "tn": 995,
+                "precision": 0.6,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.4385029682449546,
+                  1.0
+                ],
+                "false_positive_rate": 0.0020060180541624875,
+                "false_positive_wilson_95": [
+                  0.0005502949893227546,
+                  0.007284571114179622
+                ]
+              },
+              "general_joke": {
+                "support": 6,
+                "negative_support": 994,
+                "tp": 6,
+                "fp": 2,
+                "fn": 0,
+                "tn": 992,
+                "precision": 0.75,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6096657120978346,
+                  1.0
+                ],
+                "false_positive_rate": 0.002012072434607646,
+                "false_positive_wilson_95": [
+                  0.0005519563618782571,
+                  0.007306465185329862
+                ]
+              },
+              "qa_definition": {
+                "support": 19,
+                "negative_support": 981,
+                "tp": 17,
+                "fp": 4,
+                "fn": 2,
+                "tn": 977,
+                "precision": 0.8095238095238095,
+                "recall": 0.8947368421052632,
+                "recall_wilson_95": [
+                  0.6860591728889099,
+                  0.9706414397011299
+                ],
+                "false_positive_rate": 0.004077471967380225,
+                "false_positive_wilson_95": [
+                  0.0015867572101108986,
+                  0.010436963678806359
+                ]
+              },
+              "social_query": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 8,
+                "fn": 0,
+                "tn": 984,
+                "precision": 0.5,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.008064516129032258,
+                "false_positive_wilson_95": [
+                  0.004091975280787496,
+                  0.015832339623907263
+                ]
+              },
+              "music_settings": {
+                "support": 2,
+                "negative_support": 998,
+                "tp": 1,
+                "fp": 1,
+                "fn": 1,
+                "tn": 997,
+                "precision": 0.5,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.09453120573423074,
+                  0.9054687942657693
+                ],
+                "false_positive_rate": 0.001002004008016032,
+                "false_positive_wilson_95": [
+                  0.0001769002147854709,
+                  0.005653821571843652
+                ]
+              },
+              "audio_volume_other": {
+                "support": 2,
+                "negative_support": 998,
+                "tp": 1,
+                "fp": 0,
+                "fn": 1,
+                "tn": 998,
+                "precision": 1.0,
+                "recall": 0.5,
+                "recall_wilson_95": [
+                  0.09453120573423074,
+                  0.9054687942657693
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038343979347950454
+                ]
+              },
+              "calendar_remove": {
+                "support": 23,
+                "negative_support": 977,
+                "tp": 22,
+                "fp": 0,
+                "fn": 1,
+                "tn": 977,
+                "precision": 1.0,
+                "recall": 0.9565217391304348,
+                "recall_wilson_95": [
+                  0.7900884492974114,
+                  0.9922833338565469
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.003916493115322499
+                ]
+              },
+              "iot_hue_lightdim": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 7,
+                "fp": 1,
+                "fn": 0,
+                "tn": 992,
+                "precision": 0.875,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6456695649333126,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010070493454179255,
+                "false_positive_wilson_95": [
+                  0.0001777910618845106,
+                  0.005682176708321215
+                ]
+              },
+              "calendar_query": {
+                "support": 42,
+                "negative_support": 958,
+                "tp": 33,
+                "fp": 8,
+                "fn": 9,
+                "tn": 950,
+                "precision": 0.8048780487804879,
+                "recall": 0.7857142857142857,
+                "recall_wilson_95": [
+                  0.6406015468367708,
+                  0.8829420012399697
+                ],
+                "false_positive_rate": 0.008350730688935281,
+                "false_positive_wilson_95": [
+                  0.004237404169047212,
+                  0.016391212573073237
+                ]
+              },
+              "email_sendemail": {
+                "support": 38,
+                "negative_support": 962,
+                "tp": 36,
+                "fp": 3,
+                "fn": 2,
+                "tn": 959,
+                "precision": 0.9230769230769231,
+                "recall": 0.9473684210526315,
+                "recall_wilson_95": [
+                  0.8271453786822962,
+                  0.9854457918527075
+                ],
+                "false_positive_rate": 0.0031185031185031187,
+                "false_positive_wilson_95": [
+                  0.0010611269997951554,
+                  0.009128390887240554
+                ]
+              },
+              "iot_cleaning": {
+                "support": 9,
+                "negative_support": 991,
+                "tp": 8,
+                "fp": 0,
+                "fn": 1,
+                "tn": 991,
+                "precision": 1.0,
+                "recall": 0.8888888888888888,
+                "recall_wilson_95": [
+                  0.5650002944233439,
+                  0.9801091123614551
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038613778975876926
+                ]
+              },
+              "audio_volume_down": {
+                "support": 4,
+                "negative_support": 996,
+                "tp": 4,
+                "fp": 1,
+                "fn": 0,
+                "tn": 995,
+                "precision": 0.8,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.5101091635454027,
+                  1.0
+                ],
+                "false_positive_rate": 0.001004016064257028,
+                "false_positive_wilson_95": [
+                  0.0001772554801821179,
+                  0.005665129599132441
+                ]
+              },
+              "play_radio": {
+                "support": 24,
+                "negative_support": 976,
+                "tp": 19,
+                "fp": 0,
+                "fn": 5,
+                "tn": 976,
+                "precision": 1.0,
+                "recall": 0.7916666666666666,
+                "recall_wilson_95": [
+                  0.5952954674681133,
+                  0.9075517464714814
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -4.336808689942018e-19,
+                  0.003920490183501301
+                ]
+              },
+              "cooking_query": {
+                "support": 0,
+                "negative_support": 1000,
+                "tp": 0,
+                "fp": 8,
+                "fn": 0,
+                "tn": 992,
+                "precision": 0.0,
+                "recall": null,
+                "recall_wilson_95": null,
+                "false_positive_rate": 0.008,
+                "false_positive_wilson_95": [
+                  0.004059195818806103,
+                  0.015706334530980144
+                ]
+              },
+              "datetime_convert": {
+                "support": 5,
+                "negative_support": 995,
+                "tp": 2,
+                "fp": 1,
+                "fn": 3,
+                "tn": 994,
+                "precision": 0.6666666666666666,
+                "recall": 0.4,
+                "recall_wilson_95": [
+                  0.11762077423264783,
+                  0.769275718723987
+                ],
+                "false_positive_rate": 0.0010050251256281408,
+                "false_positive_wilson_95": [
+                  0.00017743364852295393,
+                  0.005670800592365468
+                ]
+              },
+              "qa_maths": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 1,
+                "fn": 0,
+                "tn": 991,
+                "precision": 0.8888888888888888,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010080645161290322,
+                "false_positive_wilson_95": [
+                  0.0001779703090762255,
+                  0.005687881899579316
+                ]
+              },
+              "iot_hue_lightoff": {
+                "support": 15,
+                "negative_support": 985,
+                "tp": 13,
+                "fp": 1,
+                "fn": 2,
+                "tn": 984,
+                "precision": 0.9285714285714286,
+                "recall": 0.8666666666666667,
+                "recall_wilson_95": [
+                  0.6211801716767764,
+                  0.9626387408969346
+                ],
+                "false_positive_rate": 0.0010152284263959391,
+                "false_positive_wilson_95": [
+                  0.00017923523140044462,
+                  0.005728141293508542
+                ]
+              },
+              "iot_hue_lighton": {
+                "support": 1,
+                "negative_support": 999,
+                "tp": 0,
+                "fp": 0,
+                "fn": 1,
+                "tn": 999,
+                "precision": null,
+                "recall": 0.0,
+                "recall_wilson_95": [
+                  0.0,
+                  0.7934506856227626
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.0038305744012733026
+                ]
+              },
+              "transport_query": {
+                "support": 17,
+                "negative_support": 983,
+                "tp": 15,
+                "fp": 5,
+                "fn": 2,
+                "tn": 978,
+                "precision": 0.75,
+                "recall": 0.8823529411764706,
+                "recall_wilson_95": [
+                  0.6566364940511412,
+                  0.9671202262362074
+                ],
+                "false_positive_rate": 0.00508646998982706,
+                "false_positive_wilson_95": [
+                  0.0021745343977171766,
+                  0.011851486395161849
+                ]
+              },
+              "music_likeness": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 5,
+                "fp": 1,
+                "fn": 7,
+                "tn": 987,
+                "precision": 0.8333333333333334,
+                "recall": 0.4166666666666667,
+                "recall_wilson_95": [
+                  0.19326031365875665,
+                  0.6804886874504503
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "email_query": {
+                "support": 40,
+                "negative_support": 960,
+                "tp": 38,
+                "fp": 0,
+                "fn": 2,
+                "tn": 960,
+                "precision": 1.0,
+                "recall": 0.95,
+                "recall_wilson_95": [
+                  0.8349612263085903,
+                  0.9861793326138516
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.003985571263342763
+                ]
+              },
+              "play_music": {
+                "support": 59,
+                "negative_support": 941,
+                "tp": 58,
+                "fp": 8,
+                "fn": 1,
+                "tn": 933,
+                "precision": 0.8787878787878788,
+                "recall": 0.9830508474576272,
+                "recall_wilson_95": [
+                  0.9100427403585771,
+                  0.9970017660816444
+                ],
+                "false_positive_rate": 0.008501594048884165,
+                "false_positive_wilson_95": [
+                  0.004314065163219883,
+                  0.01668571065679894
+                ]
+              },
+              "audio_volume_mute": {
+                "support": 11,
+                "negative_support": 989,
+                "tp": 9,
+                "fp": 0,
+                "fn": 2,
+                "tn": 989,
+                "precision": 1.0,
+                "recall": 0.8181818181818182,
+                "recall_wilson_95": [
+                  0.523019438039156,
+                  0.9486323102539149
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  2.168404344971009e-19,
+                  0.003869156335652063
+                ]
+              },
+              "social_post": {
+                "support": 27,
+                "negative_support": 973,
+                "tp": 22,
+                "fp": 0,
+                "fn": 5,
+                "tn": 973,
+                "precision": 1.0,
+                "recall": 0.8148148148148148,
+                "recall_wilson_95": [
+                  0.6330131638145156,
+                  0.9181929285702346
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.003932530489985327
+                ]
+              },
+              "alarm_set": {
+                "support": 14,
+                "negative_support": 986,
+                "tp": 13,
+                "fp": 18,
+                "fn": 1,
+                "tn": 968,
+                "precision": 0.41935483870967744,
+                "recall": 0.9285714285714286,
+                "recall_wilson_95": [
+                  0.6853129557584889,
+                  0.9872777847521093
+                ],
+                "false_positive_rate": 0.018255578093306288,
+                "false_positive_wilson_95": [
+                  0.011578255676324041,
+                  0.028672087917246576
+                ]
+              },
+              "qa_factoid": {
+                "support": 47,
+                "negative_support": 953,
+                "tp": 42,
+                "fp": 26,
+                "fn": 5,
+                "tn": 927,
+                "precision": 0.6176470588235294,
+                "recall": 0.8936170212765957,
+                "recall_wilson_95": [
+                  0.7740573065626163,
+                  0.9536952178189183
+                ],
+                "false_positive_rate": 0.02728226652675761,
+                "false_positive_wilson_95": [
+                  0.018685128887424438,
+                  0.03967507102439653
+                ]
+              },
+              "calendar_set": {
+                "support": 70,
+                "negative_support": 930,
+                "tp": 45,
+                "fp": 3,
+                "fn": 25,
+                "tn": 927,
+                "precision": 0.9375,
+                "recall": 0.6428571428571429,
+                "recall_wilson_95": [
+                  0.5258839463134151,
+                  0.7449666072836516
+                ],
+                "false_positive_rate": 0.0032258064516129032,
+                "false_positive_wilson_95": [
+                  0.0010976586560018766,
+                  0.00944102403765627
+                ]
+              },
+              "play_game": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 12,
+                "fp": 1,
+                "fn": 0,
+                "tn": 987,
+                "precision": 0.9230769230769231,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.7575059933447592,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010121457489878543,
+                "false_positive_wilson_95": [
+                  0.00017869092678273867,
+                  0.005710817692507744
+                ]
+              },
+              "alarm_remove": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 7,
+                "fp": 1,
+                "fn": 0,
+                "tn": 992,
+                "precision": 0.875,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6456695649333126,
+                  1.0
+                ],
+                "false_positive_rate": 0.0010070493454179255,
+                "false_positive_wilson_95": [
+                  0.0001777910618845106,
+                  0.005682176708321215
+                ]
+              },
+              "lists_remove": {
+                "support": 18,
+                "negative_support": 982,
+                "tp": 17,
+                "fp": 0,
+                "fn": 1,
+                "tn": 982,
+                "precision": 1.0,
+                "recall": 0.9444444444444444,
+                "recall_wilson_95": [
+                  0.7424269921812741,
+                  0.990124809021697
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038966294086368036
+                ]
+              },
+              "transport_taxi": {
+                "support": 8,
+                "negative_support": 992,
+                "tp": 8,
+                "fp": 0,
+                "fn": 0,
+                "tn": 992,
+                "precision": 1.0,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6755924351161198,
+                  1.0
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  0.0,
+                  0.0038575003949356543
+                ]
+              },
+              "recommendation_movies": {
+                "support": 7,
+                "negative_support": 993,
+                "tp": 7,
+                "fp": 2,
+                "fn": 0,
+                "tn": 991,
+                "precision": 0.7777777777777778,
+                "recall": 1.0,
+                "recall_wilson_95": [
+                  0.6456695649333126,
+                  1.0
+                ],
+                "false_positive_rate": 0.002014098690835851,
+                "false_positive_wilson_95": [
+                  0.0005525123842116775,
+                  0.007313792484338739
+                ]
+              },
+              "iot_coffee": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 11,
+                "fp": 0,
+                "fn": 1,
+                "tn": 988,
+                "precision": 1.0,
+                "recall": 0.9166666666666666,
+                "recall_wilson_95": [
+                  0.646120088858883,
+                  0.9851349055950829
+                ],
+                "false_positive_rate": 0.0,
+                "false_positive_wilson_95": [
+                  -2.168404344971009e-19,
+                  0.003873057318315413
+                ]
+              },
+              "music_query": {
+                "support": 12,
+                "negative_support": 988,
+                "tp": 10,
+                "fp": 6,
+                "fn": 2,
+                "tn": 982,
+                "precision": 0.625,
+                "recall": 0.8333333333333334,
+                "recall_wilson_95": [
+                  0.5519691377470266,
+                  0.9530348578161463
+                ],
+                "false_positive_rate": 0.006072874493927126,
+                "false_positive_wilson_95": [
+                  0.002786137061237034,
+                  0.013185628062928799
+                ]
+              },
+              "play_podcasts": {
+                "support": 21,
+                "negative_support": 979,
+                "tp": 17,
+                "fp": 1,
+                "fn": 4,
+                "tn": 978,
+                "precision": 0.9444444444444444,
+                "recall": 0.8095238095238095,
+                "recall_wilson_95": [
+                  0.5999943530979508,
+                  0.9233243494723822
+                ],
+                "false_positive_rate": 0.0010214504596527069,
+                "false_positive_wilson_95": [
+                  0.00018033384954314413,
+                  0.005763105723817202
+                ]
+              },
+              "lists_query": {
+                "support": 17,
+                "negative_support": 983,
+                "tp": 14,
+                "fp": 4,
+                "fn": 3,
+                "tn": 979,
+                "precision": 0.7777777777777778,
+                "recall": 0.8235294117647058,
+                "recall_wilson_95": [
+                  0.5897054143116588,
+                  0.9380887336237901
+                ],
+                "false_positive_rate": 0.004069175991861648,
+                "false_positive_wilson_95": [
+                  0.0015835265597994733,
+                  0.01041582623882031
+                ]
+              }
+            },
+            "majority_baseline": 0.07
+          },
+          "model_resolved": [
+            "typesafe/jev-1.13-20260917"
+          ],
+          "missing_model_identity_rows": 0
+        }
+      },
+      "basecomparison": {
+        "reference_target": "laya:base",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T143536_suite_massive_heldout_laya_base.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T144751_suite_massive_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": 0.29336353903472595,
+        "macro_f1_interval": [
+          0.24820698669582433,
+          0.3365679535556946
+        ],
+        "macro_f1_confidence": 0.99,
+        "accuracy_delta_fine_minus_reference": 0.2539999999999999,
+        "accuracy_interval_95": [
+          0.22499999999999998,
+          0.2829999999999999
+        ],
+        "n_rows": 1000,
+        "n_text_groups": 1000,
+        "classes": 60,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "99% macro-F1 interval: Bonferroni family of five primary contrasts",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "jevcomparison": {
+        "reference_target": "jev",
+        "reference_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T142935_suite_massive_heldout_jev.json",
+        "fine_input": "/Users/alexanderollman/jevtest/bench/results/workflow-suite/20260920T144751_suite_massive_heldout_laya_fine.json",
+        "macro_f1_delta_fine_minus_reference": -0.049192829745627775,
+        "macro_f1_interval": [
+          -0.08008193955483053,
+          -0.006534590292600543
+        ],
+        "macro_f1_confidence": 0.95,
+        "accuracy_delta_fine_minus_reference": -0.013000000000000012,
+        "accuracy_interval_95": [
+          -0.03699999999999992,
+          0.010999999999999899
+        ],
+        "n_rows": 1000,
+        "n_text_groups": 1000,
+        "classes": 60,
+        "resamples": 5000,
+        "seed": 7,
+        "method": "Paired normalized-text group percentile bootstrap; fixed class set, absent-class F1=0.",
+        "multiplicity": "Descriptive secondary 95% intervals; no multiplicity correction",
+        "limitation": "Conditional on these checkpoints and test examples; does not measure training-seed variation."
+      },
+      "pending": []
+    }
+  ],
+  "skipped": [],
+  "selection": "Lexicographically latest completed validated run per task and target; no score-based selection."
+}

@@ -1,0 +1,228 @@
+{
+  "laya-era-distill-1k": {
+    "weights_sha256": "258126d155c45e02b6a5df4edf6a1bebac6331b77c13ad6f228f1ee3cdecc021",
+    "config_sha256": "3902b69edbc5f7c85d7bd6dc00f3a2261ab4c15b48c846d01cf86369a8742648",
+    "bytes": 1685197088,
+    "configuration": {
+      "encoder": "answerdotai/ModernBERT-large",
+      "head_layers": 2,
+      "max_len": 512,
+      "head_max_len": 192,
+      "max_prefixes": 6,
+      "act_costs": {
+        "escalate": 0.5
+      },
+      "cost_wrong_act": 3.0,
+      "amp_dtype": "bf16",
+      "model_name": "rl-agent",
+      "temperature": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "temperature_by_options": {},
+      "training": {
+        "updates": 7313,
+        "epochs_completed": 1,
+        "hours": 1.96,
+        "world_size": 1,
+        "fine_tuned_from_checkpoint": true
+      },
+      "finetune": {
+        "base": "convaiinnovations/laya",
+        "data": "../train/distill_1k.jsonl",
+        "rows": 3986,
+        "epochs": 3,
+        "loss": "soft cross-entropy",
+        "date": "2026-09-19"
+      }
+    }
+  },
+  "laya-era-distill-full": {
+    "weights_sha256": "bac103c9ff7f5d408d50db49f84f775ddb12094b2bb38b67691968b7dd4cd6f9",
+    "config_sha256": "6a4c07c330b7ed0755f363a9a63c5f7b3e5463d79695a59a37316106de3c1c81",
+    "bytes": 1685197088,
+    "configuration": {
+      "encoder": "answerdotai/ModernBERT-large",
+      "head_layers": 2,
+      "max_len": 512,
+      "head_max_len": 192,
+      "max_prefixes": 6,
+      "act_costs": {
+        "escalate": 0.5
+      },
+      "cost_wrong_act": 3.0,
+      "amp_dtype": "bf16",
+      "model_name": "rl-agent",
+      "temperature": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "temperature_by_options": {},
+      "training": {
+        "updates": 7313,
+        "epochs_completed": 1,
+        "hours": 1.96,
+        "world_size": 1,
+        "fine_tuned_from_checkpoint": true
+      },
+      "finetune": {
+        "base": "convaiinnovations/laya",
+        "data": "../train/distill.jsonl",
+        "rows": 10384,
+        "epochs": 3,
+        "loss": "soft cross-entropy",
+        "date": "2026-09-19"
+      }
+    }
+  },
+  "laya-english-wide": {
+    "weights_sha256": "891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+    "config_sha256": "b2d411a7119832748a561149cce7e160c8784868a452ad5d7704dedb85d2d05c",
+    "bytes": 842609210,
+    "configuration": {
+      "encoder": "answerdotai/ModernBERT-large",
+      "head_layers": 2,
+      "max_len": 1024,
+      "head_max_len": 768,
+      "max_prefixes": 6,
+      "act_costs": {
+        "escalate": 0.5
+      },
+      "cost_wrong_act": 3.0,
+      "amp_dtype": "bf16",
+      "model_name": "rl-agent",
+      "temperature": [
+        1.6369030475616455,
+        1.2514300346374512,
+        1.983399510383606
+      ],
+      "temperature_by_options": {
+        "choice:3-5": 1.7601518630981445,
+        "choice:6-10": 1.0000158548355103,
+        "score:3-5": 1.2514300346374512,
+        "noul:2": 1.983399510383606,
+        "choice:11+": 0.10058280825614929,
+        "choice:2": 1.9063563346862793
+      },
+      "training": {
+        "updates": 7313,
+        "epochs_completed": 1,
+        "hours": 1.96,
+        "world_size": 1,
+        "fine_tuned_from_checkpoint": true
+      },
+      "experiment": {
+        "condition": "base weights, wider input budget",
+        "base_snapshot": "/Users/alexanderollman/.cache/huggingface/hub/models--convaiinnovations--laya/snapshots/1c5edc17a7acd8701df6fc341c0d179f1c62c982"
+      }
+    }
+  },
+  "laya-banking77-gold-1k": {
+    "weights_sha256": "6b548d5f590b3c3de0a757409d4eec66ec61136dc951cbd29c555c13e0054677",
+    "config_sha256": "baa6e487855639c0ce4c635f7fd65c772e31bf80fd09efaf5e7d47e5ad63f4f7",
+    "bytes": 1685197088,
+    "configuration": {
+      "encoder": "answerdotai/ModernBERT-large",
+      "head_layers": 2,
+      "max_len": 1024,
+      "head_max_len": 768,
+      "max_prefixes": 6,
+      "act_costs": {
+        "escalate": 0.5
+      },
+      "cost_wrong_act": 3.0,
+      "amp_dtype": "bf16",
+      "model_name": "rl-agent",
+      "temperature": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "temperature_by_options": {},
+      "training": {
+        "updates": 7313,
+        "epochs_completed": 1,
+        "hours": 1.96,
+        "world_size": 1,
+        "fine_tuned_from_checkpoint": true
+      },
+      "finetune": {
+        "dataset": "PolyAI/banking77",
+        "train_rows": 1001,
+        "epochs": 3,
+        "seed": 7,
+        "manifest": {
+          "dataset": "PolyAI/banking77",
+          "license": "CC-BY-4.0",
+          "huggingface_revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+          "source_revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+          "source": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b",
+          "seed": 7,
+          "train": 1001,
+          "development": 770,
+          "test": 3080,
+          "classes": 77,
+          "train_per_class": 13,
+          "dev_per_class": 10,
+          "exclusions": {
+            "duplicate_train": 30,
+            "test_overlap": 25,
+            "conflicting_labels": 2
+          },
+          "raw_sha256": {
+            "train.csv": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+            "test.csv": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+            "LICENSE": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+          },
+          "split_sha256": {
+            "train": "f21f32424f6c26f21d3b1dce2feee66fc3315973b00f237185ca4bb1ae1d7327",
+            "development": "388634618d0469f966670a5aec62e316337ec46f844f24c50a99c617e3f6719b",
+            "heldout": "577324f12e04f36aeb5aa145097e9c8c49208fa072e867685c8e19311167cb07"
+          },
+          "protocol": {
+            "max_len": 1024,
+            "head_max_len": 768,
+            "epochs": 3,
+            "base": "convaiinnovations/laya",
+            "selection": "fixed final epoch",
+            "calibration": "development only; no test-based tuning",
+            "primary_metric": "77-way accuracy on all 3080 official test rows",
+            "test_duplicate_groups": 3076
+          },
+          "created": "2026-09-19T19:32:05-0700"
+        },
+        "development": [
+          {
+            "epoch": 0,
+            "loss": 2.9951080594744,
+            "accuracy": 0.4961038961038961,
+            "n": 770
+          },
+          {
+            "epoch": 1,
+            "loss": 1.325582055147592,
+            "accuracy": 0.7194805194805195,
+            "n": 770
+          },
+          {
+            "epoch": 2,
+            "loss": 1.1243194795274116,
+            "accuracy": 0.7779220779220779,
+            "n": 770
+          },
+          {
+            "epoch": 3,
+            "loss": 1.084969393463878,
+            "accuracy": 0.7935064935064935,
+            "n": 770
+          }
+        ],
+        "loss": "label-smoothed cross entropy",
+        "base": "convaiinnovations/laya",
+        "base_snapshot": "/Users/alexanderollman/.cache/huggingface/hub/models--convaiinnovations--laya/snapshots/1c5edc17a7acd8701df6fc341c0d179f1c62c982"
+      }
+    }
+  }
+}

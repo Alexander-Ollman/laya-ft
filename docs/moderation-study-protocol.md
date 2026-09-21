@@ -5,7 +5,7 @@ order: 13
 
 # Can a small local model moderate chat reliably?
 
-Approved by the owner on 21 September 2026. Train two independent Laya checkpoints on 1,000 and 5,000 labelled Aegis decision examples; measure input and response safety plus cross-dataset transfer. Each budget is half prompt decisions and half response decisions. The smaller set is nested inside the larger set. No Jev outputs, new teacher labels, or provider model calls are used. Existing no-Git exception continues. Report and artifacts stay local for owner review.
+Approved by the owner on 21 September 2026. Train two independent Laya checkpoints on 1,000 and 5,000 labelled Aegis decision examples; measure input and response safety plus cross-dataset transfer. Each budget is half prompt decisions and half response decisions. The smaller set is nested inside the larger set. No Jev outputs, new teacher labels, or provider model calls are used. Existing no-Git exception continues. The owner subsequently authorized publication on 21 September 2026. This protocol describes the original Laya experiment; the later hosted Jev comparison has a separate [addendum](moderation-jev-addendum.md).
 
 ## Frozen design
 

@@ -1,0 +1,40 @@
+{
+  "dataset": "PolyAI/banking77",
+  "license": "CC-BY-4.0",
+  "huggingface_revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+  "source_revision": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "source": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "seed": 7,
+  "train": 1001,
+  "development": 770,
+  "test": 3080,
+  "classes": 77,
+  "train_per_class": 13,
+  "dev_per_class": 10,
+  "exclusions": {
+    "duplicate_train": 30,
+    "test_overlap": 25,
+    "conflicting_labels": 2
+  },
+  "raw_sha256": {
+    "train.csv": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "test.csv": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "LICENSE": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+  },
+  "split_sha256": {
+    "train": "f21f32424f6c26f21d3b1dce2feee66fc3315973b00f237185ca4bb1ae1d7327",
+    "development": "388634618d0469f966670a5aec62e316337ec46f844f24c50a99c617e3f6719b",
+    "heldout": "577324f12e04f36aeb5aa145097e9c8c49208fa072e867685c8e19311167cb07"
+  },
+  "protocol": {
+    "max_len": 1024,
+    "head_max_len": 768,
+    "epochs": 3,
+    "base": "convaiinnovations/laya",
+    "selection": "fixed final epoch",
+    "calibration": "development only; no test-based tuning",
+    "primary_metric": "77-way accuracy on all 3080 official test rows",
+    "test_duplicate_groups": 3076
+  },
+  "created": "2026-09-19T19:32:05-0700"
+}

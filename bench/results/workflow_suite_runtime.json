@@ -1,0 +1,27 @@
+{
+  "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "machine": "arm64",
+  "packages": {
+    "laya": "0.3.3",
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "huggingface-hub": "1.32.0",
+    "safetensors": "0.8.0",
+    "httpx": "0.28.1",
+    "numpy": "2.5.3",
+    "pyarrow": "25.0.1"
+  },
+  "execution": "Local direct model calls on MPS, one GPU job at a time. Hosted Jev calls sequential in a separate process.",
+  "base_revision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+  "laya_source_sha256": {
+    "../laya/laya/lang.py": "64d1e9342dbe3e744bf5dc98b1926a5aaecb5efddea6bf09f3ab3d44457ec7d0",
+    "../laya/laya/presets.py": "2a3370f587cae29696bfa487edcc51caf47a211518733fdb192cf6d4eddbf1ea",
+    "../laya/laya/__init__.py": "b062f868a381f4dabc16c310557acafdb2918b831d41802fb9f05d0c00498f7b",
+    "../laya/laya/common.py": "f948ee606abe2ed2463f830c051f1a60dccc1b9f5ca1fdc15635cfcbe0cff7b2",
+    "../laya/laya/email.py": "55138f6044f898bdefdbd8aaba08ce5b4d3e62083c61695edf06f46d71c48d2c",
+    "../laya/laya/agent.py": "025522e4fd212d805703dfe1b93919c6cfae7a3c12dc72a984f88de02f2eb9c0",
+    "../laya/laya/router.py": "c49c3daa338838bef895f92cdd58b9277b378221eb1c9016e9d35e3a7c6122c4"
+  },
+  "prior_exclusions_sha256": "d908ac0cc489e1e98cefb0be8d8666498a2af8727b9d468fa949cbfc3ce4effc"
+}

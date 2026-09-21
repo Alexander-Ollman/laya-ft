@@ -1,0 +1,27 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 2158.90it/s]
+development {'epoch': 0, 'loss': 0.613574201464653, 'accuracy': 0.76, 'n': 100}
+epoch 1 step 1/21 loss 0.3681 7s
+epoch 1 step 2/21 loss 0.7491 11s
+epoch 1 step 3/21 loss 0.3938 15s
+epoch 1 step 4/21 loss 0.2816 19s
+epoch 1 step 5/21 loss 0.2224 22s
+epoch 1 step 6/21 loss 0.2079 26s
+epoch 1 step 7/21 loss 0.2060 30s
+development {'epoch': 1, 'loss': 0.3203286373615265, 'accuracy': 0.94, 'n': 100}
+epoch 2 step 8/21 loss 0.2187 35s
+epoch 2 step 9/21 loss 0.2318 38s
+epoch 2 step 10/21 loss 0.2462 41s
+epoch 2 step 11/21 loss 0.1994 45s
+epoch 2 step 12/21 loss 0.2146 48s
+epoch 2 step 13/21 loss 0.2179 51s
+epoch 2 step 14/21 loss 0.1995 55s
+development {'epoch': 2, 'loss': 0.22211765468120576, 'accuracy': 1.0, 'n': 100}
+epoch 3 step 15/21 loss 0.2269 60s
+epoch 3 step 16/21 loss 0.2055 63s
+epoch 3 step 17/21 loss 0.2002 67s
+epoch 3 step 18/21 loss 0.2141 70s
+epoch 3 step 19/21 loss 0.2259 74s
+epoch 3 step 20/21 loss 0.2000 77s
+epoch 3 step 21/21 loss 0.1993 80s
+development {'epoch': 3, 'loss': 0.21539327442646028, 'accuracy': 1.0, 'n': 100}
+saved /Users/alexanderollman/jevtest/models/laya-suite-injection-s7

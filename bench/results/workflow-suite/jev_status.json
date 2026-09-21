@@ -1,0 +1,77 @@
+{
+  "lane": "jev",
+  "state": "completed",
+  "started": "2026-09-20T14:19:19-0700",
+  "stages": [
+    {
+      "name": "injection_jev",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/injection",
+        "--target",
+        "jev"
+      ],
+      "started": 1789939159.599447,
+      "pid": 91097,
+      "exit_code": 0,
+      "seconds": 37.4
+    },
+    {
+      "name": "sms_jev",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/sms",
+        "--target",
+        "jev"
+      ],
+      "started": 1789939196.985725,
+      "pid": 93037,
+      "exit_code": 0,
+      "seconds": 207.8
+    },
+    {
+      "name": "emotion_jev",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/emotion",
+        "--target",
+        "jev"
+      ],
+      "started": 1789939404.740299,
+      "pid": 4156,
+      "exit_code": 0,
+      "seconds": 225.4
+    },
+    {
+      "name": "counterfactual_jev",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/counterfactual",
+        "--target",
+        "jev"
+      ],
+      "started": 1789939630.0939069,
+      "pid": 15942,
+      "exit_code": 0,
+      "seconds": 145.0
+    },
+    {
+      "name": "massive_jev",
+      "command": [
+        "evaluate_workflow_suite.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/workflow-suite/massive",
+        "--target",
+        "jev"
+      ],
+      "started": 1789939775.141473,
+      "pid": 24264,
+      "exit_code": 0,
+      "seconds": 211.1
+    }
+  ]
+}
