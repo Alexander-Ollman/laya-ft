@@ -1,0 +1,51 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 2054.22it/s]
+development {'epoch': 0, 'loss': 0.929644206315279, 'accuracy': 0.6175, 'n': 400}
+epoch 1 step 1/48 loss 0.4445 9s MPS allocated 6.8GB driver 14.1GB
+epoch 1 step 2/48 loss 1.3779 19s MPS allocated 6.8GB driver 19.5GB
+epoch 1 step 3/48 loss 0.8317 34s MPS allocated 6.8GB driver 39.9GB
+epoch 1 step 4/48 loss 0.8483 42s MPS allocated 6.8GB driver 39.9GB
+epoch 1 step 5/48 loss 1.1164 55s MPS allocated 6.8GB driver 45.3GB
+epoch 1 step 6/48 loss 0.4945 67s MPS allocated 6.8GB driver 45.3GB
+epoch 1 step 7/48 loss 0.9347 79s MPS allocated 6.8GB driver 45.3GB
+epoch 1 step 8/48 loss 0.4305 90s MPS allocated 6.8GB driver 45.3GB
+epoch 1 step 9/48 loss 0.3687 102s MPS allocated 6.8GB driver 45.2GB
+epoch 1 step 10/48 loss 0.5627 116s MPS allocated 6.8GB driver 45.2GB
+epoch 1 step 11/48 loss 0.4848 132s MPS allocated 6.8GB driver 52.8GB
+epoch 1 step 12/48 loss 0.6043 149s MPS allocated 6.8GB driver 78.6GB
+epoch 1 step 13/48 loss 0.3799 162s MPS allocated 6.8GB driver 78.5GB
+epoch 1 step 14/48 loss 0.5910 182s MPS allocated 6.8GB driver 80.5GB
+epoch 1 step 15/48 loss 0.5232 201s MPS allocated 6.8GB driver 80.4GB
+epoch 1 step 16/48 loss 0.2267 207s MPS allocated 6.8GB driver 80.4GB
+development {'epoch': 1, 'loss': 0.5013815480470657, 'accuracy': 0.8, 'n': 400}
+epoch 2 step 17/48 loss 0.4324 239s MPS allocated 6.8GB driver 80.4GB
+epoch 2 step 18/48 loss 0.2759 256s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 19/48 loss 0.2485 266s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 20/48 loss 0.2211 276s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 21/48 loss 0.5730 286s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 22/48 loss 0.4040 296s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 23/48 loss 0.3140 307s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 24/48 loss 0.3877 330s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 25/48 loss 0.2755 343s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 26/48 loss 0.4962 373s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 27/48 loss 0.2403 399s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 28/48 loss 0.2166 416s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 29/48 loss 0.2018 444s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 30/48 loss 0.2214 468s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 31/48 loss 0.6586 493s MPS allocated 6.8GB driver 95.5GB
+epoch 2 step 32/48 loss 0.4907 508s MPS allocated 6.8GB driver 95.5GB
+development {'epoch': 2, 'loss': 0.5330657751858234, 'accuracy': 0.82, 'n': 400}
+epoch 3 step 33/48 loss 0.3149 563s MPS allocated 6.8GB driver 106.0GB
+epoch 3 step 34/48 loss 0.2029 597s MPS allocated 6.8GB driver 106.0GB
+epoch 3 step 35/48 loss 0.2255 617s MPS allocated 6.8GB driver 106.0GB
+epoch 3 step 36/48 loss 0.2156 736s MPS allocated 6.8GB driver 106.0GB
+Traceback (most recent call last):
+  File "/Users/alexanderollman/jevtest/bench/train_public_laya.py", line 184, in <module>
+    outcome = "completed"
+^^^^^^
+  File "/Users/alexanderollman/jevtest/bench/train_public_laya.py", line 151, in main
+    opt.zero_grad(set_to_none=True)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/alexanderollman/jevtest/bench/train_laya.py", line 78, in run_batch
+    logits, _ = agent.model(b["input_ids"].to(device), b["attention_mask"].to(device), b["marker_pos"].to(device),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

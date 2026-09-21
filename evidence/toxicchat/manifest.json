@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/toxicchat",
+  "slug": "toxicchat",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "812cc1a42e3ceb8aa791abf8daf13afd3d11ebb5a140e92b91bdbae917b1c60e"
+  },
+  "counts": {
+    "heldout": {
+      "safe": 2491,
+      "unsafe": 362
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 2853,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": "0124 human-annotated test subset; unannotated source test texts also excluded from training"
+}

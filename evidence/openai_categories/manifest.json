@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/openai_categories",
+  "slug": "openai_categories",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "a6709e3f23c6326106e52a0732475ea226794cb39a8339af978156d15b59fc6a"
+  },
+  "counts": {
+    "heldout": {
+      "safe": 8528,
+      "unsafe": 770
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 9298,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

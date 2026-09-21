@@ -1,0 +1,242 @@
+{
+  "schema": "moderation-reference-scores-v1",
+  "checked_date": "2026-09-21",
+  "status": "Published context only; these are not measurements from this project.",
+  "sources": {
+    "mistral_card": {
+      "url": "https://huggingface.co/mistralai/Shieldstral-1.0-3B/blob/003ec7e2b0bab5f0e6307edbaf186fa5822b76f5/README.md",
+      "revision": "003ec7e2b0bab5f0e6307edbaf186fa5822b76f5",
+      "publisher": "Mistral AI",
+      "model_license": "Apache-2.0",
+      "metric": "F1 (%) as reported; do not relabel as macro-F1",
+      "settings": {
+        "Shieldstral-3B": {
+          "threshold": 0.5
+        },
+        "GPT-OSS-Safeguard-20B": {
+          "reasoning_effort": "high"
+        }
+      },
+      "scores": [
+        {
+          "dataset": "WildGuardTest",
+          "task": "prompt_harmfulness",
+          "Shieldstral-3B": 88.1,
+          "GPT-OSS-Safeguard-20B": 87.3
+        },
+        {
+          "dataset": "ToxicChat",
+          "task": "prompt_harmfulness",
+          "Shieldstral-3B": 84.1,
+          "GPT-OSS-Safeguard-20B": 79.8
+        },
+        {
+          "dataset": "Aegis v2",
+          "task": "prompt_harmfulness",
+          "Shieldstral-3B": 86.2,
+          "GPT-OSS-Safeguard-20B": 84.4
+        },
+        {
+          "dataset": "OpenAI Moderation",
+          "task": "prompt_harmfulness",
+          "Shieldstral-3B": 81.4,
+          "GPT-OSS-Safeguard-20B": 84.0
+        },
+        {
+          "dataset": "WildGuardTest",
+          "task": "response_harmfulness",
+          "Shieldstral-3B": 80.4,
+          "GPT-OSS-Safeguard-20B": 80.7
+        },
+        {
+          "dataset": "BeaverTails",
+          "task": "response_harmfulness",
+          "Shieldstral-3B": 85.0,
+          "GPT-OSS-Safeguard-20B": 83.8
+        },
+        {
+          "dataset": "Aegis v2",
+          "task": "response_harmfulness",
+          "Shieldstral-3B": 87.2,
+          "GPT-OSS-Safeguard-20B": 75.2
+        },
+        {
+          "dataset": "XSTest Harm",
+          "task": "response_harmfulness",
+          "Shieldstral-3B": 93.5,
+          "GPT-OSS-Safeguard-20B": 93.8
+        },
+        {
+          "dataset": "XSTest",
+          "task": "response_refusal",
+          "Shieldstral-3B": 94.6,
+          "GPT-OSS-Safeguard-20B": 94.9
+        }
+      ],
+      "comparability": "Dataset-specific policies and complete selection/scoring scripts are not established by the card. Reference-only; not a paired comparison with our checkpoints."
+    },
+    "mistral_report": {
+      "url": "https://arxiv.org/html/2607.25857v1",
+      "publication_date": "2026-07-28",
+      "section": "Sections 2 and 7, Table 4",
+      "scoring": "Softmax over yes/no logits, threshold 0.5; instruction, query, document fields.",
+      "table4_sample_counts": {
+        "WildGuardTest": 1725,
+        "ToxicChat": 2853,
+        "Aegis v2": 1928,
+        "OpenAI Moderation": 1680,
+        "BeaverTails": 3021,
+        "XSTest": 449
+      },
+      "comparability": "Counts describe paper benchmarks, not verified per-task retained row manifests. Do not substitute our samples or original XSTest prompts for these response evaluations."
+    },
+    "openai_report": {
+      "url": "https://cdn.openai.com/pdf/08b7dee4-8bc6-4955-a219-7793fb69090c/Technical_report__Research_Preview_of_gpt_oss_safeguard.pdf",
+      "landing_url": "https://openai.com/index/gpt-oss-safeguard-technical-report/",
+      "publication_date": "2025-10-29",
+      "section": "Section 2, Table 2, PDF page 4",
+      "metric": "F1 (%) as reported; averaging unspecified in Table 2",
+      "scores": [
+        {
+          "model": "gpt-oss-safeguard-120b",
+          "OpenAI Mod (2022)": 82.9,
+          "ToxicChat": 79.3
+        },
+        {
+          "model": "gpt-oss-safeguard-20b",
+          "OpenAI Mod (2022)": 82.9,
+          "ToxicChat": 79.9
+        },
+        {
+          "model": "internal-safety-reasoner",
+          "OpenAI Mod (2022)": 82.8,
+          "ToxicChat": 81.3
+        },
+        {
+          "model": "gpt-5-thinking",
+          "OpenAI Mod (2022)": 79.8,
+          "ToxicChat": 81.0
+        },
+        {
+          "model": "gpt-oss-120b",
+          "OpenAI Mod (2022)": 80.4,
+          "ToxicChat": 76.7
+        },
+        {
+          "model": "gpt-oss-20b",
+          "OpenAI Mod (2022)": 78.7,
+          "ToxicChat": 75.9
+        }
+      ],
+      "settings": {
+        "OpenAI Mod (2022)": "Internal policies, with one policy adjusted for later changes",
+        "ToxicChat": "Short handwritten prompt adapted from internal policies",
+        "reasoning_effort": "Not specified for Table 2"
+      },
+      "comparability": "Exact policies, unknown-label treatment and row-level predictions are not supplied here. Different experiment from Mistral's safeguard column."
+    }
+  },
+  "datasets": {
+    "aegis_v2": {
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+      "revision": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+      "license": "CC-BY-4.0",
+      "gated": false,
+      "files": [
+        "train.json",
+        "refusals_train.json",
+        "validation.json",
+        "refusals_validation.json",
+        "test.json"
+      ],
+      "source_counts": {
+        "train_main": 25007,
+        "train_refusals": 5000,
+        "validation_main": 1245,
+        "validation_refusals": 200,
+        "test": 1964
+      },
+      "label_notes": "Prompt labels are human; response labels include human, LLM jury and refusal augmentation. Response target is response_label, not OR(prompt_label,response_label). Exclude redacted/missing responses and declare empty-response handling."
+    },
+    "toxicchat": {
+      "url": "https://huggingface.co/datasets/lmsys/toxic-chat",
+      "revision": "29df8e4dba60e1f4af4b4075c0705c5b313548a8",
+      "license": "CC-BY-NC-4.0",
+      "gated": false,
+      "config": "toxicchat0124",
+      "test_file": "data/0124/toxic-chat_annotation_test.csv",
+      "counts_verified_from_pinned_file": {
+        "full_test": 5083,
+        "human_annotated_test": 2853
+      },
+      "label_notes": "toxicity labels the user_input; model_output is not the labelled target. Distinguish full test from human_annotation-only subset; 0124 and 1123 labels differ."
+    },
+    "wildguard": {
+      "url": "https://huggingface.co/datasets/allenai/wildguardmix",
+      "revision": "d29c47f41c8b51348b5c8e8c81c039b3132b66d1",
+      "license": "ODC-BY",
+      "gated": "auto",
+      "access_check": "Owner enabled access; authenticated local download of the pinned test file succeeded on 2026-09-21. No access terms accepted by the agent.",
+      "test_file": "test/wildguard_test.parquet",
+      "label_notes": "Separate prompt harmfulness, response harmfulness and refusal labels. Missing or ambiguous annotation must not become safe."
+    },
+    "beavertails": {
+      "url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails",
+      "revision": "8401fe609d288129cc684a9b3be6a93e41cfe678",
+      "license": "CC-BY-NC-4.0",
+      "gated": false,
+      "test_file": "round0/30k/test.jsonl.gz",
+      "label_notes": "Human-labelled prompt/response pairs; is_safe is the response-safety target. Keep 30k and 330k splits distinct; taxonomy includes controversial/political and unethical content."
+    },
+    "openai_moderation": {
+      "url": "https://github.com/openai/moderation-api-release",
+      "revision": "f4ab51b5edd3bfbcb349a56324274235b674e0e4",
+      "license": "MIT",
+      "gated": false,
+      "test_file": "data/samples-1680.jsonl.gz",
+      "categories": [
+        "S",
+        "H",
+        "V",
+        "HR",
+        "SH",
+        "S3",
+        "H2",
+        "V2"
+      ],
+      "counts_verified_from_pinned_file": {
+        "total": 1680,
+        "any_known_positive": 522,
+        "all_eight_explicitly_negative": 337,
+        "no_known_positive_but_incomplete_labels": 821
+      },
+      "label_notes": "Missing category means unknown. A strict binary any-harm projection can retain 859 known rows and exclude 821 unresolved rows. This differs from 1680-row published protocols."
+    },
+    "xstest": {
+      "url": "https://github.com/paul-rottger/xstest",
+      "revision": "d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d",
+      "license": "CC-BY-4.0",
+      "gated": false,
+      "test_file": "xstest_prompts.csv",
+      "counts_verified_from_pinned_file": {
+        "total": 450,
+        "safe": 250,
+        "unsafe": 200
+      },
+      "label_notes": "Original prompt labels support a 250-safe-prompt false-positive check. This is not response refusal detection or XSTest Harm response classification.",
+      "hf_mirror": {
+        "url": "https://huggingface.co/datasets/walledai/XSTest",
+        "revision": "f1d713187c61b6ae64e602d74f0b3d812cc2e8e8",
+        "gated": "auto",
+        "access_check": "Unauthenticated README HTTP401"
+      }
+    }
+  },
+  "implementation_references": {
+    "allenai_safety_eval_revision": "060cc903d64703214c549b5c3a30ea8ceef2e588",
+    "openai_loader": "https://github.com/allenai/safety-eval/blob/060cc903d64703214c549b5c3a30ea8ceef2e588/evaluation/tasks/classification/openai_mod/__init__.py",
+    "openai_loader_caveat": "Uses any observed positive, otherwise unharmful; this collapses source unknowns and is not a verified reproduction of Mistral or OpenAI evaluation.",
+    "toxicchat_loader": "https://github.com/allenai/safety-eval/blob/060cc903d64703214c549b5c3a30ea8ceef2e588/evaluation/tasks/classification/toxicchat/__init__.py",
+    "xstest_harm_loader": "https://github.com/allenai/safety-eval/blob/060cc903d64703214c549b5c3a30ea8ceef2e588/evaluation/tasks/classification/xstest_response_harm/__init__.py"
+  }
+}

@@ -1,0 +1,54 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1789.53it/s]
+development {'epoch': 0, 'loss': 0.929644206315279, 'accuracy': 0.6175, 'n': 400}
+epoch 1 step 1/48 loss 0.4445 19s MPS allocated 6.8GB driver 14.0GB
+epoch 1 step 2/48 loss 1.3779 31s MPS allocated 6.8GB driver 14.0GB
+epoch 1 step 3/48 loss 0.8317 85s MPS allocated 6.8GB driver 15.1GB
+epoch 1 step 4/48 loss 0.8483 96s MPS allocated 6.8GB driver 15.1GB
+epoch 1 step 5/48 loss 1.1164 156s MPS allocated 6.8GB driver 15.1GB
+epoch 1 step 6/48 loss 0.4945 172s MPS allocated 6.8GB driver 15.1GB
+epoch 1 step 7/48 loss 0.9347 208s MPS allocated 6.8GB driver 15.1GB
+epoch 1 step 8/48 loss 0.4305 261s MPS allocated 6.8GB driver 16.1GB
+epoch 1 step 9/48 loss 0.3687 274s MPS allocated 6.8GB driver 16.1GB
+epoch 1 step 10/48 loss 0.5626 295s MPS allocated 6.8GB driver 16.1GB
+epoch 1 step 11/48 loss 0.4848 359s MPS allocated 6.8GB driver 17.2GB
+epoch 1 step 12/48 loss 0.6041 383s MPS allocated 6.8GB driver 17.2GB
+epoch 1 step 13/48 loss 0.3899 412s MPS allocated 6.8GB driver 17.2GB
+epoch 1 step 14/48 loss 0.5784 484s MPS allocated 6.8GB driver 17.3GB
+epoch 1 step 15/48 loss 0.5417 512s MPS allocated 6.8GB driver 24.7GB
+epoch 1 step 16/48 loss 0.2258 520s MPS allocated 6.8GB driver 22.6GB
+development {'epoch': 1, 'loss': 0.5038146318495274, 'accuracy': 0.7975, 'n': 400}
+epoch 2 step 17/48 loss 0.4385 636s MPS allocated 6.8GB driver 22.6GB
+epoch 2 step 18/48 loss 0.2648 664s MPS allocated 6.8GB driver 20.5GB
+epoch 2 step 19/48 loss 0.2439 675s MPS allocated 6.8GB driver 20.5GB
+epoch 2 step 20/48 loss 0.2193 725s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 21/48 loss 0.5513 774s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 22/48 loss 0.3727 795s MPS allocated 6.8GB driver 18.3GB
+epoch 2 step 23/48 loss 0.3369 808s MPS allocated 6.8GB driver 18.3GB
+epoch 2 step 24/48 loss 0.4021 867s MPS allocated 6.8GB driver 18.3GB
+epoch 2 step 25/48 loss 0.2751 919s MPS allocated 6.8GB driver 17.2GB
+epoch 2 step 26/48 loss 0.4716 939s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 27/48 loss 0.2545 953s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 28/48 loss 0.2145 964s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 29/48 loss 0.2019 976s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 30/48 loss 0.2271 988s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 31/48 loss 0.6920 1000s MPS allocated 6.8GB driver 19.4GB
+epoch 2 step 32/48 loss 0.4889 1010s MPS allocated 6.8GB driver 22.6GB
+development {'epoch': 2, 'loss': 0.5390623950958252, 'accuracy': 0.815, 'n': 400}
+epoch 3 step 33/48 loss 0.2956 1042s MPS allocated 6.8GB driver 21.6GB
+epoch 3 step 34/48 loss 0.2047 1053s MPS allocated 6.8GB driver 19.4GB
+epoch 3 step 35/48 loss 0.2248 1062s MPS allocated 6.8GB driver 19.4GB
+epoch 3 step 36/48 loss 0.2110 1074s MPS allocated 6.8GB driver 19.4GB
+epoch 3 step 37/48 loss 0.2035 1083s MPS allocated 6.8GB driver 19.4GB
+epoch 3 step 38/48 loss 0.2064 1094s MPS allocated 6.8GB driver 19.4GB
+epoch 3 step 39/48 loss 0.2059 1105s MPS allocated 6.8GB driver 18.4GB
+epoch 3 step 40/48 loss 0.2050 1119s MPS allocated 6.8GB driver 18.4GB
+epoch 3 step 41/48 loss 0.2123 1130s MPS allocated 6.8GB driver 18.3GB
+epoch 3 step 42/48 loss 0.2092 1139s MPS allocated 6.8GB driver 16.2GB
+epoch 3 step 43/48 loss 0.2479 1148s MPS allocated 6.8GB driver 16.2GB
+epoch 3 step 44/48 loss 0.2170 1169s MPS allocated 6.8GB driver 17.3GB
+epoch 3 step 45/48 loss 0.3481 1180s MPS allocated 6.8GB driver 17.3GB
+epoch 3 step 46/48 loss 0.2041 1191s MPS allocated 6.8GB driver 18.3GB
+epoch 3 step 47/48 loss 0.2664 1205s MPS allocated 6.8GB driver 19.4GB
+epoch 3 step 48/48 loss 0.2122 1213s MPS allocated 6.8GB driver 18.4GB
+development {'epoch': 3, 'loss': 0.5351797923445701, 'accuracy': 0.8175, 'n': 400}
+saved /Users/alexanderollman/jevtest/models/laya-moderation-aegis-1000-s7

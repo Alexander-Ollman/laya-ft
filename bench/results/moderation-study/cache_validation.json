@@ -1,0 +1,41 @@
+[
+  {
+    "batch": 0,
+    "max_tokens": 2048,
+    "before": {
+      "allocated": 3376403712,
+      "driver": 59168997376
+    },
+    "after": {
+      "allocated": 3376403712,
+      "driver": 16219062272
+    },
+    "seconds": 4.106495141983032
+  },
+  {
+    "batch": 1,
+    "max_tokens": 408,
+    "before": {
+      "allocated": 3376928000,
+      "driver": 16244490240
+    },
+    "after": {
+      "allocated": 3376928000,
+      "driver": 15170486272
+    },
+    "seconds": 0.6297988891601562
+  },
+  {
+    "batch": 2,
+    "max_tokens": 297,
+    "before": {
+      "allocated": 3377190144,
+      "driver": 15177039872
+    },
+    "after": {
+      "allocated": 3377190144,
+      "driver": 15176777728
+    },
+    "seconds": 0.4619150161743164
+  }
+]

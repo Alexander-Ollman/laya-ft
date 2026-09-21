@@ -1,0 +1,43 @@
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 533.44it/s]
+development {'epoch': 0, 'loss': 0.929644206315279, 'accuracy': 0.6175, 'n': 400}
+epoch 1 step 1/48 loss 0.4501 9s
+epoch 1 step 2/48 loss 1.4284 19s
+epoch 1 step 3/48 loss 0.8217 34s
+epoch 1 step 4/48 loss 0.8550 42s
+epoch 1 step 5/48 loss 1.0712 56s
+epoch 1 step 6/48 loss 0.4887 75s
+epoch 1 step 7/48 loss 0.8923 86s
+epoch 1 step 8/48 loss 0.4068 104s
+epoch 1 step 9/48 loss 0.3500 123s
+epoch 1 step 10/48 loss 0.5508 143s
+epoch 1 step 11/48 loss 0.5039 171s
+epoch 1 step 12/48 loss 0.6091 230s
+epoch 1 step 13/48 loss 0.3895 247s
+epoch 1 step 14/48 loss 0.6070 296s
+epoch 1 step 15/48 loss 0.5168 331s
+epoch 1 step 16/48 loss 0.2512 343s
+development {'epoch': 1, 'loss': 0.5047849616408349, 'accuracy': 0.8, 'n': 400}
+epoch 2 step 17/48 loss 0.4280 401s
+epoch 2 step 18/48 loss 0.2666 428s
+epoch 2 step 19/48 loss 0.2535 444s
+epoch 2 step 20/48 loss 0.2168 460s
+epoch 2 step 21/48 loss 0.5028 483s
+epoch 2 step 22/48 loss 0.3883 502s
+epoch 2 step 23/48 loss 0.3614 519s
+epoch 2 step 24/48 loss 0.4035 571s
+epoch 2 step 25/48 loss 0.2664 610s
+epoch 2 step 26/48 loss 0.4805 741s
+epoch 2 step 27/48 loss 0.2549 855s
+epoch 2 step 28/48 loss 0.2091 1022s
+epoch 2 step 29/48 loss 0.2030 1054s
+epoch 2 step 30/48 loss 0.2264 1065s
+Traceback (most recent call last):
+  File "/Users/alexanderollman/jevtest/bench/train_public_laya.py", line 178, in <module>
+    main()
+  File "/Users/alexanderollman/jevtest/bench/train_public_laya.py", line 147, in main
+    loss, _ = run_batch(agent, items, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/alexanderollman/jevtest/bench/train_laya.py", line 75, in run_batch
+    logits, _ = agent.model(b["input_ids"].to(device), b["attention_mask"].to(device), b["marker_pos"].to(device),
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+models/
+local-telemetry/
+train/moderation-study/raw/
+train/moderation-study/*/*.jsonl
+train/moderation-study/*/manifest.json
+train/moderation-study/study_manifest.json
+.DS_Store

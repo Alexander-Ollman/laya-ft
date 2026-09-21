@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-21",
+  "included_tests": 29,
+  "python_compilation": "passed",
+  "charts": "Generated from validated analysis, zero-based0\u2013100 axes,SVG+PNG",
+  "browser": "Desktop1280 andmobile390:2charts11tables,noerrors,nooverflow",
+  "recorded_predictions": "unchanged from verified local review bundle",
+  "laya_source_commit": "6a5819129eb220570792e417e49723d697efd76f",
+  "source_check": "all7recorded Laya modulehashes match upstreamcommit",
+  "scope": "Moderation experiment; no rawdatasettext,weights,privateJevdata,orcredentials"
+}

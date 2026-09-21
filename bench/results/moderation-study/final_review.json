@@ -1,0 +1,338 @@
+{
+  "schema": "moderation-final-independent-review-v1",
+  "status": "passed",
+  "review_scope": "Independent raw-row recount and scalar metric calculations; existing validated analysis evidence, CI bounds, report interpretation and comparability review. No rerunning inference.",
+  "analysis_sha256": "d4637f9e16ab7a4f7614e96b83a4985b694026368504867e5bfb7ccf4b4286b9",
+  "references_sha256": "bcc8647f0dd6d16cccd014a28b9dcf4ae612bd6a04aa1fbd63ebee481772db83",
+  "runs": 27,
+  "rows": 67890,
+  "errors": 0,
+  "primary_positive_intervals": [
+    {
+      "dataset": "aegis_prompt",
+      "comparison": "fine1000_vs_base",
+      "delta": 0.2096810573177057,
+      "interval": [
+        0.17842575303071276,
+        0.24217080339059258
+      ]
+    },
+    {
+      "dataset": "aegis_prompt",
+      "comparison": "fine5000_vs_base",
+      "delta": 0.23113297280354295,
+      "interval": [
+        0.19919097100214903,
+        0.2621892587981519
+      ]
+    },
+    {
+      "dataset": "aegis_response",
+      "comparison": "fine1000_vs_base",
+      "delta": 0.3208411801632141,
+      "interval": [
+        0.25333296655001525,
+        0.39276692978921834
+      ]
+    },
+    {
+      "dataset": "aegis_response",
+      "comparison": "fine5000_vs_base",
+      "delta": 0.3963957245836441,
+      "interval": [
+        0.32342027003656965,
+        0.47070706561984593
+      ]
+    }
+  ],
+  "checkpoint_identities": {
+    "base": "sha256:891102d372688fc2a094dac56a384bc537b87c63f21f9f3dac0be2b7cbc8d86c",
+    "fine1000": "sha256:0d86e28e5d44ac3de06b83396deee2c9f40991f9c3f3bf295eaf1b49fc162b6c",
+    "fine5000": "sha256:80211679fcb1526df36467de18ca2b3c8d0423ba7fbb8f01d3fc06f1aabd67bd"
+  },
+  "raw_run_checks": [
+    {
+      "dataset": "aegis_prompt",
+      "target": "base",
+      "rows": 1928,
+      "errors": 0,
+      "harmful_f1": 0.6056114346214928,
+      "accuracy": 0.6135892116182573,
+      "truncated": 0,
+      "result_sha256": "e40c88c472b7423130bc22431de0ac2ede2686ad5ebfade059bc9f5a9ab8e42b"
+    },
+    {
+      "dataset": "aegis_prompt",
+      "target": "fine1000",
+      "rows": 1928,
+      "errors": 0,
+      "harmful_f1": 0.8152924919391985,
+      "accuracy": 0.79201244813278,
+      "truncated": 0,
+      "result_sha256": "8f61612fe5fbddd38587f7099b1a8862fef760da477678ee252f2d59b77f4052"
+    },
+    {
+      "dataset": "aegis_prompt",
+      "target": "fine5000",
+      "rows": 1928,
+      "errors": 0,
+      "harmful_f1": 0.8367444074250358,
+      "accuracy": 0.8220954356846473,
+      "truncated": 0,
+      "result_sha256": "09eedb4a48b3a6eabf03e25ec73af536f0039cb799f2c030d5c2e12683d06323"
+    },
+    {
+      "dataset": "aegis_response",
+      "target": "base",
+      "rows": 813,
+      "errors": 0,
+      "harmful_f1": 0.37407407407407406,
+      "accuracy": 0.5842558425584256,
+      "truncated": 0,
+      "result_sha256": "f1275223f39be03242201fb22b5059cfe9a45788b5eaff1bb79b13faf13f1ff0"
+    },
+    {
+      "dataset": "aegis_response",
+      "target": "fine1000",
+      "rows": 813,
+      "errors": 0,
+      "harmful_f1": 0.6949152542372882,
+      "accuracy": 0.7343173431734318,
+      "truncated": 0,
+      "result_sha256": "91281fadaeffccf4c86f10f48fea566fd4c7b5d061fc1e2f20b52059ff65fcb9"
+    },
+    {
+      "dataset": "aegis_response",
+      "target": "fine5000",
+      "rows": 813,
+      "errors": 0,
+      "harmful_f1": 0.7704697986577181,
+      "accuracy": 0.7896678966789668,
+      "truncated": 0,
+      "result_sha256": "467c69e9603b3f6fffe25a5a46ad9b7561e0008c5349c6f5ccbda522140588ac"
+    },
+    {
+      "dataset": "toxicchat",
+      "target": "base",
+      "rows": 2853,
+      "errors": 0,
+      "harmful_f1": 0.3644787644787645,
+      "accuracy": 0.7115317209954434,
+      "truncated": 0,
+      "result_sha256": "060d3c8584b344dbd04353feec368afc0af260c034f11846d18669215f94ab63"
+    },
+    {
+      "dataset": "toxicchat",
+      "target": "fine1000",
+      "rows": 2853,
+      "errors": 0,
+      "harmful_f1": 0.5046923879040668,
+      "accuracy": 0.8335085874518051,
+      "truncated": 0,
+      "result_sha256": "b54e4f49b2d3aa1d9ac84471ffd719abf8249687be2f047eeab77cff22874857"
+    },
+    {
+      "dataset": "toxicchat",
+      "target": "fine5000",
+      "rows": 2853,
+      "errors": 0,
+      "harmful_f1": 0.5334796926454446,
+      "accuracy": 0.8510339992989835,
+      "truncated": 0,
+      "result_sha256": "ef089061e60cdba9d3f86a01875277959146bc41fba13b4df92e3abd5cb3b51e"
+    },
+    {
+      "dataset": "beavertails",
+      "target": "base",
+      "rows": 3021,
+      "errors": 0,
+      "harmful_f1": 0.060207991242474,
+      "accuracy": 0.43164515061238,
+      "truncated": 0,
+      "result_sha256": "9338773ef5661fcebe17d38de7a06b231271f0c0ef7e8c258748b1229d4b46cd"
+    },
+    {
+      "dataset": "beavertails",
+      "target": "fine1000",
+      "rows": 3021,
+      "errors": 0,
+      "harmful_f1": 0.3410705826622454,
+      "accuracy": 0.5395564382654751,
+      "truncated": 0,
+      "result_sha256": "151e230f199fa2564702da5d96c384113ad5846c824c9d27db6982e3b405e4ba"
+    },
+    {
+      "dataset": "beavertails",
+      "target": "fine5000",
+      "rows": 3021,
+      "errors": 0,
+      "harmful_f1": 0.5939584150647312,
+      "accuracy": 0.6573982125124131,
+      "truncated": 0,
+      "result_sha256": "39c0094e50529953de98a1d0e3b748122ea316cee9ce7c567e40239c93774258"
+    },
+    {
+      "dataset": "wildguard_prompt",
+      "target": "base",
+      "rows": 1699,
+      "errors": 0,
+      "harmful_f1": 0.48742411101474414,
+      "accuracy": 0.6521483225426722,
+      "truncated": 0,
+      "result_sha256": "8a050aa2d2581a804f6cb719f979afe4d3ba3099e04e35fded476171e91dd39b"
+    },
+    {
+      "dataset": "wildguard_prompt",
+      "target": "fine1000",
+      "rows": 1699,
+      "errors": 0,
+      "harmful_f1": 0.5941043083900227,
+      "accuracy": 0.6839317245438493,
+      "truncated": 0,
+      "result_sha256": "b786c1e4771b5c23d0498dd7fe9e797dfedc86ec1f531f4629df2a1e3e63ebfe"
+    },
+    {
+      "dataset": "wildguard_prompt",
+      "target": "fine5000",
+      "rows": 1699,
+      "errors": 0,
+      "harmful_f1": 0.6574923547400612,
+      "accuracy": 0.7363154796939376,
+      "truncated": 0,
+      "result_sha256": "06d12f551915aa8f3e32fedd9b3971aecb15de258bc4e7aa46fb4f65ec2d36bb"
+    },
+    {
+      "dataset": "wildguard_response",
+      "target": "base",
+      "rows": 1709,
+      "errors": 0,
+      "harmful_f1": 0.20840950639853748,
+      "accuracy": 0.7466354593329433,
+      "truncated": 8,
+      "result_sha256": "ca9f87126a89853bf29a6bd52394a084b3341a06762ef9e11c325e596c500ad7"
+    },
+    {
+      "dataset": "wildguard_response",
+      "target": "fine1000",
+      "rows": 1709,
+      "errors": 0,
+      "harmful_f1": 0.5328596802841918,
+      "accuracy": 0.8461088355763604,
+      "truncated": 8,
+      "result_sha256": "bf8fcb05b79e7d8d8350ff8a9756a367d344a5a89170a270a2ed70afcf8541a8"
+    },
+    {
+      "dataset": "wildguard_response",
+      "target": "fine5000",
+      "rows": 1709,
+      "errors": 0,
+      "harmful_f1": 0.516,
+      "accuracy": 0.8583967232299591,
+      "truncated": 8,
+      "result_sha256": "ed4ad42e81af1036eddc7f0e8013cdc4de3365cf66aee0506776e92533310f71"
+    },
+    {
+      "dataset": "openai_known",
+      "target": "base",
+      "rows": 859,
+      "errors": 0,
+      "harmful_f1": 0.5911799761620977,
+      "accuracy": 0.6006984866123399,
+      "truncated": 0,
+      "result_sha256": "a47314fad877eb18093f1b2540b61f04f3df527b95c6d5020bc7290d0ea9c759"
+    },
+    {
+      "dataset": "openai_known",
+      "target": "fine1000",
+      "rows": 859,
+      "errors": 0,
+      "harmful_f1": 0.8181011535048802,
+      "accuracy": 0.7613504074505238,
+      "truncated": 0,
+      "result_sha256": "49a214dbbc472d5ecad6d3fc1a721dace9b7e6723773f53fe1614d2fbdacfd7b"
+    },
+    {
+      "dataset": "openai_known",
+      "target": "fine5000",
+      "rows": 859,
+      "errors": 0,
+      "harmful_f1": 0.813780260707635,
+      "accuracy": 0.7671711292200233,
+      "truncated": 0,
+      "result_sha256": "446bfb23983b6a0130268b9cf415ceefeda832bd54699435f79ed7fa47e53d70"
+    },
+    {
+      "dataset": "openai_categories",
+      "target": "base",
+      "rows": 9298,
+      "errors": 0,
+      "harmful_f1": 0.23128342245989306,
+      "accuracy": 0.6289524628952463,
+      "truncated": 0,
+      "result_sha256": "cf232b429408dcd8f3ddc820a5a9570cafffa0d171c0dbf8a3a03d7afafef16e"
+    },
+    {
+      "dataset": "openai_categories",
+      "target": "fine1000",
+      "rows": 9298,
+      "errors": 0,
+      "harmful_f1": 0.24636441402908468,
+      "accuracy": 0.5262422026242203,
+      "truncated": 0,
+      "result_sha256": "1f71beffa073c5ad603c822f1c80c3643d85b3e2419f96c432ef36ff17ac453c"
+    },
+    {
+      "dataset": "openai_categories",
+      "target": "fine5000",
+      "rows": 9298,
+      "errors": 0,
+      "harmful_f1": 0.2583833392163784,
+      "accuracy": 0.5480748548074855,
+      "truncated": 0,
+      "result_sha256": "b6cd2974c8996d4791cdaa07e21048d89786eb3ff0ef1e241ef87483f3a04e3a"
+    },
+    {
+      "dataset": "xstest",
+      "target": "base",
+      "rows": 450,
+      "errors": 0,
+      "harmful_f1": 0.638961038961039,
+      "accuracy": 0.6911111111111111,
+      "truncated": 0,
+      "result_sha256": "504f8d26a73a9db17d85407d92e97196399c26bc06e26814557906e29455f9aa"
+    },
+    {
+      "dataset": "xstest",
+      "target": "fine1000",
+      "rows": 450,
+      "errors": 0,
+      "harmful_f1": 0.632768361581921,
+      "accuracy": 0.5666666666666667,
+      "truncated": 0,
+      "result_sha256": "b3c0fb14d5a5ae5a1c213bb96986c257183f6557e80296b7d46d68462ff8e76f"
+    },
+    {
+      "dataset": "xstest",
+      "target": "fine5000",
+      "rows": 450,
+      "errors": 0,
+      "harmful_f1": 0.7305389221556886,
+      "accuracy": 0.7,
+      "truncated": 0,
+      "result_sha256": "39133728f8b04d68d801c2f522f544bf83d7df27f28a139090dc298fb51639ff"
+    }
+  ],
+  "interpretation_checks": {
+    "harmful_class_f1_not_macro_f1": true,
+    "all_probability_rows_retained": true,
+    "openai_category_decisions_not_unique_prompts": true,
+    "openai_unknowns_not_safe": true,
+    "wildguard_response_truncated_rows_retained": 8,
+    "wildguard_response_sensitivity_rows": 1701,
+    "vendor_scores_reference_only": true,
+    "xstest_prompt_false_positives_not_response_refusal": true,
+    "one_training_seed_limitation_disclosed": true
+  },
+  "material_issues": [],
+  "nonblocking_copy_note": "Explicit baseline comparison wording sent to report author; no metric or evidence change required."
+}

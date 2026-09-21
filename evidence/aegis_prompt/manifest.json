@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/aegis_prompt",
+  "slug": "aegis_prompt",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "b93c4405c60f0ed6110bfc22dce01154a3118e8ef801059be99e590eedc1af8a"
+  },
+  "counts": {
+    "heldout": {
+      "unsafe": 1039,
+      "safe": 889
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 1928,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

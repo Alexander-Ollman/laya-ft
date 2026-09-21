@@ -1,0 +1,213 @@
+{
+  "files": [
+    {
+      "path": "raw/aegis/train.json",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/train.json",
+      "sha256": "154fba82c71d9fa73abd2ca5588a198e693ddc816c83444df180a22f613e02f6"
+    },
+    {
+      "path": "raw/aegis/refusals_train.json",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/refusals_train.json",
+      "sha256": "ff948d3696c9da94cf2523f5d4ae7f16cad7b3c0fd3cb46a331dad0ed717fbe2"
+    },
+    {
+      "path": "raw/aegis/validation.json",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/validation.json",
+      "sha256": "a97200e226ad4f6ba6a639982f817f675909bc74513859df3e8fc9a92951dfcd"
+    },
+    {
+      "path": "raw/aegis/refusals_validation.json",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/refusals_validation.json",
+      "sha256": "aba81546da0108bc931ae7fb7662b687b42b0bb3e734cde34fbddfbe33cadfcf"
+    },
+    {
+      "path": "raw/aegis/test.json",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/test.json",
+      "sha256": "b0a6d602260524866053cb34105194f074f2c2906e3691b68d43b9e6e9318f35"
+    },
+    {
+      "path": "raw/aegis/README.md",
+      "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/README.md",
+      "sha256": "da2598e587850bacc77c0658f56d0ea430f55d1cf70b197eb06070871802d3ba"
+    },
+    {
+      "path": "raw/toxicchat/toxic-chat_annotation_test.csv",
+      "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/data/0124/toxic-chat_annotation_test.csv",
+      "sha256": "3c2e49889626f7738dca0a29bface0ba0a0595b2ffdd17f0e02f19df7c3c4c9b"
+    },
+    {
+      "path": "raw/toxicchat/README.md",
+      "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/README.md",
+      "sha256": "70c63cac8fff2a4934c85b3d3b52d2e169b8af9fe893dd9de1ea5e4abdb51441"
+    },
+    {
+      "path": "raw/beavertails/test.jsonl.gz",
+      "url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails/resolve/8401fe609d288129cc684a9b3be6a93e41cfe678/round0/30k/test.jsonl.gz",
+      "sha256": "0ce619bf4c421c12e578445b1fb8d1aedf4bf05ca3eb985f4ddf498a784769ff"
+    },
+    {
+      "path": "raw/beavertails/README.md",
+      "url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails/resolve/8401fe609d288129cc684a9b3be6a93e41cfe678/README.md",
+      "sha256": "92bce76909c3abb6e7ca2bbb1240f6b03da0a531cde8c03b3bbf7cb20c9a7bef"
+    },
+    {
+      "path": "raw/openai/samples-1680.jsonl.gz",
+      "url": "https://raw.githubusercontent.com/openai/moderation-api-release/f4ab51b5edd3bfbcb349a56324274235b674e0e4/data/samples-1680.jsonl.gz",
+      "sha256": "ef3f7de86ee394fe337b0a566ba4b9c7db058f3caa8d6a4a0006138b663ab9a8"
+    },
+    {
+      "path": "raw/openai/README.md",
+      "url": "https://raw.githubusercontent.com/openai/moderation-api-release/f4ab51b5edd3bfbcb349a56324274235b674e0e4/README.md",
+      "sha256": "67120be63eb78d137bcc7027609c730f539e0d2039e93811707d7a653beed8cd"
+    },
+    {
+      "path": "raw/openai/LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/moderation-api-release/f4ab51b5edd3bfbcb349a56324274235b674e0e4/LICENSE",
+      "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
+    },
+    {
+      "path": "raw/xstest/xstest_prompts.csv",
+      "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/xstest_prompts.csv",
+      "sha256": "11783fb294ed017473ee53c207d71f2161c7672c8d0b037501e78387f801cb5a"
+    },
+    {
+      "path": "raw/xstest/readme.md",
+      "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/readme.md",
+      "sha256": "51488f4032ba007b0345449e63293fccf5588cde1a967e3897107c6e08b532ce"
+    },
+    {
+      "path": "raw/xstest/LICENSE",
+      "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/LICENSE",
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "path": "raw/wildguard/test.parquet",
+      "repo": "allenai/wildguardmix",
+      "filename": "test/wildguard_test.parquet",
+      "revision": "d29c47f41c8b51348b5c8e8c81c039b3132b66d1",
+      "sha256": "6ccc2909c1ae6d41424fac69f1fc32535b1de39cb8f80407d81e8bc64a0bebca"
+    }
+  ],
+  "raw_sources_record": {
+    "sources": {
+      "aegis": [
+        "nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+        "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+        [
+          "train.json",
+          "refusals_train.json",
+          "validation.json",
+          "refusals_validation.json",
+          "test.json",
+          "README.md"
+        ]
+      ],
+      "toxicchat": [
+        "lmsys/toxic-chat",
+        "29df8e4dba60e1f4af4b4075c0705c5b313548a8",
+        [
+          "data/0124/toxic-chat_annotation_test.csv",
+          "README.md"
+        ]
+      ],
+      "beavertails": [
+        "PKU-Alignment/BeaverTails",
+        "8401fe609d288129cc684a9b3be6a93e41cfe678",
+        [
+          "round0/30k/test.jsonl.gz",
+          "README.md"
+        ]
+      ],
+      "openai": {
+        "repo": "openai/moderation-api-release",
+        "revision": "f4ab51b5edd3bfbcb349a56324274235b674e0e4"
+      },
+      "xstest": {
+        "repo": "paul-rottger/xstest",
+        "revision": "d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d"
+      }
+    },
+    "files": [
+      {
+        "file": "train/moderation-study/raw/aegis/train.json",
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/train.json",
+        "bytes": 22705956
+      },
+      {
+        "file": "train/moderation-study/raw/aegis/refusals_train.json",
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/refusals_train.json",
+        "bytes": 2758729
+      },
+      {
+        "file": "train/moderation-study/raw/aegis/validation.json",
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/validation.json",
+        "bytes": 1137821
+      },
+      {
+        "file": "train/moderation-study/raw/aegis/refusals_validation.json",
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/refusals_validation.json",
+        "bytes": 109404
+      },
+      {
+        "file": "train/moderation-study/raw/aegis/test.json",
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/test.json",
+        "bytes": 1731373
+      },
+      {
+        "file": "train/moderation-study/raw/aegis/README.md",
+        "url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/README.md",
+        "bytes": 14107
+      },
+      {
+        "file": "train/moderation-study/raw/toxicchat/toxic-chat_annotation_test.csv",
+        "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/data/0124/toxic-chat_annotation_test.csv",
+        "bytes": 8090164
+      },
+      {
+        "file": "train/moderation-study/raw/toxicchat/README.md",
+        "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/README.md",
+        "bytes": 5463
+      },
+      {
+        "file": "train/moderation-study/raw/beavertails/test.jsonl.gz",
+        "url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails/resolve/8401fe609d288129cc684a9b3be6a93e41cfe678/round0/30k/test.jsonl.gz",
+        "bytes": 545222
+      },
+      {
+        "file": "train/moderation-study/raw/beavertails/README.md",
+        "url": "https://huggingface.co/datasets/PKU-Alignment/BeaverTails/resolve/8401fe609d288129cc684a9b3be6a93e41cfe678/README.md",
+        "bytes": 6951
+      },
+      {
+        "file": "train/moderation-study/raw/openai/samples-1680.jsonl.gz",
+        "url": "https://raw.githubusercontent.com/openai/moderation-api-release/f4ab51b5edd3bfbcb349a56324274235b674e0e4/data/samples-1680.jsonl.gz",
+        "bytes": 477573
+      },
+      {
+        "file": "train/moderation-study/raw/openai/README.md",
+        "url": "https://raw.githubusercontent.com/openai/moderation-api-release/f4ab51b5edd3bfbcb349a56324274235b674e0e4/README.md",
+        "bytes": 1958
+      },
+      {
+        "file": "train/moderation-study/raw/openai/LICENSE",
+        "url": "https://raw.githubusercontent.com/openai/moderation-api-release/f4ab51b5edd3bfbcb349a56324274235b674e0e4/LICENSE",
+        "bytes": 1063
+      },
+      {
+        "file": "train/moderation-study/raw/xstest/xstest_prompts.csv",
+        "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/xstest_prompts.csv",
+        "bytes": 38719
+      },
+      {
+        "file": "train/moderation-study/raw/xstest/readme.md",
+        "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/readme.md",
+        "bytes": 2772
+      },
+      {
+        "file": "train/moderation-study/raw/xstest/LICENSE",
+        "url": "https://raw.githubusercontent.com/paul-rottger/xstest/d7bb5bd738c1fcbc36edd83d5e7d1b71a3e2d84d/LICENSE",
+        "bytes": 18656
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "dataset": "Aegis development only",
+  "n": 20,
+  "same_choices": 20,
+  "max_probability_difference": 0.0,
+  "pad_to_multiple": 128,
+  "text_or_labels_changed": false
+}

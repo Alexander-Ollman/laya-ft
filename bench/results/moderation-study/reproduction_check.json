@@ -1,0 +1,6 @@
+{
+  "files_verified": 27,
+  "method": "reconstruct from pinned raw files and portable prior-exclusion hashes in isolated directory",
+  "byte_identical": true,
+  "prior_hashes_sha256": "dad73e6d8aa02b871ee9b3126e095f8760d4c831ea5437716d21685c1009e57c"
+}

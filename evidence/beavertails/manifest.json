@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/beavertails",
+  "slug": "beavertails",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "003266f4ffa0198409c72ff224afc959b03d586efca370fa6c0215b8a3af5353"
+  },
+  "counts": {
+    "heldout": {
+      "unsafe": 1733,
+      "safe": 1288
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 3021,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

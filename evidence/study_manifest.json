@@ -1,0 +1,74 @@
+{
+  "schema": "moderation-study-v1",
+  "training_sizes": [
+    1000,
+    5000
+  ],
+  "unit": "labelled decision examples, half prompt and half response",
+  "nested_training": true,
+  "test_counts": {
+    "aegis_prompt": 1928,
+    "aegis_response": 813,
+    "toxicchat": 2853,
+    "beavertails": 3021,
+    "wildguard_prompt": 1699,
+    "wildguard_response": 1709,
+    "openai_known": 859,
+    "openai_categories": 9298,
+    "xstest": 450
+  },
+  "notes": {
+    "aegis_test_exclusions": {
+      "response_missing_label": 1076,
+      "empty_response": 39,
+      "redacted_or_empty_prompt": 36
+    },
+    "toxicchat": "0124 human-annotated test subset; unannotated source test texts also excluded from training",
+    "wildguard_revision": "d29c47f41c8b51348b5c8e8c81c039b3132b66d1",
+    "openai_unknown_binary_excluded": 821,
+    "development_source_exclusions": {
+      "response_missing_label": 680,
+      "redacted_or_empty_prompt": 44,
+      "empty_response": 35
+    },
+    "development_overlap_exclusions": {
+      "heldout_or_development_component_overlap": 144,
+      "duplicates": 229
+    },
+    "train_source_exclusions": {
+      "redacted_or_empty_prompt": 927,
+      "response_missing_label": 13847,
+      "empty_response": 803
+    },
+    "training_overlap_exclusions": {
+      "heldout_or_development_component_overlap": 4672,
+      "duplicates": 6392,
+      "conflicting_labels": 432
+    }
+  },
+  "raw_sha256": {
+    "raw/sources.json": "15313773fbb7bc8a950e27aef1e5762cda32d02d1c9f9396975fd7c3c0c236b1",
+    "raw/beavertails/README.md": "92bce76909c3abb6e7ca2bbb1240f6b03da0a531cde8c03b3bbf7cb20c9a7bef",
+    "raw/beavertails/test.jsonl.gz": "0ce619bf4c421c12e578445b1fb8d1aedf4bf05ca3eb985f4ddf498a784769ff",
+    "raw/aegis/refusals_train.json": "ff948d3696c9da94cf2523f5d4ae7f16cad7b3c0fd3cb46a331dad0ed717fbe2",
+    "raw/aegis/refusals_validation.json": "aba81546da0108bc931ae7fb7662b687b42b0bb3e734cde34fbddfbe33cadfcf",
+    "raw/aegis/test.json": "b0a6d602260524866053cb34105194f074f2c2906e3691b68d43b9e6e9318f35",
+    "raw/aegis/README.md": "da2598e587850bacc77c0658f56d0ea430f55d1cf70b197eb06070871802d3ba",
+    "raw/aegis/validation.json": "a97200e226ad4f6ba6a639982f817f675909bc74513859df3e8fc9a92951dfcd",
+    "raw/aegis/train.json": "154fba82c71d9fa73abd2ca5588a198e693ddc816c83444df180a22f613e02f6",
+    "raw/xstest/LICENSE": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "raw/xstest/readme.md": "51488f4032ba007b0345449e63293fccf5588cde1a967e3897107c6e08b532ce",
+    "raw/xstest/xstest_prompts.csv": "11783fb294ed017473ee53c207d71f2161c7672c8d0b037501e78387f801cb5a",
+    "raw/toxicchat/toxic-chat_annotation_test.csv": "3c2e49889626f7738dca0a29bface0ba0a0595b2ffdd17f0e02f19df7c3c4c9b",
+    "raw/toxicchat/README.md": "70c63cac8fff2a4934c85b3d3b52d2e169b8af9fe893dd9de1ea5e4abdb51441",
+    "raw/wildguard/test.parquet": "6ccc2909c1ae6d41424fac69f1fc32535b1de39cb8f80407d81e8bc64a0bebca",
+    "raw/openai/LICENSE": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d",
+    "raw/openai/README.md": "67120be63eb78d137bcc7027609c730f539e0d2039e93811707d7a653beed8cd",
+    "raw/openai/samples-1680.jsonl.gz": "ef3f7de86ee394fe337b0a566ba4b9c7db058f3caa8d6a4a0006138b663ab9a8"
+  },
+  "leakage": "all test and complete official development content excluded by normalized component hash; conflicting training labels removed",
+  "max_len": 2048,
+  "head_max_len": 256,
+  "epochs": 3,
+  "seed": 7
+}

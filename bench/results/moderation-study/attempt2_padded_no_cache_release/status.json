@@ -1,0 +1,22 @@
+{
+  "state": "failed",
+  "started": "2026-09-21T01:02:58-0700",
+  "stages": [
+    {
+      "name": "train1000",
+      "command": [
+        "train_public_laya.py",
+        "--data",
+        "/Users/alexanderollman/jevtest/train/moderation-study/aegis_1000",
+        "--out",
+        "/Users/alexanderollman/jevtest/models/laya-moderation-aegis-1000-s7",
+        "--pad-to-multiple",
+        "128"
+      ],
+      "started": 1789977778.668488,
+      "pid": 6144,
+      "exit_code": -2,
+      "seconds": 792.6
+    }
+  ]
+}

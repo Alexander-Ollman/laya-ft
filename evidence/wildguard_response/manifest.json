@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/wildguard_response",
+  "slug": "wildguard_response",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "f4a25e104505ca2cc9d668896e3443285c2d948c4bad92617777a9dce4dcd651"
+  },
+  "counts": {
+    "heldout": {
+      "safe": 1425,
+      "unsafe": 284
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 1709,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

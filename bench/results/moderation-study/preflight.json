@@ -1,0 +1,122 @@
+{
+  "train/moderation-study/aegis_1000/development.jsonl": {
+    "n": 400,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1547
+  },
+  "train/moderation-study/aegis_1000/heldout.jsonl": {
+    "n": 2741,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1402
+  },
+  "train/moderation-study/aegis_1000/train.jsonl": {
+    "n": 1000,
+    "input_truncated": 1,
+    "truncated_ids": [
+      "aegis_prompt-train-24222"
+    ],
+    "head_truncated": 0,
+    "max_tokens": 3469
+  },
+  "train/moderation-study/aegis_5000/development.jsonl": {
+    "n": 400,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1547
+  },
+  "train/moderation-study/aegis_5000/heldout.jsonl": {
+    "n": 2741,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1402
+  },
+  "train/moderation-study/aegis_5000/train.jsonl": {
+    "n": 5000,
+    "input_truncated": 3,
+    "truncated_ids": [
+      "aegis_prompt-train-24222",
+      "aegis_prompt-train-990",
+      "aegis_prompt-train-4152"
+    ],
+    "head_truncated": 0,
+    "max_tokens": 3469
+  },
+  "train/moderation-study/aegis_prompt/heldout.jsonl": {
+    "n": 1928,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1402
+  },
+  "train/moderation-study/aegis_response/heldout.jsonl": {
+    "n": 813,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 849
+  },
+  "train/moderation-study/beavertails/heldout.jsonl": {
+    "n": 3021,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 584
+  },
+  "train/moderation-study/openai_categories/heldout.jsonl": {
+    "n": 9298,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1942
+  },
+  "train/moderation-study/openai_known/heldout.jsonl": {
+    "n": 859,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1919
+  },
+  "train/moderation-study/toxicchat/heldout.jsonl": {
+    "n": 2853,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 1434
+  },
+  "train/moderation-study/wildguard_prompt/heldout.jsonl": {
+    "n": 1699,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 789
+  },
+  "train/moderation-study/wildguard_response/heldout.jsonl": {
+    "n": 1709,
+    "input_truncated": 8,
+    "truncated_ids": [
+      "wildguard_response-89",
+      "wildguard_response-153",
+      "wildguard_response-166",
+      "wildguard_response-982",
+      "wildguard_response-1127",
+      "wildguard_response-1418",
+      "wildguard_response-1449",
+      "wildguard_response-1475"
+    ],
+    "head_truncated": 0,
+    "max_tokens": 7279
+  },
+  "train/moderation-study/xstest/heldout.jsonl": {
+    "n": 450,
+    "input_truncated": 0,
+    "truncated_ids": [],
+    "head_truncated": 0,
+    "max_tokens": 132
+  }
+}

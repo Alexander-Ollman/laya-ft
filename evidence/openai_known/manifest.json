@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/openai_known",
+  "slug": "openai_known",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "830c00347eb3a7e64a3b6d904340fd2026cc2447a4da7277068be6a941d44b35"
+  },
+  "counts": {
+    "heldout": {
+      "unsafe": 522,
+      "safe": 337
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 859,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

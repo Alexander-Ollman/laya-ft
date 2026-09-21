@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/aegis_response",
+  "slug": "aegis_response",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "b5df2b94fe6ede9516b270d1b8d01ed80556c6a77f0f3e18ee116bff89e6552c"
+  },
+  "counts": {
+    "heldout": {
+      "unsafe": 394,
+      "safe": 419
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 813,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

@@ -1,0 +1,29 @@
+{
+  "dataset": "moderation-study/xstest",
+  "slug": "xstest",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "heldout": "55c6c031c741194f63ae0b1448a6f515ca38b7d0236f857c5a7ccb72b4399e5d"
+  },
+  "counts": {
+    "heldout": {
+      "safe": 250,
+      "unsafe": 200
+    }
+  },
+  "train": 0,
+  "development": 0,
+  "test": 450,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "notes": null
+}

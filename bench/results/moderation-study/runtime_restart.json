@@ -1,0 +1,50 @@
+{
+  "reason": "MPS dynamic-length memory growth to80GB physical footprint and increasing step times; stopped before any heldout evaluation",
+  "completed_checkpoint": false,
+  "action": "Restart both sizes from base with128-token masked padding and explicit unusedMPS cache release each optimizerstep, after development/training-only diagnostic. Frozeninputs,optimizer,epochs,seed unchanged.",
+  "partial_attempt_status": {
+    "state": "failed",
+    "started": "2026-09-21T00:39:03-0700",
+    "stages": [
+      {
+        "name": "train1000",
+        "command": [
+          "train_public_laya.py",
+          "--data",
+          "/Users/alexanderollman/jevtest/train/moderation-study/aegis_1000",
+          "--out",
+          "/Users/alexanderollman/jevtest/models/laya-moderation-aegis-1000-s7"
+        ],
+        "started": 1789976343.805696,
+        "pid": 23292,
+        "exit_code": -2,
+        "seconds": 1120.7
+      }
+    ]
+  },
+  "second_attempt": {
+    "status": {
+      "state": "failed",
+      "started": "2026-09-21T01:02:58-0700",
+      "stages": [
+        {
+          "name": "train1000",
+          "command": [
+            "train_public_laya.py",
+            "--data",
+            "/Users/alexanderollman/jevtest/train/moderation-study/aegis_1000",
+            "--out",
+            "/Users/alexanderollman/jevtest/models/laya-moderation-aegis-1000-s7",
+            "--pad-to-multiple",
+            "128"
+          ],
+          "started": 1789977778.668488,
+          "pid": 6144,
+          "exit_code": -2,
+          "seconds": 792.6
+        }
+      ]
+    },
+    "reason": "Masked padding alone did not bound retained allocator cache; driver memory reached106GB with6.8GB live tensors and step36 took119seconds. Stopped before checkpoint or heldout scoring."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "dataset": "moderation-study/aegis_1000",
+  "slug": "aegis_1000",
+  "labels": [
+    "safe",
+    "unsafe"
+  ],
+  "split_sha256": {
+    "train": "1891a2706c41377cfecc5380d7d887755d924ea0546d235683c20b46eb5fcd7d",
+    "development": "90933aef2a765bc9fd46362f7e24242195886e8451418ccf4db3f35b6d3bb768",
+    "heldout": "648dd6b3e2be8b1d8d210ccc724022a6c4cd7375437a1b33ea52b063b7b65e87"
+  },
+  "counts": {
+    "train": {
+      "unsafe": 392,
+      "safe": 608
+    },
+    "development": {
+      "safe": 216,
+      "unsafe": 184
+    },
+    "heldout": {
+      "unsafe": 1433,
+      "safe": 1308
+    }
+  },
+  "train": 1000,
+  "development": 400,
+  "test": 2741,
+  "protocol": {
+    "max_len": 2048,
+    "head_max_len": 256,
+    "epochs": 3,
+    "seed": 7,
+    "positive_class": "unsafe",
+    "selection": "fixed final epoch; no test-based tuning"
+  },
+  "source": "NVIDIA Aegis 2.0 original labels; mixed human/model provenance",
+  "notes": {
+    "aegis_test_exclusions": {
+      "response_missing_label": 1076,
+      "empty_response": 39,
+      "redacted_or_empty_prompt": 36
+    },
+    "toxicchat": "0124 human-annotated test subset; unannotated source test texts also excluded from training",
+    "wildguard_revision": "d29c47f41c8b51348b5c8e8c81c039b3132b66d1",
+    "openai_unknown_binary_excluded": 821,
+    "development_source_exclusions": {
+      "response_missing_label": 680,
+      "redacted_or_empty_prompt": 44,
+      "empty_response": 35
+    },
+    "development_overlap_exclusions": {
+      "heldout_or_development_component_overlap": 144,
+      "duplicates": 229
+    },
+    "train_source_exclusions": {
+      "redacted_or_empty_prompt": 927,
+      "response_missing_label": 13847,
+      "empty_response": 803
+    },
+    "training_overlap_exclusions": {
+      "heldout_or_development_component_overlap": 4672,
+      "duplicates": 6392,
+      "conflicting_labels": 432
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "schema": "moderation-independent-data-audit-v1",
+  "scope": "CPU-only frozen data and source-label validation; no model inference",
+  "study_sha256": "863bf377337873b33452aeaf23442bdfa36759b82f31b3784dac9352eee54f0d",
+  "checks": {
+    "all_raw_hashes_match": true,
+    "nested_training_and_identical_development": true,
+    "all_selected_train_labels_match_pinned_aegis_rows": true,
+    "train_disjoint_from_all_official_dev_and_test_components_including_omitted_tests": true,
+    "development_disjoint_from_evaluation_components": true,
+    "xstest_type_mapping_matches_original_label_column": true,
+    "all_split_hashes_counts_and_ids_match": true,
+    "training_disjoint_from_prior_benchmarks": true,
+    "aegis_toxicchat_beavertails_wildguard_test_text_and_labels_match_raw": true
+  },
+  "sets": {
+    "aegis_1000/train": {
+      "rows": 1000,
+      "unique_prompt_groups": 986,
+      "counts": {
+        "unsafe": 392,
+        "safe": 608
+      },
+      "sha256": "1891a2706c41377cfecc5380d7d887755d924ea0546d235683c20b46eb5fcd7d",
+      "task_counts": {
+        "aegis_response": 500,
+        "aegis_prompt": 500
+      },
+      "label_source_counts": {
+        "llm_jury": 216,
+        "refusal_data_augmentation": 100,
+        "human": 684
+      }
+    },
+    "aegis_1000/development": {
+      "rows": 400,
+      "unique_prompt_groups": 347,
+      "counts": {
+        "safe": 216,
+        "unsafe": 184
+      },
+      "sha256": "90933aef2a765bc9fd46362f7e24242195886e8451418ccf4db3f35b6d3bb768"
+    },
+    "aegis_1000/heldout": {
+      "rows": 2741,
+      "unique_prompt_groups": 1911,
+      "counts": {
+        "unsafe": 1433,
+        "safe": 1308
+      },
+      "sha256": "648dd6b3e2be8b1d8d210ccc724022a6c4cd7375437a1b33ea52b063b7b65e87"
+    },
+    "aegis_5000/train": {
+      "rows": 5000,
+      "unique_prompt_groups": 4586,
+      "counts": {
+        "safe": 3039,
+        "unsafe": 1961
+      },
+      "sha256": "a493212a26c2700efbae8ad090881e7932b94a8fd7764e04b0b435978cbb8d75",
+      "task_counts": {
+        "aegis_response": 2500,
+        "aegis_prompt": 2500
+      },
+      "label_source_counts": {
+        "human": 3422,
+        "llm_jury": 1057,
+        "refusal_data_augmentation": 521
+      }
+    },
+    "aegis_5000/development": {
+      "rows": 400,
+      "unique_prompt_groups": 347,
+      "counts": {
+        "safe": 216,
+        "unsafe": 184
+      },
+      "sha256": "90933aef2a765bc9fd46362f7e24242195886e8451418ccf4db3f35b6d3bb768"
+    },
+    "aegis_5000/heldout": {
+      "rows": 2741,
+      "unique_prompt_groups": 1911,
+      "counts": {
+        "unsafe": 1433,
+        "safe": 1308
+      },
+      "sha256": "648dd6b3e2be8b1d8d210ccc724022a6c4cd7375437a1b33ea52b063b7b65e87"
+    },
+    "aegis_prompt/heldout": {
+      "rows": 1928,
+      "unique_prompt_groups": 1911,
+      "counts": {
+        "unsafe": 1039,
+        "safe": 889
+      },
+      "sha256": "b93c4405c60f0ed6110bfc22dce01154a3118e8ef801059be99e590eedc1af8a"
+    },
+    "aegis_response/heldout": {
+      "rows": 813,
+      "unique_prompt_groups": 811,
+      "counts": {
+        "unsafe": 394,
+        "safe": 419
+      },
+      "sha256": "b5df2b94fe6ede9516b270d1b8d01ed80556c6a77f0f3e18ee116bff89e6552c"
+    },
+    "beavertails/heldout": {
+      "rows": 3021,
+      "unique_prompt_groups": 2523,
+      "counts": {
+        "unsafe": 1733,
+        "safe": 1288
+      },
+      "sha256": "003266f4ffa0198409c72ff224afc959b03d586efca370fa6c0215b8a3af5353"
+    },
+    "openai_categories/heldout": {
+      "rows": 9298,
+      "unique_prompt_groups": 1653,
+      "counts": {
+        "safe": 8528,
+        "unsafe": 770
+      },
+      "sha256": "a6709e3f23c6326106e52a0732475ea226794cb39a8339af978156d15b59fc6a"
+    },
+    "openai_known/heldout": {
+      "rows": 859,
+      "unique_prompt_groups": 848,
+      "counts": {
+        "unsafe": 522,
+        "safe": 337
+      },
+      "sha256": "830c00347eb3a7e64a3b6d904340fd2026cc2447a4da7277068be6a941d44b35"
+    },
+    "toxicchat/heldout": {
+      "rows": 2853,
+      "unique_prompt_groups": 2774,
+      "counts": {
+        "safe": 2491,
+        "unsafe": 362
+      },
+      "sha256": "812cc1a42e3ceb8aa791abf8daf13afd3d11ebb5a140e92b91bdbae917b1c60e"
+    },
+    "wildguard_prompt/heldout": {
+      "rows": 1699,
+      "unique_prompt_groups": 1699,
+      "counts": {
+        "safe": 945,
+        "unsafe": 754
+      },
+      "sha256": "2e0816547f7b834dd7f981eb2bcb30fc039a2b078a680d8db19af9852efc19a3"
+    },
+    "wildguard_response/heldout": {
+      "rows": 1709,
+      "unique_prompt_groups": 1709,
+      "counts": {
+        "safe": 1425,
+        "unsafe": 284
+      },
+      "sha256": "f4a25e104505ca2cc9d668896e3443285c2d948c4bad92617777a9dce4dcd651"
+    },
+    "xstest/heldout": {
+      "rows": 450,
+      "unique_prompt_groups": 450,
+      "counts": {
+        "safe": 250,
+        "unsafe": 200
+      },
+      "sha256": "55c6c031c741194f63ae0b1448a6f515ca38b7d0236f857c5a7ccb72b4399e5d"
+    }
+  },
+  "limitations": [
+    "Training budgets count labelled decisions, not unique prompts; prompt and response decisions may share a prompt within a training split.",
+    "Published reference scores use different policies and sometimes different retained rows; no competitor was run here.",
+    "Aegis response labels mix human, LLM-jury and refusal augmentation provenance.",
+    "Exact normalized component exclusion does not rule out semantic paraphrases or pretraining contamination.",
+    "Shared broad policy differs from some source taxonomies; transfer scores include policy-definition mismatch. No policy was changed after freezing."
+  ],
+  "preflight_reported": {
+    "train/moderation-study/aegis_1000/development.jsonl": {
+      "n": 400,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_1000/heldout.jsonl": {
+      "n": 2741,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_1000/train.jsonl": {
+      "n": 1000,
+      "input_truncated": 1,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_5000/development.jsonl": {
+      "n": 400,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_5000/heldout.jsonl": {
+      "n": 2741,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_5000/train.jsonl": {
+      "n": 5000,
+      "input_truncated": 3,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_prompt/heldout.jsonl": {
+      "n": 1928,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/aegis_response/heldout.jsonl": {
+      "n": 813,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/beavertails/heldout.jsonl": {
+      "n": 3021,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/openai_categories/heldout.jsonl": {
+      "n": 9298,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/openai_known/heldout.jsonl": {
+      "n": 859,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/toxicchat/heldout.jsonl": {
+      "n": 2853,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/wildguard_prompt/heldout.jsonl": {
+      "n": 1699,
+      "input_truncated": 0,
+      "head_truncated": 0
+    },
+    "train/moderation-study/wildguard_response/heldout.jsonl": {
+      "n": 1709,
+      "input_truncated": 8,
+      "head_truncated": 0
+    },
+    "train/moderation-study/xstest/heldout.jsonl": {
+      "n": 450,
+      "input_truncated": 0,
+      "head_truncated": 0
+    }
+  }
+}
